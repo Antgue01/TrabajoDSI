@@ -9,6 +9,74 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <!--#region Generacion del Grid -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--#endregion-->
+        <!--#region Boton atras -->
+        <Button x:Name="BackButton"  
+            Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+                Style="{ThemeResource NavigationBackButtonNormalStyle}" Height="128" Width="128" Click="goBack"/>
+
+        <!--#endregion-->
+        <!--#region Opciones -->
+        <TextBlock Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Text="Opciones" VerticalAlignment="Center"
+                   HorizontalAlignment="Center" FontSize="90"/>
+
+        <!--#endregion-->
+        <!--#region Idioma -->
+        <Grid Grid.Column="4" Grid.Row="0"  VerticalAlignment="Center" HorizontalAlignment="Left">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="Assets/speechIcon.png" Width="32" Height="32" Grid.Column="0"/>
+            <ComboBox Grid.Column="1" Width="200"  Margin="5,0,0,0" VerticalAlignment="Center">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Assets/Spain.png" Grid.Column="0" Width="32" Height=" 32"/>
+                    <TextBlock Grid.Column="1" Text="Español" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Assets/England.png" Grid.Column="0" Width="32" Height=" 32"/>
+                    <TextBlock Grid.Column="1" Text="English" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Assets/Japan.png" Grid.Column="0" Width="32" Height=" 32"/>
+                    <TextBlock Grid.Column="1" Text="日本語" VerticalAlignment="Center"/>
+                </Grid>
+            </ComboBox>
+        </Grid>
+
+        <!--#endregion-->
+        <!--#region Musica -->
+        <Image Source="Assets/note.png" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"
+               Height="64"/>
+        <!--#endregion-->
+
 
     </Grid>
 </Page>
