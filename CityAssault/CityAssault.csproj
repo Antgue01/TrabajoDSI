@@ -150,9 +150,11 @@
   <ItemGroup>
     <Content Include="Assets\Apuntado.png" />
     <Content Include="Assets\Audio.png" />
+    <Content Include="Assets\BattleZone.jpg" />
     <Content Include="Assets\Effects.png" />
     <Content Include="Assets\England.png" />
     <Content Include="Assets\Giroscopio.png" />
+    <Content Include="Assets\HealthIcon.png" />
     <Content Include="Assets\Japan.png" />
     <Content Include="Assets\JoysticVirtual.png" />
     <Content Include="Assets\Mute.png" />
