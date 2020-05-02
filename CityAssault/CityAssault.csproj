@@ -148,9 +148,19 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Apuntado.png" />
+    <Content Include="Assets\Audio.png" />
+    <Content Include="Assets\Effects.png" />
     <Content Include="Assets\England.png" />
+    <Content Include="Assets\Giroscopio.png" />
     <Content Include="Assets\Japan.png" />
+    <Content Include="Assets\JoysticVirtual.png" />
+    <Content Include="Assets\Mute.png" />
     <Content Include="Assets\note.png" />
+    <Content Include="Assets\sound0.png" />
+    <Content Include="Assets\sound1.png" />
+    <Content Include="Assets\sound2.png" />
+    <Content Include="Assets\sound3.png" />
     <Content Include="Assets\Spain.png" />
     <Content Include="Assets\speechIcon.png" />
     <Content Include="Properties\Default.rd.xml" />

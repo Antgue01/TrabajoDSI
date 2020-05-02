@@ -74,7 +74,107 @@
         <!--#endregion-->
         <!--#region Musica -->
         <Image Source="Assets/note.png" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"
-               Height="64"/>
+               Height="64" Margin="0,0,20,0"/>
+        <Rectangle Fill="#4DD7FA" Grid.Row="1" Grid.Column="1" Height="57"/>
+        <TextBlock Grid.Row="1" Grid.Column="1"  Text="Música" FontSize="32"
+                 VerticalAlignment="Center" TextAlignment="Center"
+                 />
+        <Grid Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Margin="20,0,20,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Source="Assets/sound0.png" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Image Source="Assets/sound3.png" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Slider x:Name="Music_Slider" Grid.Column="1" VerticalAlignment="Center" 
+                Margin="10,0,10,0" StepFrequency="10" ValueChanged="Music_Slider_ValueChanged"/>
+        </Grid>
+        <ToggleButton IsChecked="False" x:Name="Mute_Music" Grid.Row="1" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Width="73"
+                Height="73" Background="#00A4D3" BorderThickness="3" BorderBrush="Black" Checked="Mute_Music_Checked" Unchecked="Mute_Music_Unchecked" >
+            <Image Source="Assets/Mute.png" VerticalAlignment="Center"
+                   HorizontalAlignment="Center" Stretch="Fill"/>
+        </ToggleButton>
+        <!--#endregion-->
+        <!--#region Efectos -->
+        <Image Source="Assets/Effects.png" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"
+               Height="64" Margin="0,0,20,0"/>
+        <Rectangle Fill="#4DD7FA" Grid.Row="2" Grid.Column="1" Height="57"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="Efectos" FontSize="32"
+                 VerticalAlignment="Center" TextAlignment="Center"
+                 />
+        <Grid Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="20,0,20,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Source="Assets/sound0.png" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Image Source="Assets/sound3.png" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Slider x:Name="Effects_Slider" Grid.Column="1" VerticalAlignment="Center" 
+                Margin="10,0,10,0" StepFrequency="10" ValueChanged="Effects_Slider_ValueChanged"/>
+        </Grid>
+        <ToggleButton IsChecked="False" x:Name="Mute_Effects" Grid.Row="2" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Width="73"
+                Height="73" Background="#00A4D3" BorderThickness="3" BorderBrush="Black" Unchecked="Mute_Effects_Unchecked" Checked="Mute_Effects_Checked" >
+            <Image Source="Assets/Mute.png" VerticalAlignment="Center"
+                   HorizontalAlignment="Center" Stretch="Fill"/>
+        </ToggleButton>
+        <!--#endregion-->
+        <!--#region Audio -->
+        <Image Source="Assets/Audio.png" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"
+               Height="64" Margin="0,0,20,0"/>
+        <Rectangle Fill="#4DD7FA" Grid.Row="3" Grid.Column="1" Height="57"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="Audio" FontSize="32"
+                 VerticalAlignment="Center" TextAlignment="Center"/>
+        <Grid Margin="30,0,0,0" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+            <RadioButton x:Name="Mono" Grid.Column="0"  VerticalAlignment="Center" Checked="Mono_Checked"/>
+            <TextBlock Grid.Column="1" Text="Mono" FontSize="32" VerticalAlignment="Center"/>
+
+        </Grid>
+        <Grid Grid.Row="3" Margin="30,0,0,0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <RadioButton x:Name="Estereo" Grid.Column="0"  VerticalAlignment="Center" Checked="Estereo_Checked"/>
+            <TextBlock Grid.Column="1" Text="Estéreo" FontSize="32" VerticalAlignment="Center"/>
+        </Grid>
+        <!--#endregion-->
+        <!--#region Apuntado -->
+        <Image Source="Assets/Apuntado.png" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"
+               Height="64" Margin="0,0,20,0"/>
+        <Rectangle Fill="#4DD7FA" Grid.Row="4" Grid.Column="1" Height="57"/>
+        <TextBlock Grid.Row="4" Grid.Column="1" Text="Apuntar mediante movimiento" FontSize="24"
+                   TextWrapping="Wrap"
+                 VerticalAlignment="Center" TextAlignment="Center"/>
+        <Grid Grid.Row="4" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition />
+                <ColumnDefinition />
+
+            </Grid.ColumnDefinitions>
+            <RadioButton x:Name="Girscopio" Grid.Column="0"  VerticalAlignment="Center" Checked="Girscopio_Checked"/>
+            <TextBlock Grid.Column="1" Text="Activado" FontSize="32" VerticalAlignment="Center"/>
+            <Image Source="Assets/Giroscopio.png" Grid.Column="2" Height="64" Width="64" Margin="10,0,0,0"/>
+
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <RadioButton x:Name="Joystick" Grid.Column="0"  VerticalAlignment="Center" Checked="Joystick_Checked"/>
+            <TextBlock Grid.Column="1" Text="Desactivado" FontSize="32" VerticalAlignment="Center" />
+            <Image Grid.Column="2" Source="Assets/JoysticVirtual.png" Width="64" Height=" 64" Margin="5,0,0,0"/>
+        </Grid>
+
         <!--#endregion-->
 
 

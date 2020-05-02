@@ -23,6 +23,8 @@ namespace CityAssault
     /// </summary>
     public sealed partial class Settings : Page
     {
+        private double MusicVolume = 0;
+        private double EffectsVolume = 0;
         public Settings()
         {
 
@@ -60,6 +62,62 @@ namespace CityAssault
         {
             On_BackRequested();
             args.Handled = true;
+        }
+
+        private void Estereo_Checked(object sender, RoutedEventArgs e)
+        {
+            Mono.IsChecked = false;
+        }
+
+        private void Mono_Checked(object sender, RoutedEventArgs e)
+        {
+            Estereo.IsChecked = false;
+        }
+
+        private void Joystick_Checked(object sender, RoutedEventArgs e)
+        {
+            Girscopio.IsChecked = false;
+        }
+
+        private void Girscopio_Checked(object sender, RoutedEventArgs e)
+        {
+            Joystick.IsChecked = false;
+        }
+
+        private void Mute_Music_Checked(object sender, RoutedEventArgs e)
+        {
+            Music_Slider.Value = 0;
+        }
+
+        private void Mute_Music_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if(Music_Slider.Value != MusicVolume)
+            Music_Slider.Value = MusicVolume;
+        }
+
+        private void Music_Slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            if (Mute_Music.IsChecked == false)
+                MusicVolume = (sender as Slider).Value;
+        }
+
+        private void Mute_Effects_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if(Music_Slider.Value != EffectsVolume)
+                Effects_Slider.Value = EffectsVolume;
+
+        }
+
+        private void Mute_Effects_Checked(object sender, RoutedEventArgs e)
+        {
+            Effects_Slider.Value = 0;
+
+        }
+
+        private void Effects_Slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            if (Mute_Effects.IsChecked == false)
+                EffectsVolume = (sender as Slider).Value;
         }
     }
 }
