@@ -26,5 +26,15 @@ namespace CityAssault
         {
             this.InitializeComponent();
         }
+
+        private void ToggleButton_Checked(object sender, RoutedEventArgs e)
+        {
+            Stats_Viewer.Visibility = Visibility.Collapsed;
+        }
+
+        private void ToggleButton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Stats_Viewer.Visibility=Visibility.Visible;
+        }
     }
 }

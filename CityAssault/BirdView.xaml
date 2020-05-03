@@ -9,6 +9,84 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <!--#region Generacion del Grid -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
+        <!--#endregion-->
+        <!--#region Comandos y Stats-->
+        <Grid Grid.Row="2" Grid.Column="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--#region Comandos -->
+            <Grid Grid.Row="1" Background="#92D36E">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <!--#region Auto -->
+                <ToggleButton Grid.Column="2" Background="#91E4FB"  
+                     HorizontalAlignment="Center"  FontSize="11">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Auto" Grid.Column="0"/>
+                        <Image Source="Assets/Auto.png" Grid.Column="1" Height="16" Margin="7,0,0,0"/>
+                    </Grid>
+                </ToggleButton>
+
+                <!--#endregion-->
+                <!--#region Pasar Turno -->
+                <Button Grid.Column="0" HorizontalAlignment="Center" Background="#91E4FB">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Assets/Flag.png" Grid.Column="0" Height="16"/>
+                        <TextBlock Text="Pasar turno" Grid.Column="1" FontSize="11" Margin="7,0,0,0"/>
+                    </Grid>
+                </Button>
+                <!--#endregion-->
+                <!--#region Ver Stats -->
+                <ToggleButton Grid.Column="1" HorizontalAlignment="Center" Background="#91E4FB" Unchecked="ToggleButton_Unchecked" Checked="ToggleButton_Checked">
+                    <Image Source="Assets/Arrow.png" Height="16" Width="16"/>
+                </ToggleButton>
+                <!--#endregion-->
+                            </Grid>
+            <!--#endregion-->
+            <!--#region Stats -->
+            <Grid x:Name="Stats_Viewer" Grid.Row="0" Grid.Column="0"
+                       Background="#92D36E">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>                
+
+
+
+            </Grid>
+
+            <!--#endregion-->
+        </Grid>
+
+        <!--#endregion-->
     </Grid>
 </Page>

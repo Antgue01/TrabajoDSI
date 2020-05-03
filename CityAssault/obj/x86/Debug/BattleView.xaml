@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="CityAssault.BattleView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CityAssault"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <!--#region FondoEscena -->
+        <Image HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" Width="auto" Source="Assets/BattleZone.jpg"/>
+        <!--#endregion-->
+
+        
+        <!--#region Botones de ataque -->
+        <Button x:ConnectionId='2' Content="Button" Margin="537,242,0,0" VerticalAlignment="Top" RequestedTheme="Light" Width="98" Height="101"                     >
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:ConnectionId='3' Content="Button" Margin="655,156,0,0" RequestedTheme="Light" Width="63" Height="60" VerticalAlignment="Top"                       >
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <!--#endregion-->
+
+        
+        <!--#region Salud -->
+        <ProgressBar HorizontalAlignment="Left" Height="19" Margin="54,31,0,0" VerticalAlignment="Top" Width="274" Foreground="#FF24C514" Background="#3311AEC7" BorderBrush="#FF165B0C" BorderThickness="2,2,2,2"/>
+        <Image HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="34" Source="Assets/HealthIcon.png" Margin="17,21,0,0"/>
+        <!--#endregion-->
+
+        
+        <!--#region Tiempo atras -->
+        <TextBox HorizontalAlignment="Center" Margin="0,10,0,0" Text="1:43" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="36"/>
+        <!--#endregion-->
+
+        
+        <!--#region Joystick -->
+        <Ellipse HorizontalAlignment="Left" Height="162" Margin="91,216,0,0" VerticalAlignment="Top" Width="161" MinWidth="2" StrokeThickness="7">
+            <Ellipse.Stroke>
+                <SolidColorBrush Color="#FF0A2C9C" Opacity="0.65"/>
+            </Ellipse.Stroke>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="75" Margin="134,260,0,0" VerticalAlignment="Top" Width="75" StrokeThickness="40">
+            <Ellipse.Stroke>
+                <SolidColorBrush Color="#FF766F6F" Opacity="0.83"/>
+            </Ellipse.Stroke>
+        </Ellipse>
+        <!--#endregion-->
+
+    </Grid>
+</Page>
+
