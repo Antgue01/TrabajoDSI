@@ -150,9 +150,11 @@
   <ItemGroup>
     <Content Include="Assets\Apuntado.png" />
     <Content Include="Assets\Arrow.png" />
+    <Content Include="Assets\Attack.png" />
     <Content Include="Assets\Audio.png" />
     <Content Include="Assets\Auto.png" />
     <Content Include="Assets\BattleZone.jpg" />
+    <Content Include="Assets\Defense.png" />
     <Content Include="Assets\Effects.png" />
     <Content Include="Assets\England.png" />
     <Content Include="Assets\Flag.png" />
@@ -160,6 +162,7 @@
     <Content Include="Assets\HealthIcon.png" />
     <Content Include="Assets\Japan.png" />
     <Content Include="Assets\JoysticVirtual.png" />
+    <Content Include="Assets\Movement.png" />
     <Content Include="Assets\Mute.png" />
     <Content Include="Assets\note.png" />
     <Content Include="Assets\sound0.png" />
@@ -168,6 +171,12 @@
     <Content Include="Assets\sound3.png" />
     <Content Include="Assets\Spain.png" />
     <Content Include="Assets\speechIcon.png" />
+    <Content Include="Assets\Speed.png" />
+    <Content Include="Assets\Tank0.png" />
+    <Content Include="Assets\Tank1.png" />
+    <Content Include="Assets\Tank2.png" />
+    <Content Include="Assets\Tank3.png" />
+    <Content Include="Assets\VS.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-03T10:01:13.810</Modified>
+      <Modified>2020-05-04T09:01:11.435</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\bin\x64\Debug\CityAssault.exe">
       <PackagePath>entrypoint\CityAssault.exe</PackagePath>
-      <Modified>2020-05-03T10:01:13.110</Modified>
+      <Modified>2020-05-04T09:01:10.807</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -54,6 +54,10 @@
       <PackagePath>Assets\Arrow.png</PackagePath>
       <Modified>2020-05-03T09:04:12.832</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Attack.png">
+      <PackagePath>Assets\Attack.png</PackagePath>
+      <Modified>2020-05-04T07:57:06.719</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Audio.png">
       <PackagePath>Assets\Audio.png</PackagePath>
       <Modified>2020-05-02T11:06:25.886</Modified>
@@ -61,6 +65,10 @@
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Auto.png">
       <PackagePath>Assets\Auto.png</PackagePath>
       <Modified>2020-05-03T07:55:33.531</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Defense.png">
+      <PackagePath>Assets\Defense.png</PackagePath>
+      <Modified>2020-05-04T07:57:06.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Effects.png">
       <PackagePath>Assets\Effects.png</PackagePath>
@@ -89,6 +97,10 @@
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\JoysticVirtual.png">
       <PackagePath>Assets\JoysticVirtual.png</PackagePath>
       <Modified>2020-05-02T11:06:25.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Movement.png">
+      <PackagePath>Assets\Movement.png</PackagePath>
+      <Modified>2020-05-04T08:00:47.971</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Mute.png">
       <PackagePath>Assets\Mute.png</PackagePath>
@@ -121,6 +133,30 @@
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\speechIcon.png">
       <PackagePath>Assets\speechIcon.png</PackagePath>
       <Modified>2020-05-02T11:06:25.961</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Speed.png">
+      <PackagePath>Assets\Speed.png</PackagePath>
+      <Modified>2020-05-04T07:57:06.772</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Tank0.png">
+      <PackagePath>Assets\Tank0.png</PackagePath>
+      <Modified>2020-05-04T08:37:07.719</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Tank1.png">
+      <PackagePath>Assets\Tank1.png</PackagePath>
+      <Modified>2020-05-04T08:37:07.724</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Tank2.png">
+      <PackagePath>Assets\Tank2.png</PackagePath>
+      <Modified>2020-05-04T08:37:07.729</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Tank3.png">
+      <PackagePath>Assets\Tank3.png</PackagePath>
+      <Modified>2020-05-04T08:37:07.736</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\VS.png">
+      <PackagePath>Assets\VS.png</PackagePath>
+      <Modified>2020-05-04T08:30:37.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -166,39 +202,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\bin\x64\Debug\CityAssault.xr.xml">
       <PackagePath>CityAssault.xr.xml</PackagePath>
-      <Modified>2020-05-03T10:00:35.184</Modified>
+      <Modified>2020-05-04T08:58:50.231</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-03T10:00:35.217</Modified>
+      <Modified>2020-05-04T08:03:25.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\bin\x64\Debug\BattleView.xbf">
       <PackagePath>BattleView.xbf</PackagePath>
-      <Modified>2020-05-03T10:00:35.217</Modified>
+      <Modified>2020-05-04T08:03:25.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\bin\x64\Debug\BirdView.xbf">
       <PackagePath>BirdView.xbf</PackagePath>
-      <Modified>2020-05-03T10:01:12.748</Modified>
+      <Modified>2020-05-04T09:01:10.554</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\bin\x64\Debug\Campaign.xbf">
       <PackagePath>Campaign.xbf</PackagePath>
-      <Modified>2020-05-03T10:00:35.218</Modified>
+      <Modified>2020-05-04T08:03:25.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\bin\x64\Debug\Garage.xbf">
       <PackagePath>Garage.xbf</PackagePath>
-      <Modified>2020-05-03T10:00:35.219</Modified>
+      <Modified>2020-05-04T08:03:25.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\bin\x64\Debug\MainMenu.xbf">
       <PackagePath>MainMenu.xbf</PackagePath>
-      <Modified>2020-05-03T10:00:35.219</Modified>
+      <Modified>2020-05-04T08:03:25.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\bin\x64\Debug\Online.xbf">
       <PackagePath>Online.xbf</PackagePath>
-      <Modified>2020-05-03T10:00:35.221</Modified>
+      <Modified>2020-05-04T08:03:25.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\bin\x64\Debug\Settings.xbf">
       <PackagePath>Settings.xbf</PackagePath>
-      <Modified>2020-05-03T10:00:35.216</Modified>
+      <Modified>2020-05-04T08:03:25.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -206,11 +242,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-05-03T09:19:00.045</Modified>
+      <Modified>2020-05-04T08:57:32.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\bin\x64\Debug\Core\CityAssault.exe">
       <PackagePath>CityAssault.exe</PackagePath>
-      <Modified>2020-05-03T10:01:13.806</Modified>
+      <Modified>2020-05-04T09:01:11.430</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
