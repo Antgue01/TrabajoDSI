@@ -26,5 +26,25 @@ namespace CityAssault
         {
             this.InitializeComponent();
         }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Back(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LevelSelected(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

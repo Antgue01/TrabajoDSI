@@ -27,12 +27,12 @@ namespace CityAssault
             this.InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void NormalShoot(object sender, RoutedEventArgs e)
         {
             //Pium
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void SpecialAttack(object sender, RoutedEventArgs e)
         {
             //Ataque tope poderoso
         }
