@@ -32,19 +32,19 @@ namespace CityAssault
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Play(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(BirdView));
         }
 
         private void Button_Back(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(MainMenu));
         }
 
         private void LevelSelected(object sender, RoutedEventArgs e)
         {
-
+            PlayButton.IsEnabled = true;
         }
     }
 }

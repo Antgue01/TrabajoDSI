@@ -30,11 +30,18 @@ namespace CityAssault
         private void NormalShoot(object sender, RoutedEventArgs e)
         {
             //Pium
+            RecieveDamage(10);  //Para comprobar que cambia la vida del jugador
         }
 
         private void SpecialAttack(object sender, RoutedEventArgs e)
         {
             //Ataque tope poderoso
+            RecieveDamage(-5);  //Para comprobar que cambia la vida del jugador
+        }
+
+        public void RecieveDamage(int damage)//Para comprobar que cambia la vida del jugador
+        {
+            BarraSalud.Value -= damage;
         }
     }
 }

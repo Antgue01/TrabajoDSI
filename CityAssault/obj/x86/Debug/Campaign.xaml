@@ -10,14 +10,13 @@
 
     <Page.Resources>
 
-        <DataTemplate x:Key="Niveles">
-            <StackPanel x:Name="ña" Orientation="Horizontal">
-                <TextBlock x:Name="Id" Text="1" FontSize="20" Width="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-                <Image x:Name="ImagenDueño" Width="auto" VerticalAlignment="Center" Source="Assets/Spain.png"/>
-                <TextBlock x:Name="nombreDron" FontSize="12" Text="Facil" VerticalAlignment="Center"/>
-            </StackPanel>
+        <DataTemplate x:Key="Niveles"                   >
+            <Image x:Name="ImagenDueño" Width="auto" VerticalAlignment="Center" Source="Assets/Spain.png"/>
+
         </DataTemplate>
-        
+
+
+
     </Page.Resources>
 
     <Grid>
@@ -32,21 +31,35 @@
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
 
-        <Button x:ConnectionId='6' Content="Button" Grid.Column="0" Margin="10,0,0,0" Height="74" Width="81"                    />
+        <!--#region TítuloyRecompensas -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,20,0">
+            <TextBlock Text="Rewards:" FontSize="25" TextAlignment="Center"/>
+            <TextBlock x:ConnectionId='9' x:Name="Rewards" Text="17/30" FontSize="25" TextAlignment="Left"/>
+        </StackPanel>
 
-        <Button x:ConnectionId='7' Content="Button" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="127,0,0,0" Height="98" Width="307"                     />
+        <TextBlock x:ConnectionId='4' x:Name="Menu" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="Campaign" FontSize="30" Grid.Column="1" TextAlignment="Center"/>
 
-        <TextBlock x:ConnectionId='8' x:Name="Descripción" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" FontSize="18" Margin="35,0,0,0" TextWrapping="Wrap" 
+        <Button x:ConnectionId='5' Content="Back" Grid.Column="0" Margin="11,0,0,0" Height="64" Width="67"                    />
+        <!--#endregion-->
+
+        <!--#region DescripcionyBotonJugar -->
+        <Button x:ConnectionId='6' x:Name="PlayButton" Content="Play" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="127,0,0,0" Height="98" Width="307"                     IsEnabled="True"/>
+
+        <TextBlock x:ConnectionId='7' x:Name="Descripción" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" FontSize="18" Margin="35,0,0,0" TextWrapping="Wrap" 
                    VerticalAlignment="Center" Height="143" Width="363"                                              >
             <Run Text="Descripción de la misión:"/><LineBreak/>
             <Run Text="Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar inceptos vestibulum, cursus ac suspendisse ornare fames phasellus praesent litora molestie potenti."/>
         </TextBlock>
+        <!--#endregion-->
 
-        <ListView x:ConnectionId='9' x:Name="ListadoPersonas" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
+        <!--#region ListaDeNiveles -->
+        <ListView x:ConnectionId='8' x:Name="ListadoPersonas" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
                   ItemTemplate="{StaticResource Niveles}"
                   IsItemClickEnabled="true"
                                            
-                  IsFocusEngagementEnabled="True"/>
+                  ShowsScrollingPlaceholders="True"
+                  RequestedTheme="Dark"/>
+        <!--#endregion-->
     </Grid>
 </Page>
 
