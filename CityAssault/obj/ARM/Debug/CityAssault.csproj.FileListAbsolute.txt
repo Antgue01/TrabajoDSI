@@ -72,3 +72,40 @@ C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault
 C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\obj\ARM\Debug\ProjectArchitectures.txt
 C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\obj\ARM\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\CityAssault.csprojAssemblyReference.cache
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\App.g.i.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\App.g.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\BattleView.g.i.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\BattleView.g.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\BirdView.g.i.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\BirdView.g.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Campaign.g.i.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Campaign.g.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Garage.g.i.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Garage.g.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\MainMenu.g.i.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\MainMenu.g.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Online.g.i.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Online.g.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Settings.g.i.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Settings.g.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\XamlTypeInfo.g.cs
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\App.xaml
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\BattleView.xaml
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\BirdView.xaml
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Campaign.xaml
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Garage.xaml
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Online.xaml
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Settings.xaml
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\MainMenu.xaml
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\App.xbf
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\BattleView.xbf
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\BirdView.xbf
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Campaign.xbf
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Garage.xbf
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Online.xbf
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\Settings.xbf
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\MainMenu.xbf
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\XamlSaveStateFile.xml
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\CityAssault.exe
+C:\TrabajoDSI\CityAssault\obj\ARM\Debug\CityAssault.pdb

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +26,34 @@ namespace CityAssault
         public MainMenu()
         {
             this.InitializeComponent();
+        }
+
+        private void SettingsButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Settings));
+
+        }
+        private void Button_Back(object sender, RoutedEventArgs e)
+        {
+            CoreApplication.Exit();
+        }
+
+        private void CampaignButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Campaign));
+
+        }
+
+        private void OnlineButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Online));
+
+        }
+
+        private void GarageButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Garage));
+
         }
     }
 }

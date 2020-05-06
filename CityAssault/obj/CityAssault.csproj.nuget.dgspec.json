@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\madar\\Desktop\\Uni\\2º V\\trabajos dsi\\repositorio\\TrabajoDSI\\CityAssault\\CityAssault.csproj": {}
+    "C:\\TrabajoDSI\\CityAssault\\CityAssault.csproj": {}
   },
   "projects": {
-    "C:\\Users\\madar\\Desktop\\Uni\\2º V\\trabajos dsi\\repositorio\\TrabajoDSI\\CityAssault\\CityAssault.csproj": {
+    "C:\\TrabajoDSI\\CityAssault\\CityAssault.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\madar\\Desktop\\Uni\\2º V\\trabajos dsi\\repositorio\\TrabajoDSI\\CityAssault\\CityAssault.csproj",
+        "projectUniqueName": "C:\\TrabajoDSI\\CityAssault\\CityAssault.csproj",
         "projectName": "CityAssault",
-        "projectPath": "C:\\Users\\madar\\Desktop\\Uni\\2º V\\trabajos dsi\\repositorio\\TrabajoDSI\\CityAssault\\CityAssault.csproj",
-        "packagesPath": "C:\\Users\\madar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\madar\\Desktop\\Uni\\2º V\\trabajos dsi\\repositorio\\TrabajoDSI\\CityAssault\\obj\\",
+        "projectPath": "C:\\TrabajoDSI\\CityAssault\\CityAssault.csproj",
+        "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
+        "outputPath": "C:\\TrabajoDSI\\CityAssault\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\madar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

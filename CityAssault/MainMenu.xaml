@@ -9,6 +9,44 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <!--#region PanelSuperior -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,20,0">
+            <Button Name="SettingsButton" Content="Settings" Margin="0,0,60,0" Height="100" FontSize="20" Width="100" Click="SettingsButton_Click"></Button>
+        </StackPanel>
+
+        <TextBlock x:Name="Menu" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="City Assault" FontSize="80" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Center"/>
+
+        <Button Content="Back" Grid.Column="0" Margin="60,0,0,0" FontSize="40" Height="100" Width="100" Click="Button_Back"/>
+        <!--#endregion-->
+
+        <!--#region Botones -->
+        <Button x:Name="CampaignButton" Content="Campaña" FontSize="40" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,0,0,0" Height="100" Width="360" Click="CampaignButton_Click" IsEnabled="True"/>
+        <Button x:Name="OnlineButton" Content="Online" FontSize="40" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,0,0,0" Height="100" Width="360" Click="OnlineButton_Click" IsEnabled="True"/>
+        <Button x:Name="GarageButton" Content="Taller" FontSize="40" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,0,0,0" Height="100" Width="360" Click="GarageButton_Click" IsEnabled="True"/>
+
+        
+        <!--#endregion-->
+
+        <!--#region Foto -->
+        <Image Source="Assets/Tank0.png" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Stretch="Fill" Margin="40,0,0,0"/>
+
+        <!--#endregion-->
+
 
     </Grid>
 </Page>

@@ -1,0 +1,181 @@
+﻿<Page
+    x:Class="CityAssault.BirdView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CityAssault"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <!--#region Generacion del Grid -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--#endregion-->
+        <Image Source="Assets/birdbg.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="3" Stretch="Fill"/>
+        <!--#region Comandos y Stats-->
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--#region Comandos -->
+            <Grid Grid.Row="1" Background="#92D36E" BorderBrush="#629C44" BorderThickness="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <!--#region Auto -->
+                <ToggleButton Grid.Column="2" Background="#91E4FB"  
+                     HorizontalAlignment="Center"  FontSize="11">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Auto" Grid.Column="0"/>
+                        <Image Source="Assets/Auto.png" Grid.Column="1" Height="16" Margin="7,0,0,0"/>
+                    </Grid>
+                </ToggleButton>
+
+                <!--#endregion-->
+                <!--#region Pasar Turno -->
+                <Button Grid.Column="0" HorizontalAlignment="Center" Background="#91E4FB">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Assets/Flag.png" Grid.Column="0" Height="16"/>
+                        <TextBlock Text="Pasar turno" Grid.Column="1" FontSize="11" Margin="7,0,0,0"/>
+                    </Grid>
+                </Button>
+                <!--#endregion-->
+                <!--#region Ver Stats -->
+                <ToggleButton x:ConnectionId='3' Grid.Column="1" HorizontalAlignment="Center" Background="#91E4FB"                                                                  >
+                    <Image Source="Assets/Arrow.png" Height="16" Width="16"/>
+                </ToggleButton>
+                <!--#endregion-->
+                            </Grid>
+            <!--#endregion-->
+            <!--#region Stats -->
+            <Grid x:ConnectionId='2' x:Name="Stats_Viewer" Grid.Row="0" Grid.Column="0" BorderBrush="#629C44" BorderThickness="2"
+                       Background="#92D36E">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <!--#region Imagenes -->
+                <Image Source="Assets/Attack.png" Grid.Column="0" Grid.Row="0" Width="24"/>
+                <Image Source="Assets/Defense.png" Grid.Column="0" Grid.Row="1" Width="24" />
+                <Image Source="Assets/Movement.png" Grid.Column="2" Grid.Row="0" Width="24" />
+                <Image Source="Assets/Speed.png" Grid.Column="2" Grid.Row="1" Width="24" />
+                <!--#endregion-->
+                <!--#region Barras -->
+                <ProgressBar Grid.Column="1" Grid.Row="0" Value="75" Margin="5,0,5,0"/>
+                <ProgressBar Grid.Column="1" Grid.Row="1" Value="25" Margin="5,0,5,0"/>
+                <ProgressBar Grid.Column="3" Grid.Row="0" Value="55" Margin="5,0,5,0"/>
+                <ProgressBar Grid.Column="3" Grid.Row="1" Value="98" Margin="5,0,5,0"/>
+                <!--#endregion-->
+
+
+            </Grid>
+
+            <!--#endregion-->
+        </Grid>
+
+        <!--#endregion-->
+        <!--#region Equipos -->
+        <Grid Grid.Row="0" Grid.Column="1" Background="#407BD6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="Assets/VS.png" Grid.Column="1" Width="40"/>
+            <!--#region Aliados -->
+            <Grid Grid.Row="0" Grid.Column="0" Background="#9FCD7A" BorderThickness="3" BorderBrush="Black">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" BorderThickness="1" BorderBrush="Black">
+                    <Image Source="Assets/Tank0.png" />
+                </Border>
+                <Border Grid.Column="1" BorderThickness="1" BorderBrush="Black">
+                    <Image Source="Assets/Tank1.png"/>
+                </Border>
+                <Border Grid.Column="2" BorderThickness="1" BorderBrush="Black">
+                    <Image Source="Assets/Tank2.png" />
+                </Border>
+                <Border Grid.Column="3" BorderThickness="1" BorderBrush="Black">
+                    <Image Source="Assets/Tank3.png"/>
+                </Border>
+            </Grid>
+            <!--#endregion-->
+            <!--#region Enemigos -->
+            <Grid Grid.Row="0" Grid.Column="2" Background="#FF8A84" BorderBrush="Black" BorderThickness="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" BorderThickness="1" BorderBrush="Black">
+                    <Image Source="Assets/Tank3.png" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <ScaleTransform ScaleX="-1"/>
+                        </Image.RenderTransform>
+                    </Image>
+                </Border>
+                <Border Grid.Column="1" BorderThickness="1" BorderBrush="Black">
+                    <Image Source="Assets/Tank2.png" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <ScaleTransform ScaleX="-1"/>
+                        </Image.RenderTransform>
+                    </Image>
+                </Border>
+                <Border Grid.Column="2" BorderThickness="1" BorderBrush="Black">
+                    <Image Source="Assets/Tank1.png" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <ScaleTransform ScaleX="-1"/>
+                        </Image.RenderTransform>
+                    </Image>
+                </Border>
+                <Border Grid.Column="3" BorderThickness="1" BorderBrush="Black">
+                    <Image Source="Assets/Tank0.png" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <ScaleTransform ScaleX="-1"/>
+                        </Image.RenderTransform>
+                    </Image>
+                </Border>
+
+            </Grid>
+            <!--#endregion-->
+
+
+        </Grid>
+        <!--#endregion-->
+
+    </Grid>
+</Page>
+

@@ -49,6 +49,8 @@
       <RootProperty Name="FocusVisualPrimaryBrush" />
       <RootProperty Name="Background" />
       <RootProperty Name="IsEnabled" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Name" />
       <RootProperty Name="Style" />
       <RootEvent Name="Click" />
     </RootType>
