@@ -27,7 +27,7 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
 
@@ -37,16 +37,17 @@
             <TextBlock x:ConnectionId='9' x:Name="Rewards" Text="17/30" FontSize="25" TextAlignment="Left"/>
         </StackPanel>
 
-        <TextBlock x:ConnectionId='4' x:Name="Menu" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="Campaign" FontSize="30" Grid.Column="1" TextAlignment="Center"/>
+        <TextBlock x:ConnectionId='4' x:Name="Menu" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="Campaign" FontSize="45
+                   " Grid.Column="1" TextAlignment="Center"/>
 
         <Button x:ConnectionId='5' Content="Back" Grid.Column="0" Margin="11,0,0,0" Height="64" Width="67"                    />
         <!--#endregion-->
 
         <!--#region DescripcionyBotonJugar -->
-        <Button x:ConnectionId='6' x:Name="PlayButton" Content="Play" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="127,0,0,0" Height="98" Width="307"                     IsEnabled="True"/>
+        <Button x:ConnectionId='6' x:Name="PlayButton" Content="Play" Grid.Row="2" Grid.Column="1" Margin="164,44,0,0" Height="98" Width="307"                     IsEnabled="True" Grid.ColumnSpan="2" Background="#FF06CD0F" VerticalAlignment="Top"/>
 
-        <TextBlock x:ConnectionId='7' x:Name="Descripción" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" FontSize="18" Margin="35,0,0,0" TextWrapping="Wrap" 
-                   VerticalAlignment="Center" Height="143" Width="363"                                              >
+        <TextBlock x:ConnectionId='7' x:Name="Descripción" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="18" Margin="32,0,0,12" TextWrapping="Wrap" 
+                    Height="143" Width="352">
             <Run Text="Descripción de la misión:"/><LineBreak/>
             <Run Text="Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar inceptos vestibulum, cursus ac suspendisse ornare fames phasellus praesent litora molestie potenti."/>
         </TextBlock>

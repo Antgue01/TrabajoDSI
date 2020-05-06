@@ -24,8 +24,12 @@
                      Foreground="#FF24C514" Background="#3311AEC7" BorderBrush="#FF165B0C" 
                      BorderThickness="2,2,2,2" Value="75" />
         <Image HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="34" Source="Assets/HealthIcon.png" Margin="17,21,0,0"/>
-        <Rectangle Width="102" Height="70" Stroke="#FF0B3EEC" Fill="#FF0FBDB5"
-                   HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle Width="102" Height="70" Stroke="Black"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" StrokeThickness="3">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF0F2FBD" Opacity="0.65"/>
+            </Rectangle.Fill>
+        </Rectangle>
         <!--#endregion-->
 
 

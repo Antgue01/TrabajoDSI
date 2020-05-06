@@ -66,7 +66,7 @@ namespace CityAssault
                     // Cuando no se restaura la pila de navegación, navegar a la primera página,
                     // configurando la nueva página pasándole la información requerida como
                     //parámetro de navegación
-                    rootFrame.Navigate(typeof(BattleView), e.Arguments);
+                    rootFrame.Navigate(typeof(Campaign), e.Arguments);
                 }
                 // Asegurarse de que la ventana actual está activa.
                 Window.Current.Activate();
