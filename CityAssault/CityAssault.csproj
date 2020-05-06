@@ -154,6 +154,7 @@
     <Content Include="Assets\Audio.png" />
     <Content Include="Assets\Auto.png" />
     <Content Include="Assets\BattleZone.jpg" />
+    <Content Include="Assets\birdbg.png" />
     <Content Include="Assets\Defense.png" />
     <Content Include="Assets\Effects.png" />
     <Content Include="Assets\England.png" />

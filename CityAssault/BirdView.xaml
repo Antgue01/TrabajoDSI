@@ -22,6 +22,7 @@
         </Grid.ColumnDefinitions>
 
         <!--#endregion-->
+        <Image Source="Assets/birdbg.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="3" Stretch="Fill"/>
         <!--#region Comandos y Stats-->
         <Grid Grid.Row="2" Grid.Column="1">
             <Grid.RowDefinitions>
@@ -174,10 +175,6 @@
 
         </Grid>
         <!--#endregion-->
-        <!--#region Seleccionar Tanques -->
-        <Grid Grid.Row="0" Grid.Column="0" >
 
-        </Grid>
-        <!--#endregion-->
     </Grid>
 </Page>
