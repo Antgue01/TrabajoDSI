@@ -160,9 +160,11 @@
     <Content Include="Assets\England.png" />
     <Content Include="Assets\Flag.png" />
     <Content Include="Assets\Giroscopio.png" />
+    <Content Include="Assets\goback.png" />
     <Content Include="Assets\HealthIcon.png" />
     <Content Include="Assets\Japan.png" />
     <Content Include="Assets\JoysticVirtual.png" />
+    <Content Include="Assets\llave.png" />
     <Content Include="Assets\Movement.png" />
     <Content Include="Assets\Mute.png" />
     <Content Include="Assets\note.png" />
