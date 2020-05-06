@@ -15,30 +15,11 @@
 
 
         <!--#region Botones de ataque -->
-        <Button x:ConnectionId='2' Content="" Margin="0,0,136,73" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="115" Height="115"                    >
-            <Button.Foreground>
-                <ImageBrush ImageSource="/Assets/ShootButton.png"/>
-            </Button.Foreground>
-            <Button.FocusVisualPrimaryBrush>
-                <ImageBrush ImageSource="/Assets/ShootButton.png" Opacity="1"/>
-            </Button.FocusVisualPrimaryBrush>
-            <Button.Background>
-                <ImageBrush ImageSource="/Assets/ShootButton.png" Opacity="0.8"/>
-            </Button.Background>
-        </Button>
-        <Button x:ConnectionId='3' Content="" Margin="0,0,41,205" Width="76" Height="74" HorizontalAlignment="Right" VerticalAlignment="Bottom"                      >
-            <Button.FocusVisualPrimaryBrush>
-                <ImageBrush ImageSource="/Assets/SpecialButton.png"/>
-            </Button.FocusVisualPrimaryBrush>
-            <Button.Background>
-                <ImageBrush ImageSource="/Assets/SpecialButton.png" Opacity="0.8"/>
-            </Button.Background>
-        </Button>
         <!--#endregion-->
 
 
         <!--#region Salud -->
-        <ProgressBar x:ConnectionId='4' x:Name="BarraSalud" HorizontalAlignment="Left" Height="19" 
+        <ProgressBar x:ConnectionId='2' x:Name="BarraSalud" HorizontalAlignment="Left" Height="19" 
                      Margin="54,31,0,0" VerticalAlignment="Top" Width="274" 
                      Foreground="#FF24C514" Background="#3311AEC7" BorderBrush="#FF165B0C" 
                      BorderThickness="2,2,2,2" Value="75" />
@@ -50,7 +31,7 @@
 
         <!--#region Tiempo atras -->
 
-        <TextBlock x:ConnectionId='5' x:Name="Contador" HorizontalAlignment="Center" Margin="0,10,0,0" 
+        <TextBlock x:ConnectionId='3' x:Name="Contador" HorizontalAlignment="Center" Margin="0,10,0,0" 
               Text="1:43" TextWrapping="Wrap" VerticalAlignment="Top" 
               TextAlignment="Center" FontSize="36" Width="89" 
               FocusVisualPrimaryBrush="#FFFF1212" Foreground="Black"/>
@@ -68,6 +49,9 @@
                 <SolidColorBrush Color="#FF766F6F" Opacity="0.83"/>
             </Ellipse.Stroke>
         </Ellipse>
+        <Image x:ConnectionId='4' Margin="0,0,41,205" Width="76" Height="74" HorizontalAlignment="Right" VerticalAlignment="Bottom"                                Source="Assets/SpecialButton.png"/>
+
+        <Image x:ConnectionId='5' Margin="0,0,136,73" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="115" Height="115"                              Source="Assets/ShootButton.png"/>
         <!--#endregion-->
 
     </Grid>

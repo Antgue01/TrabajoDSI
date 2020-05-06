@@ -145,3 +145,4 @@ C:\TrabajoDSI\CityAssault\obj\x86\Debug\qualifiers.txt.intermediate
 C:\TrabajoDSI\CityAssault\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\TrabajoDSI\CityAssault\obj\x86\Debug\ProjectArchitectures.txt
 C:\TrabajoDSI\CityAssault\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885274160000000.json
+C:\Users\adria\Desktop\TrabajoDSI\CityAssault\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885274160000000.json

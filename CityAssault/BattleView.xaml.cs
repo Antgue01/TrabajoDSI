@@ -25,6 +25,7 @@ namespace CityAssault
         public BattleView()
         {
             this.InitializeComponent();
+            DispatcherTimer timer;
         }
 
         private void NormalShoot(object sender, RoutedEventArgs e)

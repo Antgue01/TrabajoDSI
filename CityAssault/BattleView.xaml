@@ -15,25 +15,6 @@
 
 
         <!--#region Botones de ataque -->
-        <Button Content="" Margin="0,0,136,73" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="115" Height="115" Click="NormalShoot">
-            <Button.Foreground>
-                <ImageBrush ImageSource="/Assets/ShootButton.png"/>
-            </Button.Foreground>
-            <Button.FocusVisualPrimaryBrush>
-                <ImageBrush ImageSource="/Assets/ShootButton.png" Opacity="1"/>
-            </Button.FocusVisualPrimaryBrush>
-            <Button.Background>
-                <ImageBrush ImageSource="/Assets/ShootButton.png" Opacity="0.8"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" Margin="0,0,41,205" Width="76" Height="74" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="SpecialAttack">
-            <Button.FocusVisualPrimaryBrush>
-                <ImageBrush ImageSource="/Assets/SpecialButton.png"/>
-            </Button.FocusVisualPrimaryBrush>
-            <Button.Background>
-                <ImageBrush ImageSource="/Assets/SpecialButton.png" Opacity="0.8"/>
-            </Button.Background>
-        </Button>
         <!--#endregion-->
 
 
@@ -68,6 +49,9 @@
                 <SolidColorBrush Color="#FF766F6F" Opacity="0.83"/>
             </Ellipse.Stroke>
         </Ellipse>
+        <Image Margin="0,0,41,205" Width="76" Height="74" HorizontalAlignment="Right" VerticalAlignment="Bottom" PointerPressed="SpecialAttack" Source="Assets/SpecialButton.png"/>
+
+        <Image Margin="0,0,136,73" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="115" Height="115" PointerPressed="NormalShoot" Source="Assets/ShootButton.png"/>
         <!--#endregion-->
 
     </Grid>
