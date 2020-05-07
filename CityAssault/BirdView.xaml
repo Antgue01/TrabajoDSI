@@ -22,6 +22,7 @@
         </Grid.ColumnDefinitions>
 
         <!--#endregion-->
+        <Button Grid.Column="0" Style="{ThemeResource NavigationBackButtonNormalStyle}"/>
         <Image Source="Assets/birdbg.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="3" Stretch="Fill"/>
         <!--#region Comandos y Stats-->
         <Grid Grid.Row="2" Grid.Column="1">
@@ -38,7 +39,7 @@
                 </Grid.ColumnDefinitions>
                 <!--#region Auto -->
                 <ToggleButton Grid.Column="2" Background="#91E4FB"  
-                     HorizontalAlignment="Center"  FontSize="11">
+                     HorizontalAlignment="Center"  FontSize="11" Checked="GoToMenu">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="2*"/>
@@ -51,7 +52,7 @@
 
                 <!--#endregion-->
                 <!--#region Pasar Turno -->
-                <Button Grid.Column="0" HorizontalAlignment="Center" Background="#91E4FB">
+                <Button Grid.Column="0" HorizontalAlignment="Center" Background="#91E4FB" Click="Button_Click">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>

@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.System;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,6 +28,8 @@ namespace CityAssault
         private double EffectsVolume = 0;
         public Settings()
         {
+            ApplicationView.PreferredLaunchViewSize = new Size(Height = 432, Width = 768);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
 
             this.InitializeComponent();
             KeyboardAccelerator GoBack = new KeyboardAccelerator();

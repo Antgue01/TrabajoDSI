@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -24,6 +25,9 @@ namespace CityAssault
     {
         public BirdView()
         {
+            ApplicationView.PreferredLaunchViewSize = new Size(Height = 432, Width = 768);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+
             this.InitializeComponent();
         }
 
@@ -35,6 +39,16 @@ namespace CityAssault
         private void ToggleButton_Unchecked(object sender, RoutedEventArgs e)
         {
             Stats_Viewer.Visibility=Visibility.Visible;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(BattleView));
+        }
+
+        private void GoToMenu(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainMenu));
         }
     }
 }

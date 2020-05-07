@@ -28,8 +28,8 @@ namespace CityAssault
         int maxRewards =50;
         public Campaign()
         {
-            //ApplicationView.PreferredLaunchViewSize = new Size(Height = 432, Width = 768);
-            //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            ApplicationView.PreferredLaunchViewSize = new Size(Height = 432, Width = 768);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             this.InitializeComponent();
             RewardsUnlocked();
         }

@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.System;
+using Windows.UI.ViewManagement;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -27,45 +28,20 @@ namespace CityAssault
         {
             this.InitializeComponent();
 
-            //KeyboardAccelerator GoBack = new KeyboardAccelerator();
-            //GoBack.Key = VirtualKey.GoBack;
-            //GoBack.Invoked += BackInvoked;
-            //KeyboardAccelerator AltLeft = new KeyboardAccelerator();
-            //AltLeft.Key = VirtualKey.Left;
-            //AltLeft.Invoked += BackInvoked;
-            //this.KeyboardAccelerators.Add(GoBack);
-            //this.KeyboardAccelerators.Add(AltLeft);
-            //// ALT routes here
-            //AltLeft.Modifiers = VirtualKeyModifiers.Menu;
+            ApplicationView.PreferredLaunchViewSize = new Size(Height = 432, Width = 768);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            //BackButton.IsEnabled = this.Frame.CanGoBack;
         }
 
         private void goBack(object sender, RoutedEventArgs e)
         {
-            //On_BackRequested();
+            
             this.Frame.Navigate(typeof(MainMenu));
         }
-
-        //private bool On_BackRequested()
-        //{
-        //    if (this.Frame.CanGoBack)
-        //    {
-        //        this.Frame.GoBack();
-        //        return true;
-        //    }
-        //    return false;
-        //}
-
-        //private void BackInvoked(KeyboardAccelerator sender,
-        //KeyboardAcceleratorInvokedEventArgs args)
-        //{
-        //    On_BackRequested();
-        //    args.Handled = true;
-        //}
 
         private void GarageButton_Click(object sender, RoutedEventArgs e)
         {
@@ -74,11 +50,12 @@ namespace CityAssault
 
         private void LocalButton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(BirdView));
         }
 
         private void OnlineButton_Click(object sender, RoutedEventArgs e)
         {
+            this.Frame.Navigate(typeof(BirdView));
 
         }
     }
