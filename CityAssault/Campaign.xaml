@@ -44,7 +44,7 @@
         <!--#endregion-->
 
         <!--#region DescripcionyBotonJugar -->
-        <Button x:Name="PlayButton" Content="Play" Grid.Row="2" Grid.Column="1" Margin="164,44,0,0" Height="98" Width="307" Click="Button_Play" IsEnabled="True" Grid.ColumnSpan="2" Background="#FF06CD0F" VerticalAlignment="Top"/>
+        <Button x:Name="PlayButton" Content="Play" Grid.Row="2" Grid.Column="1" Margin="0,0,38,32" Height="98" Width="307" Click="Button_Play" IsEnabled="True" Grid.ColumnSpan="2" Background="#FF06CD0F" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
 
         <TextBlock x:Name="Descripción" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="18" Margin="32,0,0,12" TextWrapping="Wrap" 
                     Height="143" Width="352">

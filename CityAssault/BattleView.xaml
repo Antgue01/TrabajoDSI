@@ -20,7 +20,7 @@
 
         <!--#region Salud -->
         <ProgressBar x:Name="BarraSalud" HorizontalAlignment="Left" Height="19" 
-                     Margin="54,31,0,0" VerticalAlignment="Top" Width="274" 
+                     Margin="54,31,0,0" VerticalAlignment="Top" Width="253" 
                      Foreground="#FF24C514" Background="#3311AEC7" BorderBrush="#FF165B0C" 
                      BorderThickness="2,2,2,2" Value="75" />
         <Image HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="34" Source="Assets/HealthIcon.png" Margin="17,21,0,0"/>
@@ -43,19 +43,46 @@
 
 
         <!--#region Joystick -->
-        <Ellipse HorizontalAlignment="Left" Height="162" Margin="78,0,0,50" VerticalAlignment="Bottom" Width="161" MinWidth="2" StrokeThickness="7">
+        <Ellipse HorizontalAlignment="Left" Height="162" Margin="78,0,0,50" VerticalAlignment="Bottom" Width="161" MinWidth="2" StrokeThickness="7" >
             <Ellipse.Stroke>
                 <SolidColorBrush Color="#FF0A2C9C" Opacity="0.65"/>
             </Ellipse.Stroke>
         </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="75" Margin="121,0,0,94" VerticalAlignment="Bottom" Width="75" StrokeThickness="40">
+        <Ellipse HorizontalAlignment="Left" Height="75" Margin="121,0,0,94" VerticalAlignment="Bottom" Width="75" StrokeThickness="40" IsTapEnabled="True">
             <Ellipse.Stroke>
                 <SolidColorBrush Color="#FF766F6F" Opacity="0.83"/>
             </Ellipse.Stroke>
         </Ellipse>
+
         <Image Margin="0,0,41,205" Width="76" Height="74" HorizontalAlignment="Right" VerticalAlignment="Bottom" PointerPressed="SpecialAttack" Source="Assets/SpecialButton.png"/>
 
         <Image Margin="0,0,136,73" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="115" Height="115" PointerPressed="NormalShoot" Source="Assets/ShootButton.png"/>
+
+        <!--#endregion-->
+
+        <!--#region Salud Enemiga -->
+        <ProgressBar x:Name="BarraSaludE0" HorizontalAlignment="Right" Height="17" 
+            Margin="694,106,0,0" Width="65" 
+            Foreground="#C4C52C14" BorderBrush="#FF5B0C0C" 
+            BorderThickness="2,2,2,2" Value="100" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" >
+            <ProgressBar.Background>
+                <SolidColorBrush Color="#3311AEC7" Opacity="0.6"/>
+            </ProgressBar.Background>
+            <ProgressBar.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+        <ProgressBar x:Name="BarraSaludE1" HorizontalAlignment="Left" Height="17" 
+            Margin="0,199,0,0" VerticalAlignment="Top" Width="65" 
+            Foreground="#C4C52C14" BorderBrush="#FF5B0C0C" 
+            BorderThickness="2,2,2,2" Value="45" RenderTransformOrigin="0.5,0.5">
+            <ProgressBar.Background>
+                <SolidColorBrush Color="#3311AEC7" Opacity="0.6"/>
+            </ProgressBar.Background>
+            <ProgressBar.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
         <!--#endregion-->
 
     </Grid>

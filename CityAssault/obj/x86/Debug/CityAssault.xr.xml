@@ -50,6 +50,8 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Value" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="Width" />
@@ -83,10 +85,14 @@
       <RootProperty Name="MinWidth" />
       <RootProperty Name="StrokeThickness" />
       <RootProperty Name="Stroke" />
+      <RootProperty Name="IsTapEnabled" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
       <RootProperty Name="Opacity" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="ScaleY" />
     </RootType>
     <RootType FullName="CityAssault.BattleView" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
