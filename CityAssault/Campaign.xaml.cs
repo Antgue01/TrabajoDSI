@@ -24,12 +24,12 @@ namespace CityAssault
     /// </summary>
     public sealed partial class Campaign : Page
     {
-        int rewards= 15;
+        int rewards= 10;
         int maxRewards =50;
         public Campaign()
         {
-            ApplicationView.PreferredLaunchViewSize = new Size(Height = 432, Width = 768);
-            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            //ApplicationView.PreferredLaunchViewSize = new Size(Height = 432, Width = 768);
+            //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             this.InitializeComponent();
             RewardsUnlocked();
         }

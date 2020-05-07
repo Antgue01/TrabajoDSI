@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.System;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,6 +26,60 @@ namespace CityAssault
         public Online()
         {
             this.InitializeComponent();
+
+            //KeyboardAccelerator GoBack = new KeyboardAccelerator();
+            //GoBack.Key = VirtualKey.GoBack;
+            //GoBack.Invoked += BackInvoked;
+            //KeyboardAccelerator AltLeft = new KeyboardAccelerator();
+            //AltLeft.Key = VirtualKey.Left;
+            //AltLeft.Invoked += BackInvoked;
+            //this.KeyboardAccelerators.Add(GoBack);
+            //this.KeyboardAccelerators.Add(AltLeft);
+            //// ALT routes here
+            //AltLeft.Modifiers = VirtualKeyModifiers.Menu;
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            //BackButton.IsEnabled = this.Frame.CanGoBack;
+        }
+
+        private void goBack(object sender, RoutedEventArgs e)
+        {
+            //On_BackRequested();
+            this.Frame.Navigate(typeof(MainMenu));
+        }
+
+        //private bool On_BackRequested()
+        //{
+        //    if (this.Frame.CanGoBack)
+        //    {
+        //        this.Frame.GoBack();
+        //        return true;
+        //    }
+        //    return false;
+        //}
+
+        //private void BackInvoked(KeyboardAccelerator sender,
+        //KeyboardAcceleratorInvokedEventArgs args)
+        //{
+        //    On_BackRequested();
+        //    args.Handled = true;
+        //}
+
+        private void GarageButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Garage));
+        }
+
+        private void LocalButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnlineButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

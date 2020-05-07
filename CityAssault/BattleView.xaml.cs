@@ -25,24 +25,59 @@ namespace CityAssault
     /// </summary>
     public sealed partial class BattleView : Page
     {
+        int min = 2;
+        int sec = 0;
+
+        public DispatcherTimer GameTimer { get; private set; }
+
         public BattleView()
         {
-            ApplicationView.PreferredLaunchViewSize = new Size(Height = 720, Width = 1280);
-            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            //ApplicationView.PreferredLaunchViewSize = new Size(Height = 432, Width = 768);
+            //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             this.InitializeComponent();
-            DispatcherTimer timer;
+        }
+
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            GameTimeSetup();    //Activamos el timer para leer el mando
+        }
+
+        public void GameTimeSetup()
+        {
+            GameTimer = new DispatcherTimer();
+            GameTimer.Tick += Counter;     //Metodo al que llama cada vez
+            GameTimer.Interval = new TimeSpan(10000000);
+            GameTimer.Start();
+        }
+
+        private void Counter(object sender, object e)   //Contador del tiempo de batalla
+        {
+            sec--;
+            if(sec < 0)
+            {
+                sec = 59;
+                min--;
+            }
+
+            if (min <= 0 && sec <=0)
+            {
+                this.Frame.Navigate(typeof(BirdView));
+                GameTimer.Stop();
+            }
+
+            Contador.Text = min + ":" + sec;
         }
 
         private void NormalShoot(object sender, RoutedEventArgs e)
         {
             //Pium
-            RecieveDamage(10);  //Para comprobar que cambia la vida del jugador
+            BarraSaludE1.Value -= 5;
         }
 
         private void SpecialAttack(object sender, RoutedEventArgs e)
         {
             //Ataque tope poderoso
-            RecieveDamage(-5);  //Para comprobar que cambia la vida del jugador
+            BarraSaludE0.Value -= 15;
         }
 
         public void RecieveDamage(int damage)//Para comprobar que cambia la vida del jugador

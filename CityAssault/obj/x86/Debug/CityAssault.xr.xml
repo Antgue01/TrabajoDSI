@@ -17,6 +17,7 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
@@ -50,6 +51,8 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Value" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="Width" />
@@ -83,10 +86,15 @@
       <RootProperty Name="MinWidth" />
       <RootProperty Name="StrokeThickness" />
       <RootProperty Name="Stroke" />
+      <RootProperty Name="IsTapEnabled" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
       <RootProperty Name="Opacity" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="ScaleY" />
+      <RootProperty Name="Rotation" />
     </RootType>
     <RootType FullName="CityAssault.BattleView" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
@@ -99,6 +107,7 @@
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Child" />
+      <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform">
       <RootProperty Name="ScaleX" />
@@ -127,6 +136,8 @@
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
       <RootProperty Name="Name" />
       <RootProperty Name="Style" />
       <RootEvent Name="Click" />
@@ -155,6 +166,9 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="CityAssault.Campaign" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ScrollBar">
+      <RootProperty Name="Orientation" />
+    </RootType>
     <RootType FullName="CityAssault.Garage" />
     <RootType FullName="CityAssault.MainMenu" />
     <RootType FullName="CityAssault.Online" />
