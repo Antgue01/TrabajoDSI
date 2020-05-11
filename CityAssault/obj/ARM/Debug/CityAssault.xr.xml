@@ -17,6 +17,7 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
@@ -37,22 +38,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="RenderTransform" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="FocusVisualPrimaryBrush" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="IsEnabled" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="Name" />
-      <RootProperty Name="Style" />
-      <RootEvent Name="Click" />
+      <RootEvent Name="PointerPressed" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
       <RootProperty Name="HorizontalAlignment" />
@@ -65,14 +51,17 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Value" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Stroke" />
-      <RootProperty Name="Fill" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="Fill" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="HorizontalAlignment" />
@@ -98,14 +87,15 @@
       <RootProperty Name="MinWidth" />
       <RootProperty Name="StrokeThickness" />
       <RootProperty Name="Stroke" />
+      <RootProperty Name="IsTapEnabled" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
       <RootProperty Name="Opacity" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
-      <RootProperty Name="ImageSource" />
-      <RootProperty Name="Opacity" />
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="ScaleY" />
+      <RootProperty Name="Rotation" />
     </RootType>
     <RootType FullName="CityAssault.BattleView" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
@@ -114,10 +104,28 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Style" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Name" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas" />
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Child" />
+      <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform">
       <RootProperty Name="ScaleX" />
@@ -133,8 +141,8 @@
       <RootProperty Name="Height" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="BorderBrush" />
-      <RootEvent Name="Unchecked" />
       <RootEvent Name="Checked" />
+      <RootEvent Name="Unchecked" />
     </RootType>
     <RootType FullName="CityAssault.BirdView" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -160,6 +168,9 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="CityAssault.Campaign" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ScrollBar">
+      <RootProperty Name="Orientation" />
+    </RootType>
     <RootType FullName="CityAssault.Garage" />
     <RootType FullName="CityAssault.MainMenu" />
     <RootType FullName="CityAssault.Online" />

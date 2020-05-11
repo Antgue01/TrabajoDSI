@@ -134,6 +134,7 @@
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="model.cs" />
     <Compile Include="Online.xaml.cs">
       <DependentUpon>Online.xaml</DependentUpon>
     </Compile>
@@ -141,6 +142,7 @@
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="viewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

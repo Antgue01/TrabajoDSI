@@ -34,20 +34,122 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Apuntado.png">
+      <PackagePath>Assets\Apuntado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Arrow.png">
+      <PackagePath>Assets\Arrow.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\atras.png">
+      <PackagePath>Assets\atras.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Attack.png">
+      <PackagePath>Assets\Attack.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Audio.png">
+      <PackagePath>Assets\Audio.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Auto.png">
+      <PackagePath>Assets\Auto.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\birdbg.png">
+      <PackagePath>Assets\birdbg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\bracket.png">
+      <PackagePath>Assets\bracket.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Defense.png">
+      <PackagePath>Assets\Defense.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Effects.png">
+      <PackagePath>Assets\Effects.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\England.png">
       <PackagePath>Assets\England.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Flag.png">
+      <PackagePath>Assets\Flag.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Giroscopio.png">
+      <PackagePath>Assets\Giroscopio.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\HealthIcon.png">
+      <PackagePath>Assets\HealthIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\internet.png">
+      <PackagePath>Assets\internet.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Japan.png">
       <PackagePath>Assets\Japan.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\JoysticVirtual.png">
+      <PackagePath>Assets\JoysticVirtual.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\llave.png">
+      <PackagePath>Assets\llave.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Movement.png">
+      <PackagePath>Assets\Movement.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Mute.png">
+      <PackagePath>Assets\Mute.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\note.png">
       <PackagePath>Assets\note.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\save.png">
+      <PackagePath>Assets\save.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\ShootButton.png">
+      <PackagePath>Assets\ShootButton.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\signal.png">
+      <PackagePath>Assets\signal.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\sound0.png">
+      <PackagePath>Assets\sound0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\sound1.png">
+      <PackagePath>Assets\sound1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\sound2.png">
+      <PackagePath>Assets\sound2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\sound3.png">
+      <PackagePath>Assets\sound3.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Spain.png">
       <PackagePath>Assets\Spain.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\SpecialButton.png">
+      <PackagePath>Assets\SpecialButton.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\speechIcon.png">
       <PackagePath>Assets\speechIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Speed.png">
+      <PackagePath>Assets\Speed.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Tank0.png">
+      <PackagePath>Assets\Tank0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Tank1.png">
+      <PackagePath>Assets\Tank1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Tank2.png">
+      <PackagePath>Assets\Tank2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Tank3.png">
+      <PackagePath>Assets\Tank3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\unnamed.png">
+      <PackagePath>Assets\unnamed.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\user.png">
+      <PackagePath>Assets\user.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\VS.png">
+      <PackagePath>Assets\VS.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -75,6 +177,9 @@
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Assets\BattleZone.jpg">
+      <PackagePath>Assets\BattleZone.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\madar\Desktop\Uni\2º V\trabajos dsi\repositorio\TrabajoDSI\CityAssault\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

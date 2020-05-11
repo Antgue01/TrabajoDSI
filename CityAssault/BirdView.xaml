@@ -23,7 +23,10 @@
 
         <!--#endregion-->
         <Button Grid.Column="0" Style="{ThemeResource NavigationBackButtonNormalStyle}"/>
-        <Image Source="Assets/birdbg.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="3" Stretch="Fill"/>
+        <Image Source="Assets/birdbg.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="3" Stretch="Fill" PointerPressed="Move"/>
+        <!--#region Tanques del mapa -->
+        <Canvas x:Name="canvasTanques" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <!--#endregion-->
         <!--#region Comandos y Stats-->
         <Grid Grid.Row="2" Grid.Column="1">
             <Grid.RowDefinitions>
@@ -90,10 +93,10 @@
                 <Image Source="Assets/Speed.png" Grid.Column="2" Grid.Row="1" Width="24" />
                 <!--#endregion-->
                 <!--#region Barras -->
-                <ProgressBar Grid.Column="1" Grid.Row="0" Value="75" Margin="5,0,5,0"/>
-                <ProgressBar Grid.Column="1" Grid.Row="1" Value="25" Margin="5,0,5,0"/>
-                <ProgressBar Grid.Column="3" Grid.Row="0" Value="55" Margin="5,0,5,0"/>
-                <ProgressBar Grid.Column="3" Grid.Row="1" Value="98" Margin="5,0,5,0"/>
+                <ProgressBar x:Name="AtkBar" Grid.Column="1" Grid.Row="0" Value="{x:Bind selectedTank.Atk}" Margin="5,0,5,0"/>
+                <ProgressBar x:Name="DefBar" Grid.Column="1" Grid.Row="1" Value="{x:Bind selectedTank.Def}" Margin="5,0,5,0"/>
+                <ProgressBar x:Name="MovBar" Grid.Column="3" Grid.Row="0" Value="{x:Bind selectedTank.Mov}" Margin="5,0,5,0"/>
+                <ProgressBar x:Name="SpeBar" Grid.Column="3" Grid.Row="1" Value="{x:Bind selectedTank.Spe}" Margin="5,0,5,0"/>
                 <!--#endregion-->
 
 
@@ -120,16 +123,16 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Border Grid.Column="0" BorderThickness="1" BorderBrush="Black">
-                    <Image Source="Assets/Tank0.png" />
+                    <Image Source="{x:Bind ListaTanques[0].Imagen}" />
                 </Border>
                 <Border Grid.Column="1" BorderThickness="1" BorderBrush="Black">
-                    <Image Source="Assets/Tank1.png"/>
+                    <Image Source="{x:Bind ListaTanques[1].Imagen}"/>
                 </Border>
                 <Border Grid.Column="2" BorderThickness="1" BorderBrush="Black">
-                    <Image Source="Assets/Tank2.png" />
+                    <Image Source="{x:Bind ListaTanques[2].Imagen}" />
                 </Border>
                 <Border Grid.Column="3" BorderThickness="1" BorderBrush="Black">
-                    <Image Source="Assets/Tank3.png"/>
+                    <Image Source="{x:Bind ListaTanques[3].Imagen}"/>
                 </Border>
             </Grid>
             <!--#endregion-->
@@ -142,28 +145,28 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Border Grid.Column="0" BorderThickness="1" BorderBrush="Black">
-                    <Image Source="Assets/Tank3.png" RenderTransformOrigin="0.5,0.5">
+                    <Image Source="{x:Bind ListaTanques[4].Imagen}" RenderTransformOrigin="0.5,0.5">
                         <Image.RenderTransform>
                             <ScaleTransform ScaleX="-1"/>
                         </Image.RenderTransform>
                     </Image>
                 </Border>
                 <Border Grid.Column="1" BorderThickness="1" BorderBrush="Black">
-                    <Image Source="Assets/Tank2.png" RenderTransformOrigin="0.5,0.5">
+                    <Image Source="{x:Bind ListaTanques[5].Imagen}" RenderTransformOrigin="0.5,0.5">
                         <Image.RenderTransform>
                             <ScaleTransform ScaleX="-1"/>
                         </Image.RenderTransform>
                     </Image>
                 </Border>
                 <Border Grid.Column="2" BorderThickness="1" BorderBrush="Black">
-                    <Image Source="Assets/Tank1.png" RenderTransformOrigin="0.5,0.5">
+                    <Image Source="{x:Bind ListaTanques[6].Imagen}" RenderTransformOrigin="0.5,0.5">
                         <Image.RenderTransform>
                             <ScaleTransform ScaleX="-1"/>
                         </Image.RenderTransform>
                     </Image>
                 </Border>
                 <Border Grid.Column="3" BorderThickness="1" BorderBrush="Black">
-                    <Image Source="Assets/Tank0.png" RenderTransformOrigin="0.5,0.5">
+                    <Image Source="{x:Bind ListaTanques[7].Imagen}" RenderTransformOrigin="0.5,0.5">
                         <Image.RenderTransform>
                             <ScaleTransform ScaleX="-1"/>
                         </Image.RenderTransform>
@@ -176,6 +179,5 @@
 
         </Grid>
         <!--#endregion-->
-
     </Grid>
 </Page>
