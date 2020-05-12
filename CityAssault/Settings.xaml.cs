@@ -39,7 +39,7 @@ namespace CityAssault
 
             this.InitializeComponent();
 
-            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
+
 
             KeyboardAccelerator GoBack = new KeyboardAccelerator();
             GoBack.Key = VirtualKey.GoBack;
@@ -149,6 +149,7 @@ namespace CityAssault
                 default:
                     break;
             }
+
         }
     }
 }

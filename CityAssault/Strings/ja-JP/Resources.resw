@@ -117,16 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Aim.Text" xml:space="preserve">
+    <value>動きで狙う</value>
+  </data>
+  <data name="Audio.Text" xml:space="preserve">
+    <value>オーディオ</value>
+  </data>
   <data name="Campaign.Content" xml:space="preserve">
     <value>ストーリー</value>
   </data>
+  <data name="Disabled.Text" xml:space="preserve">
+    <value>オフ</value>
+  </data>
+  <data name="Effects.Text" xml:space="preserve">
+    <value>効果音音量</value>
+  </data>
+  <data name="Enabled.Text" xml:space="preserve">
+    <value>オン</value>
+  </data>
   <data name="Garage.Content" xml:space="preserve">
     <value>ガレージ</value>
+  </data>
+  <data name="Mono.Text" xml:space="preserve">
+    <value>モノ</value>
+  </data>
+  <data name="Music.Text" xml:space="preserve">
+    <value>音楽音量</value>
   </data>
   <data name="Online.Content" xml:space="preserve">
     <value>オンライン</value>
   </data>
   <data name="Settings.Content" xml:space="preserve">
-    <value>その他</value>
+    <value>設定</value>
+  </data>
+  <data name="SettingsT.Text" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Stereo.Text" xml:space="preserve">
+    <value>ステレオ</value>
   </data>
 </root>

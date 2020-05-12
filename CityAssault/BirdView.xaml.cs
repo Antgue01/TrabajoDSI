@@ -29,14 +29,14 @@ namespace CityAssault
 
         public ObservableCollection<VMTank> ListaTanques { get; } = new ObservableCollection<VMTank>();
         private List<ContentControl> contentControls = new List<ContentControl>(8);
-        private List<ProgressBar> progressBars = new List<ProgressBar>(8);
         private VMTank selectedTank;
-       
+
 
 
         public BirdView()
         {
 
+            this.InitializeComponent();
             ApplicationView.PreferredLaunchViewSize = new Size(Height = 432, Width = 768);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
 
@@ -46,31 +46,7 @@ namespace CityAssault
                     VMTank VMitem = new VMTank(tank);
                     ListaTanques.Add(VMitem);
                 }
-            for (int i = 0; i < progressBars.Capacity; i++)
-            {
-                ProgressBar pb = new ProgressBar();
-                pb.IsIndeterminate = false;
-                pb.Value = ListaTanques[i].HP;
-                
-                pb.Width = 6000;
-                pb.Height = 100;
-                Rect r;
-                r.X = ListaTanques[i].X;
-                r.Y = ListaTanques[i].Y;
-                r.Height= 100;
-                r.Width= 6000;
-                pb.Arrange(r);
-                pb.Opacity = 100;
-                pb.Measure(new Size(6000, 100));
-                Canvas.SetLeft(pb, ListaTanques[i].X);
-                Canvas.SetTop(pb, ListaTanques[i].Y);
-                pb.StartBringIntoView();
-                pb.Visibility = Visibility.Visible;
-                pb.IsEnabled = true;
-                progressBars.Add(pb);
 
-            }
-            this.InitializeComponent();
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -81,6 +57,7 @@ namespace CityAssault
                 img.Height = 60;
                 img.Source = ListaTanques[i].Img.Source;
                 canvasTanques.Children.Add(ListaTanques[i].CCImg);
+                bars.Children.Add(ListaTanques[i].HPBarControl);
                 ListaTanques[i].CCImg.PointerPressed += SelectTank;
                 contentControls.Add(ListaTanques[i].CCImg);
                 ListaTanques[i].Img.CenterPoint = new System.Numerics.Vector3(.5f, .5f, .5f);
@@ -90,9 +67,12 @@ namespace CityAssault
                     ListaTanques[i].Img.Scale = new System.Numerics.Vector3(ListaTanques[i].Img.Scale.X * -1
                         , ListaTanques[i].Img.Scale.Y, ListaTanques[i].Img.Scale.Z);
                 }
-                progressBars[i].Translation = new System.Numerics.Vector3(ListaTanques[i].X, ListaTanques[i].Y - 30, 0);
+                //canvasTanques.Children.Add(ListaTanques[i].HPBarControl.Content as ProgressBar);
                 Canvas.SetTop(contentControls[i], ListaTanques[i].Y);
+                //Canvas.SetTop(ListaTanques[i].HPBarControl, ListaTanques[i].Y-30);
+
                 Canvas.SetLeft(contentControls[i], ListaTanques[i].X);
+                //Canvas.SetLeft(ListaTanques[i].HPBarControl, ListaTanques[i].X);
             }
             selectedTank = ListaTanques[0];
         }

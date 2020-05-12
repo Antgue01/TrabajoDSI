@@ -117,16 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Aim.Text" xml:space="preserve">
+    <value>Aim by movement</value>
+  </data>
+  <data name="Audio.Text" xml:space="preserve">
+    <value>Audio</value>
+  </data>
   <data name="Campaign.Content" xml:space="preserve">
     <value>Campaign</value>
   </data>
+  <data name="Disabled.Text" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="Effects.Text" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+  <data name="Enabled.Text" xml:space="preserve">
+    <value>On</value>
+  </data>
   <data name="Garage.Content" xml:space="preserve">
     <value>Garage</value>
+  </data>
+  <data name="Mono.Text" xml:space="preserve">
+    <value>Mono</value>
+  </data>
+  <data name="Music.Text" xml:space="preserve">
+    <value>Music</value>
   </data>
   <data name="Online.Content" xml:space="preserve">
     <value>Online</value>
   </data>
   <data name="Settings.Content" xml:space="preserve">
     <value>Settings</value>
+  </data>
+  <data name="SettingsT.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Stereo.Text" xml:space="preserve">
+    <value>Stereo</value>
   </data>
 </root>
