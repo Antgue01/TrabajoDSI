@@ -24,28 +24,13 @@ namespace CityAssault
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
 
-    public sealed partial class BirdView : Page, INotifyPropertyChanged
+    public sealed partial class BirdView : Page
     {
-        public event PropertyChangedEventHandler PropertyChanged;
 
         public ObservableCollection<VMTank> ListaTanques { get; } = new ObservableCollection<VMTank>();
         private List<ContentControl> contentControls = new List<ContentControl>(8);
         private List<ProgressBar> progressBars = new List<ProgressBar>(8);
-        public VMTank selectedTank
-        {
-            get => _selectedTank;
-            set
-            {
-                if (_selectedTank != value)
-                {
-                    _selectedTank = value;
-
-                    PropertyChanged?.Invoke(this, new
-                   PropertyChangedEventArgs(nameof(selectedTank)));
-                }
-            }
-        }
-        private VMTank _selectedTank;
+        private VMTank selectedTank;
        
 
 
@@ -64,8 +49,22 @@ namespace CityAssault
             for (int i = 0; i < progressBars.Capacity; i++)
             {
                 ProgressBar pb = new ProgressBar();
+                pb.IsIndeterminate = false;
                 pb.Value = ListaTanques[i].HP;
-                pb.Width = 60;
+                
+                pb.Width = 6000;
+                pb.Height = 100;
+                Rect r;
+                r.X = ListaTanques[i].X;
+                r.Y = ListaTanques[i].Y;
+                r.Height= 100;
+                r.Width= 6000;
+                pb.Arrange(r);
+                pb.Opacity = 100;
+                pb.Measure(new Size(6000, 100));
+                Canvas.SetLeft(pb, ListaTanques[i].X);
+                Canvas.SetTop(pb, ListaTanques[i].Y);
+                pb.StartBringIntoView();
                 pb.Visibility = Visibility.Visible;
                 pb.IsEnabled = true;
                 progressBars.Add(pb);

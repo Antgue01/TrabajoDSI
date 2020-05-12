@@ -43,7 +43,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             <Image Source="Assets/speechIcon.png" Width="32" Height="32" Grid.Column="0"/>
-            <ComboBox Grid.Column="1" Width="200"  Margin="5,0,0,0" VerticalAlignment="Center">
+            <ComboBox Grid.Column="1" Width="200"  Margin="5,0,0,0" VerticalAlignment="Center" SelectionChanged="ComboBox_SelectionChanged">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>

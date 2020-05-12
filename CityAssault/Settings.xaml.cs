@@ -7,6 +7,12 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.System;
 using Windows.UI.ViewManagement;
+using Windows.Globalization;
+using Windows.Globalization.Collation;
+using Windows.Globalization.DateTimeFormatting;
+using Windows.Globalization.NumberFormatting;
+using Windows.Globalization.Fonts;
+using Windows.Globalization.PhoneNumberFormatting;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -32,6 +38,9 @@ namespace CityAssault
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
 
             this.InitializeComponent();
+
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
+
             KeyboardAccelerator GoBack = new KeyboardAccelerator();
             GoBack.Key = VirtualKey.GoBack;
             GoBack.Invoked += BackInvoked;
@@ -94,8 +103,8 @@ namespace CityAssault
 
         private void Mute_Music_Unchecked(object sender, RoutedEventArgs e)
         {
-            if(Music_Slider.Value != MusicVolume)
-            Music_Slider.Value = MusicVolume;
+            if (Music_Slider.Value != MusicVolume)
+                Music_Slider.Value = MusicVolume;
         }
 
         private void Music_Slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
@@ -106,7 +115,7 @@ namespace CityAssault
 
         private void Mute_Effects_Unchecked(object sender, RoutedEventArgs e)
         {
-            if(Music_Slider.Value != EffectsVolume)
+            if (Music_Slider.Value != EffectsVolume)
                 Effects_Slider.Value = EffectsVolume;
 
         }
@@ -121,6 +130,25 @@ namespace CityAssault
         {
             if (Mute_Effects.IsChecked == false)
                 EffectsVolume = (sender as Slider).Value;
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            switch (((e.AddedItems[0] as Grid).Children[1] as TextBlock).Text)
+            {
+                case "Español":
+                    ApplicationLanguages.PrimaryLanguageOverride = "es-ES";
+                    break;
+                case "English":
+                    ApplicationLanguages.PrimaryLanguageOverride = "en-US";
+
+                    break;
+                case "日本語":
+                    ApplicationLanguages.PrimaryLanguageOverride = "ja-JP";
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

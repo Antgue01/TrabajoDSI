@@ -66,6 +66,7 @@ namespace CityAssault
                 Spe = 60,
                 Mov = 24,
                 side=Tank.Side.Ally
+                
 
             },
             new Tank()
