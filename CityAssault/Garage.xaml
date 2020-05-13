@@ -34,7 +34,7 @@
         <!--#endregion-->
 
         <!--#region Taller -->
-        <TextBlock Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Text="Taller" VerticalAlignment="Center"
+        <TextBlock Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" x:Uid="Garage2" Text="" VerticalAlignment="Center"
                    HorizontalAlignment="Center" FontSize="40"/>
         <!--#endregion-->
 
@@ -75,7 +75,7 @@
 
                 <Border Grid.Row="0" Grid.Column="2" Background="#FF75B6DB" BorderBrush="DarkCyan" BorderThickness="2"></Border>
 
-                <TextBlock x:Name="Habilidad" Text="Rayo Gélido" Grid.Column="2" TextWrapping="Wrap" HorizontalAlignment="Center"
+                <TextBlock x:Name="Habilidad" x:Uid="Super" Text="" Grid.Column="2" TextWrapping="Wrap" HorizontalAlignment="Center"
                            VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
                 <Image x:Name="TanqueImagen" Source="Assets/Tank0.png" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="2"></Image>
             </Grid>
@@ -106,7 +106,7 @@
                 <!--#endregion-->
 
                 <Border Background="#FF51BD94" BorderBrush="DarkGreen" BorderThickness="2"></Border>
-                <TextBlock Text="EQUIPACIONES GUARDADAS" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock x:Uid="Saved" Text="" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
             </Grid>
             <!--#endregion-->
             
@@ -161,7 +161,7 @@
             <Border Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="5" Background="#FF75DBA3" BorderThickness="2" BorderBrush="DarkGreen"></Border>
             <!--#endregion-->
 
-            <TextBlock Text="Tanquérrimo" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center"
+            <TextBlock x:Uid="TankName" Text="" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center"
                        VerticalAlignment="Center" FontSize="20"></TextBlock>
 
             <!--#region Boton guardar -->
@@ -183,7 +183,7 @@
                 </Button>
 
                 <Image Grid.Column="0" Source="Assets/save.png" Height="20"></Image>
-                <TextBlock Grid.Column="1" Text="GUARDAR EQUIPACIÓN" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Column="1" x:Uid="Save" Text="" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             </Grid>
             <!--#endregion-->
 
@@ -204,11 +204,11 @@
                 <!--#endregion-->
 
                 <Button x:Name="CanonButton" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                        Content="CAÑÓN" FontSize="8" Click="CanonButton_Click"></Button>
+                        x:Uid="Cannon" Content="" FontSize="8" Click="CanonButton_Click"></Button>
                 <Button x:Name="BlindajeButton" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                        Content="BLINDAJE" FontSize="8" Click="BlindajeButton_Click"></Button>
+                        x:Uid="Armor" Content="" FontSize="8" Click="BlindajeButton_Click"></Button>
                 <Button x:Name="RuedasButton" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                        Content="RUEDAS" FontSize="8" Click="RuedasButton_Click"></Button>
+                        x:Uid="Wheels" Content="" FontSize="8" Click="RuedasButton_Click"></Button>
             </Grid>
             <!--#endregion-->
             

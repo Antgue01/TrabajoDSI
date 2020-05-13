@@ -120,6 +120,12 @@
   <data name="Aim.Text" xml:space="preserve">
     <value>動きで狙う</value>
   </data>
+  <data name="Armor.Content" xml:space="preserve">
+    <value>装甲</value>
+  </data>
+  <data name="Armor.FontSize" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="Audio.Text" xml:space="preserve">
     <value>オーディオ</value>
   </data>
@@ -128,6 +134,12 @@
   </data>
   <data name="CampaignT.Text" xml:space="preserve">
     <value>ストーリー</value>
+  </data>
+  <data name="Cannon.Content" xml:space="preserve">
+    <value>大砲</value>
+  </data>
+  <data name="Cannon.FontSize" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="Description.Text" xml:space="preserve">
     <value>任務記述: </value>
@@ -142,6 +154,9 @@
     <value>オン</value>
   </data>
   <data name="Garage.Content" xml:space="preserve">
+    <value>ガレージ</value>
+  </data>
+  <data name="Garage2.Text" xml:space="preserve">
     <value>ガレージ</value>
   </data>
   <data name="GarageT.Text" xml:space="preserve">
@@ -171,6 +186,12 @@
   <data name="Rewards.Text" xml:space="preserve">
     <value>リワード: </value>
   </data>
+  <data name="Save.Text" xml:space="preserve">
+    <value>セーブセット</value>
+  </data>
+  <data name="Saved.Text" xml:space="preserve">
+    <value>セーブドセット</value>
+  </data>
   <data name="Settings.Content" xml:space="preserve">
     <value>設定</value>
   </data>
@@ -180,7 +201,19 @@
   <data name="Stereo.Text" xml:space="preserve">
     <value>ステレオ</value>
   </data>
+  <data name="Super.Text" xml:space="preserve">
+    <value>アイスビーム</value>
+  </data>
+  <data name="TankName.Text" xml:space="preserve">
+    <value>タンク君</value>
+  </data>
   <data name="Victory.Text" xml:space="preserve">
     <value>勝利: 61</value>
+  </data>
+  <data name="Wheels.Content" xml:space="preserve">
+    <value>車輪</value>
+  </data>
+  <data name="Wheels.FontSize" xml:space="preserve">
+    <value>9</value>
   </data>
 </root>

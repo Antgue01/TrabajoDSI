@@ -120,6 +120,9 @@
   <data name="Aim.Text" xml:space="preserve">
     <value>Apuntar mediante movimiento</value>
   </data>
+  <data name="Armor.Content" xml:space="preserve">
+    <value>BLINDAJE</value>
+  </data>
   <data name="Audio.Text" xml:space="preserve">
     <value>Audio</value>
   </data>
@@ -128,6 +131,9 @@
   </data>
   <data name="CampaignT.Text" xml:space="preserve">
     <value>Campaña</value>
+  </data>
+  <data name="Cannon.Content" xml:space="preserve">
+    <value>CAÑÓN</value>
   </data>
   <data name="Description.Text" xml:space="preserve">
     <value>Descripción de la misión:</value>
@@ -142,6 +148,9 @@
     <value>Activado</value>
   </data>
   <data name="Garage.Content" xml:space="preserve">
+    <value>Taller</value>
+  </data>
+  <data name="Garage2.Text" xml:space="preserve">
     <value>Taller</value>
   </data>
   <data name="GarageT.Text" xml:space="preserve">
@@ -171,6 +180,12 @@
   <data name="Rewards.Text" xml:space="preserve">
     <value>Recompensas:</value>
   </data>
+  <data name="Save.Text" xml:space="preserve">
+    <value>GUARDAR EQUIPACIÓN</value>
+  </data>
+  <data name="Saved.Text" xml:space="preserve">
+    <value>EQUIPACIONES GUARDADAS</value>
+  </data>
   <data name="Settings.Content" xml:space="preserve">
     <value>Ajustes</value>
   </data>
@@ -180,7 +195,16 @@
   <data name="Stereo.Text" xml:space="preserve">
     <value>Estéreo</value>
   </data>
+  <data name="Super.Text" xml:space="preserve">
+    <value>Rayo Gélido</value>
+  </data>
+  <data name="TankName.Text" xml:space="preserve">
+    <value>Tanquérrimo</value>
+  </data>
   <data name="Victory.Text" xml:space="preserve">
     <value>VICTORIAS: 61</value>
+  </data>
+  <data name="Wheels.Content" xml:space="preserve">
+    <value>RUEDAS</value>
   </data>
 </root>

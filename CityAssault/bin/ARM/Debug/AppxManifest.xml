@@ -21,6 +21,8 @@
   </Dependencies>
   <Resources>
     <Resource Language="ES-ES" />
+    <Resource Language="EN-US" />
+    <Resource Language="JA-JP" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="CityAssault.exe" EntryPoint="CityAssault.App">

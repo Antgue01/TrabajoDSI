@@ -34,7 +34,7 @@
         <!--#endregion-->
 
         <!--#region Multijugador -->
-        <TextBlock Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Text="Multijugador" VerticalAlignment="Center"
+        <TextBlock Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" x:Uid="OnlineT" Text="" VerticalAlignment="Center"
                    HorizontalAlignment="Center" FontSize="40"/>
         <!--#endregion-->
 
@@ -85,7 +85,7 @@
                 </Button>
 
                 <Image Grid.Column="1" Source="Assets/llave.png" Height="30"></Image>
-                <TextBlock Grid.Column="2" Text="TALLER" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Column="2" x:Uid="GarageT" Text="TALLER" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             </Grid>
             <!--#endregion-->
         </Grid>
@@ -133,7 +133,7 @@
                                Margin="20, 0, 0, 0"/>
                 </StackPanel>
 
-                <TextBlock Grid.Row="2" Grid.Column="1" Text="VICTORIAS: 61" FontSize="18" HorizontalAlignment="Center"
+                <TextBlock Grid.Row="2" Grid.Column="1" x:Uid="Victory" Text="" FontSize="18" HorizontalAlignment="Center"
                            VerticalAlignment="Center"></TextBlock>
 
             </Grid>
@@ -159,7 +159,7 @@
                 </Button>
 
                 <Image Grid.Column="1" Source="Assets/signal.png" Height="30"></Image>
-                <TextBlock Grid.Column="2" Text="LOCAL" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Column="2" x:Uid="Local" Text="" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             </Grid>
             <!--#endregion-->
 
@@ -183,7 +183,7 @@
                 </Button>
 
                 <Image Grid.Column="1" Source="Assets/internet.png" Height="30"></Image>
-                <TextBlock Grid.Column="2" Text="ONLINE" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Column="2" x:Uid="Online2" Text="" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             </Grid>
             <!--#endregion-->
         </Grid>
