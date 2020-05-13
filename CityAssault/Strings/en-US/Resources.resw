@@ -126,6 +126,12 @@
   <data name="Campaign.Content" xml:space="preserve">
     <value>Campaign</value>
   </data>
+  <data name="CampaignT.Text" xml:space="preserve">
+    <value>Campaign</value>
+  </data>
+  <data name="Description.Text" xml:space="preserve">
+    <value>Mission Description:</value>
+  </data>
   <data name="Disabled.Text" xml:space="preserve">
     <value>Off</value>
   </data>
@@ -138,6 +144,12 @@
   <data name="Garage.Content" xml:space="preserve">
     <value>Garage</value>
   </data>
+  <data name="GarageT.Text" xml:space="preserve">
+    <value>GARAGE</value>
+  </data>
+  <data name="Local.Text" xml:space="preserve">
+    <value>LOCAL</value>
+  </data>
   <data name="Mono.Text" xml:space="preserve">
     <value>Mono</value>
   </data>
@@ -147,6 +159,18 @@
   <data name="Online.Content" xml:space="preserve">
     <value>Online</value>
   </data>
+  <data name="Online2.Text" xml:space="preserve">
+    <value>ONLINE</value>
+  </data>
+  <data name="OnlineT.Text" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="Play.Content" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="Rewards.Text" xml:space="preserve">
+    <value>Rewards:</value>
+  </data>
   <data name="Settings.Content" xml:space="preserve">
     <value>Settings</value>
   </data>
@@ -155,5 +179,8 @@
   </data>
   <data name="Stereo.Text" xml:space="preserve">
     <value>Stereo</value>
+  </data>
+  <data name="Victory.Text" xml:space="preserve">
+    <value>VICTORIES: 61</value>
   </data>
 </root>

@@ -33,22 +33,22 @@
 
         <!--#region TítuloyRecompensas -->
         <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,20,0">
-            <TextBlock Text="Rewards:" FontSize="25" TextAlignment="Center"/>
+            <TextBlock x:Uid="Rewards" Text="" FontSize="25" TextAlignment="Center"/>
             <TextBlock x:Name="Rewards" Text="17/30" FontSize="25" TextAlignment="Left"/>
         </StackPanel>
 
-        <TextBlock x:Name="Menu" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="Campaign" FontSize="45
+        <TextBlock x:Name="Menu" HorizontalAlignment="Stretch" VerticalAlignment="Center" x:Uid="CampaignT" Text="" FontSize="45
                    " Grid.Column="1" TextAlignment="Center"/>
 
         <Button Content="Back" Grid.Column="0" Margin="11,0,0,0" Height="64" Width="67" Click="Button_Back"/>
         <!--#endregion-->
 
         <!--#region DescripcionyBotonJugar -->
-        <Button x:Name="PlayButton" Content="Play" Grid.Row="2" Grid.Column="1" Margin="0,0,38,32" Height="98" Width="307" Click="Button_Play" IsEnabled="True" Grid.ColumnSpan="2" Background="#FF06CD0F" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        <Button x:Name="PlayButton" x:Uid="Play" Content="" Grid.Row="2" Grid.Column="1" Margin="0,0,38,32" Height="98" Width="307" Click="Button_Play" IsEnabled="True" Grid.ColumnSpan="2" Background="#FF06CD0F" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
 
         <TextBlock x:Name="Descripción" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="18" Margin="32,0,0,12" TextWrapping="Wrap" 
                     Height="143" Width="352">
-            <Run Text="Descripción de la misión:"/><LineBreak/>
+            <Run x:Uid="Description" Text=""/><LineBreak/>
             <Run Text="Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar inceptos vestibulum, cursus ac suspendisse ornare fames phasellus praesent litora molestie potenti."/>
         </TextBlock>
         <!--#endregion-->

@@ -176,7 +176,6 @@
     <RootType FullName="CityAssault.Online" />
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Scale" />
       <RootEvent Name="Checked" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Slider">
