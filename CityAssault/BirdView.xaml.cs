@@ -110,12 +110,17 @@ namespace CityAssault
         private void Move(object sender, PointerRoutedEventArgs e)
         {
             if (selectedTank.side == Tank.Side.Ally)
+            {
                 Canvas.SetLeft(contentControls[selectedTank.Id], e.GetCurrentPoint(sender as Image).Position.X - selectedTank.Img.ActualWidth / 2);
+                selectedTank.X = (int)(e.GetCurrentPoint(sender as Image).Position.X - selectedTank.Img.ActualWidth / 2);
+            }
             else
+            {
                 Canvas.SetLeft(contentControls[selectedTank.Id], e.GetCurrentPoint(sender as Image).Position.X + selectedTank.Img.ActualWidth / 2);
-
+                selectedTank.X = (int)(e.GetCurrentPoint(sender as Image).Position.X + selectedTank.Img.ActualWidth / 2);
+            }
             Canvas.SetTop(contentControls[selectedTank.Id], e.GetCurrentPoint(sender as Image).Position.Y - 2 * selectedTank.Img.ActualHeight);
-
+            selectedTank.Y = (int)(e.GetCurrentPoint(sender as Image).Position.Y - 2 * selectedTank.Img.ActualHeight);
         }
     }
 }

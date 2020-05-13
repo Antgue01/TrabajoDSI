@@ -129,6 +129,9 @@
   <data name="Audio.Text" xml:space="preserve">
     <value>オーディオ</value>
   </data>
+  <data name="Auto.Text" xml:space="preserve">
+    <value>おまかせ</value>
+  </data>
   <data name="Campaign.Content" xml:space="preserve">
     <value>ストーリー</value>
   </data>
@@ -179,6 +182,9 @@
   </data>
   <data name="OnlineT.Text" xml:space="preserve">
     <value>オンライン</value>
+  </data>
+  <data name="Pass.Text" xml:space="preserve">
+    <value>ターン終了</value>
   </data>
   <data name="Play.Content" xml:space="preserve">
     <value>プレー</value>

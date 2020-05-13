@@ -126,6 +126,9 @@
   <data name="Audio.Text" xml:space="preserve">
     <value>Audio</value>
   </data>
+  <data name="Auto.Text" xml:space="preserve">
+    <value>Auto</value>
+  </data>
   <data name="Campaign.Content" xml:space="preserve">
     <value>Campaña</value>
   </data>
@@ -173,6 +176,9 @@
   </data>
   <data name="OnlineT.Text" xml:space="preserve">
     <value>Multijugador</value>
+  </data>
+  <data name="Pass.Text" xml:space="preserve">
+    <value>Pasar turno</value>
   </data>
   <data name="Play.Content" xml:space="preserve">
     <value>Jugar</value>
