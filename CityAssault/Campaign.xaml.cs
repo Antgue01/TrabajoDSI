@@ -70,5 +70,10 @@ namespace CityAssault
         {
             PlayButton.IsEnabled = true;
         }
+
+        private void LevelUnselected(object sender, RoutedEventArgs e)
+        {
+            PlayButton.IsEnabled = false;
+        }
     }
 }

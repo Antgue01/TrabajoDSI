@@ -66,7 +66,17 @@
                   IsItemClickEnabled="true"
                   ItemClick="LevelSelected"
                   ShowsScrollingPlaceholders="True"
-                  RequestedTheme="Light"/>
+                  ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.HorizontalScrollMode="Enabled" ScrollViewer.VerticalScrollMode="Disabled"
+                  RequestedTheme="Light">
+
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            
+        </ListView>
         <!--#endregion-->
     </Grid>
 </Page>
