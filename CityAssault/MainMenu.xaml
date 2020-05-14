@@ -25,26 +25,51 @@
         </Grid.ColumnDefinitions>
 
         <!--#region PanelSuperior -->
-        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,20,0">
-            <Button Name="SettingsButton" x:Uid="Settings" Content="" Margin="0,0,60,0" Height="100" FontSize="20" Width="100" Click="SettingsButton_Click"></Button>
-        </StackPanel>
 
-        <TextBlock x:Name="Menu" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="City Assault" FontSize="80" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Center"/>
 
-        <Button Content="Back" Grid.Column="0" Margin="60,0,0,0" FontSize="40" Height="100" Width="100" Click="Button_Back"/>
+        <TextBlock x:Name="Menu" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="City Assault" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Center" FontWeight="Bold" FontSize="60"/>
+
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Button x:Name="BackButton" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 10, 0, 0"
+                 Height="45" Width="45" Click="Button_Back" BorderBrush="Black" BorderThickness="2" Background="#FFF32525">
+                <Image Source="Assets/atras.png"  />
+            </Button>
+            
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2">
+            <Button x:Name="SettingsButton" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10, 10, 10, 10"
+                 Height="45" Width="45" Click="SettingsButton_Click" BorderBrush="Black" BorderThickness="2" Background="Gray">
+                <Image Source="Assets/llave.png"  />
+            </Button>
+        </Grid>
         <!--#endregion-->
 
         <!--#region Botones -->
-        <Button x:Name="CampaignButton" x:Uid="Campaign" Content="" FontSize="40" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,0,0,0" Height="100" Width="360" Click="CampaignButton_Click" IsEnabled="True"/>
-        <Button x:Name="OnlineButton" x:Uid="Online" Content="" FontSize="40" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,0,0,0" Height="100" Width="360" Click="OnlineButton_Click" IsEnabled="True"/>
-        <Button x:Name="GarageButton" x:Uid="Garage" Content="" FontSize="40" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,0,0,0" Height="100" Width="360" Click="GarageButton_Click" IsEnabled="True"/>
+        <Grid Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2">
+            <Button x:Name="CampaignButton" VerticalAlignment="Top" HorizontalAlignment="Right" Content="CAMPAÑA" Margin="10, 10, 10, 10"
+                 Height="80" Width="360" Click="CampaignButton_Click" BorderBrush="Black" BorderThickness="2" Background="#FF43B5C0" FontSize="30" FontWeight="Bold"/>
+            <Image Source="Assets/user.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 35, 15, 15"
+                 Height="35" Width="35" />
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2">
+            <Button x:Name="OnlineButton" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10, 10, 10, 10" Content="MULTIJUGADOR"
+                 Height="80" Width="360" Click="OnlineButton_Click" BorderBrush="Black" BorderThickness="2" Background="#FF43B5C0" FontSize="30" FontWeight="Bold"/>
+            <Image Source="Assets/signal.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 35, 15, 15"
+                 Height="35" Width="35" />
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2">
+            <Button x:Name="GarageButton" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10, 10, 10, 10" Content="TALLER"
+                 Height="80" Width="360" Click="GarageButton_Click" BorderBrush="Black" BorderThickness="2" Background="#FF43B5C0" FontSize="30" FontWeight="Bold"/>
+            <Image Source="Assets/llave.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 35, 15, 15"
+                 Height="35" Width="35" />
+        </Grid>
 
         
         <!--#endregion-->
 
         <!--#region Foto -->
         <Image Source="Assets/Tank0.png" Grid.Column="0" Grid.Row="1" Grid.RowSpan="3
-               " Grid.ColumnSpan="2" Stretch="Fill" Margin="40,0,0,44"/>
+               " Grid.ColumnSpan="2" Stretch="Fill" Margin="10,10,10,10"/>
 
         <!--#endregion-->
 
