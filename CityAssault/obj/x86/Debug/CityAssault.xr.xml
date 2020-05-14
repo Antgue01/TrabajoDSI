@@ -111,9 +111,9 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="FontSize" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Name" />

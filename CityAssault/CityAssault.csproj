@@ -172,6 +172,7 @@
     <Content Include="Assets\Movement.png" />
     <Content Include="Assets\Mute.png" />
     <Content Include="Assets\note.png" />
+    <Content Include="Assets\PlayButton.png" />
     <Content Include="Assets\save.png" />
     <Content Include="Assets\ShootButton.png" />
     <Content Include="Assets\signal.png" />
