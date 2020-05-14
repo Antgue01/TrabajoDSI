@@ -272,6 +272,7 @@ namespace CityAssault
         public static Pieza GetPiezaById(int id)
         {
             return Piezas[id];
+        }
 
         public static IList<Mission> GetAllMissions()
         {
