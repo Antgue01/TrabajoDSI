@@ -27,19 +27,19 @@
         <!--#region PanelSuperior -->
 
 
-        <TextBlock x:Name="Menu" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="City Assault" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Center" FontWeight="Bold" FontSize="60"/>
+        <TextBlock x:Name="Menu" HorizontalAlignment="Stretch" VerticalAlignment="Top" Text="City Assault" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Center" FontWeight="Bold" FontSize="60"/>
 
         <Grid Grid.Row="0" Grid.ColumnSpan="2">
             <Button x:Name="BackButton" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 10, 0, 0"
                  Height="45" Width="45" Click="Button_Back" BorderBrush="Black" BorderThickness="2" Background="#FFF32525">
-                <Image Source="Assets/atras.png"  />
+                <Image Source="Assets/exit.png"  />
             </Button>
             
         </Grid>
         <Grid Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2">
             <Button x:Name="SettingsButton" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10, 10, 10, 10"
                  Height="45" Width="45" Click="SettingsButton_Click" BorderBrush="Black" BorderThickness="2" Background="Gray">
-                <Image Source="Assets/llave.png"  />
+                <Image Source="/Assets/settingsicon.png"  />
             </Button>
         </Grid>
         <!--#endregion-->
@@ -48,13 +48,15 @@
         <Grid Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2">
             <Button x:Name="CampaignButton" VerticalAlignment="Top" HorizontalAlignment="Right" x:Uid="Campaign" Content="" Margin="10, 10, 10, 10"
                  Height="80" Width="360" Click="CampaignButton_Click" BorderBrush="Black" BorderThickness="2" Background="#FF43B5C0" FontSize="30" FontWeight="Bold"/>
-            <Image Source="Assets/user.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 35, 15, 15"
-                 Height="35" Width="35" />
+            <Image Source="/Assets/playerone.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 20, 15, 15"
+                 Height="50" Width="50" />
         </Grid>
         <Grid Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2">
             <Button x:Name="OnlineButton" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10, 10, 10, 10" Content="" x:Uid="Online"
                  Height="80" Width="360" Click="OnlineButton_Click" BorderBrush="Black" BorderThickness="2" Background="#FF43B5C0" FontSize="30" FontWeight="Bold"/>
-            <Image Source="Assets/signal.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 35, 15, 15"
+            <Image Source="/Assets/twoplayer.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 35, 15, 15"
+                 Height="35" Width="35" />
+            <Image Source="/Assets/signal.png" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30, 35, 20, 15"
                  Height="35" Width="35" />
         </Grid>
         <Grid Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2">
