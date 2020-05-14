@@ -40,6 +40,19 @@ namespace CityAssault
         public Pieza() { }
     }
 
+    public class Mission
+    {
+        public enum State { Unlock, Lock };
+
+        public int Id { get; set; }
+        public string Imagen { get; set; }
+        public int Dificultad { get; set; }     //0 facil, 1 medio, 2 dificil
+        public string Descripcion { get; set; }
+        public State side { get; set; }
+        public Mission() { }
+
+    }
+
     public class model
     {
         public static List<Tank> Tanks = new List<Tank>()
@@ -173,6 +186,73 @@ namespace CityAssault
             }
         };
 
+        public static List<Mission> Misiones = new List<Mission>()
+        {
+            new Mission()
+            {
+                Id = 0,
+                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Dificultad = 0,
+                Descripcion = "bla bla bla",
+                side=Mission.State.Unlock
+            },
+            new Mission()
+            {
+                Id = 0,
+                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Dificultad = 0,
+                Descripcion = "bla bla bla",
+                side=Mission.State.Unlock
+            },
+            new Mission()
+            {
+                Id = 1,
+                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Dificultad = 1,
+                Descripcion = "bla bla bla",
+                side=Mission.State.Unlock
+            },
+            new Mission()
+            {
+                Id = 2,
+                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Dificultad = 1,
+                Descripcion = "bla bla bla",
+                side=Mission.State.Unlock
+            },
+            new Mission()
+            {
+                Id = 3,
+                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Dificultad = 2,
+                Descripcion = "bla bla bla",
+                side=Mission.State.Lock
+            },
+            new Mission()
+            {
+                Id = 4,
+                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Dificultad = 1,
+                Descripcion = "bla bla bla",
+                side=Mission.State.Lock
+            },
+            new Mission()
+            {
+                Id = 5,
+                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Dificultad = 0,
+                Descripcion = "bla bla bla",
+                side=Mission.State.Lock
+            },
+            new Mission()
+            {
+                Id = 6,
+                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Dificultad = 1,
+                Descripcion = "bla bla bla",
+                side=Mission.State.Lock
+            }
+        };
 
         public static IList<Tank> GetAllTanks()
         {
@@ -192,6 +272,15 @@ namespace CityAssault
         public static Pieza GetPiezaById(int id)
         {
             return Piezas[id];
+
+        public static IList<Mission> GetAllMissions()
+        {
+            return Misiones;
+        }
+
+        public static Mission GetMissionById(int id)
+        {
+            return Misiones[id];
         }
     }
 }

@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 using Windows.UI.ViewManagement;
+using System.Collections.ObjectModel;
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace CityAssault
@@ -24,6 +25,8 @@ namespace CityAssault
     /// </summary>
     public sealed partial class Campaign : Page
     {
+        public ObservableCollection<Mission> ListaMisiones { get; } = new ObservableCollection<Mission>();
+
         int rewards= 10;
         int maxRewards =50;
         public Campaign()
@@ -32,6 +35,21 @@ namespace CityAssault
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             this.InitializeComponent();
             RewardsUnlocked();
+        }
+
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            //Cargamos la lista de los Drones
+            if (ListaMisiones != null)
+            {
+                foreach (Mission mis in model.GetAllMissions())
+                {
+                    VMission VMitem = new VMission(mis);
+                    ListaMisiones.Add(VMitem);
+                }
+
+            }
+            base.OnNavigatedTo(e);
         }
 
         private void RewardsUnlocked()
@@ -51,6 +69,11 @@ namespace CityAssault
         private void LevelSelected(object sender, RoutedEventArgs e)
         {
             PlayButton.IsEnabled = true;
+        }
+
+        private void LevelUnselected(object sender, RoutedEventArgs e)
+        {
+            PlayButton.IsEnabled = false;
         }
     }
 }

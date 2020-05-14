@@ -163,6 +163,7 @@
     <Content Include="Assets\Defense.png" />
     <Content Include="Assets\Effects.png" />
     <Content Include="Assets\England.png" />
+    <Content Include="Assets\exit.png" />
     <Content Include="Assets\Flag.png" />
     <Content Include="Assets\Giroscopio.png" />
     <Content Include="Assets\HealthIcon.png" />
@@ -173,7 +174,10 @@
     <Content Include="Assets\Movement.png" />
     <Content Include="Assets\Mute.png" />
     <Content Include="Assets\note.png" />
+    <Content Include="Assets\PlayButton.png" />
+    <Content Include="Assets\playerone.png" />
     <Content Include="Assets\save.png" />
+    <Content Include="Assets\settingsicon.png" />
     <Content Include="Assets\ShootButton.png" />
     <Content Include="Assets\signal.png" />
     <Content Include="Assets\sound0.png" />
@@ -188,6 +192,7 @@
     <Content Include="Assets\Tank1.png" />
     <Content Include="Assets\Tank2.png" />
     <Content Include="Assets\Tank3.png" />
+    <Content Include="Assets\twoplayer.png" />
     <Content Include="Assets\unnamed.png" />
     <Content Include="Assets\user.png" />
     <Content Include="Assets\VS.png" />

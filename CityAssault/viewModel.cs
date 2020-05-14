@@ -63,6 +63,15 @@ namespace CityAssault
         }
     }
 
+    public class VMission : Mission
+    {
+        public VMission(Mission mis)
+        {
+            Id = mis.Id;
+            Imagen = mis.Imagen;
+            Descripcion = mis.Descripcion;
+            side = mis.side;
+        }
+        public VMission() { }
+    }
 }
-
-

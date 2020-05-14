@@ -10,9 +10,12 @@
 
     <Page.Resources>
 
-        <DataTemplate x:Key="Niveles" x:DataType="Image">
-            <Image x:Name="ImagenDueño" Width="auto" VerticalAlignment="Center" Source="Assets/Spain.png"/>
-
+        <DataTemplate x:Key="Niveles" x:DataType="local:Mission">
+            <StackPanel x:Name="mision" Orientation="Horizontal">
+                
+                <Image x:Name="ImagenDueño" Width="150" Height="AUTO" VerticalAlignment="Center" Source="{x:Bind Imagen}"/>
+                
+            </StackPanel>
         </DataTemplate>
 
 
@@ -40,12 +43,15 @@
         <TextBlock x:Name="Menu" HorizontalAlignment="Stretch" VerticalAlignment="Center" x:Uid="CampaignT" Text="" FontSize="45
                    " Grid.Column="1" TextAlignment="Center"/>
 
-        <Button Content="Back" Grid.Column="0" Margin="11,0,0,0" Height="64" Width="67" Click="Button_Back"/>
+        <Button Grid.Column="0" Margin="11,0,0,0" Height="64" Width="67" Click="Button_Back" Background="#CC0568E0">
+            <Image Source="Assets/atras.png"></Image>
+        </Button>
         <!--#endregion-->
 
         <!--#region DescripcionyBotonJugar -->
-        <Button x:Name="PlayButton" x:Uid="Play" Content="" Grid.Row="2" Grid.Column="1" Margin="0,0,38,32" Height="98" Width="307" Click="Button_Play" IsEnabled="True" Grid.ColumnSpan="2" Background="#FF06CD0F" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
-
+        <Button x:Name="PlayButton" x:Uid="Play" Content="" FontSize="40" Grid.Row="2" Grid.Column="1" Margin="0,0,38,32" 
+                Height="98" Width="307" Click="Button_Play" IsEnabled="False" Grid.ColumnSpan="2" Background="#FF06CD0F" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        <Image Source="Assets/PlayButton.png" Grid.Row="2" Grid.Column="1" Margin="160,65,243,47" Grid.ColumnSpan="2" PointerPressed="Button_Play"></Image>
         <TextBlock x:Name="Descripción" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="18" Margin="32,0,0,12" TextWrapping="Wrap" 
                     Height="143" Width="352">
             <Run x:Uid="Description" Text=""/><LineBreak/>
@@ -56,10 +62,21 @@
         <!--#region ListaDeNiveles -->
         <ListView x:Name="ListadoPersonas" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
                   ItemTemplate="{StaticResource Niveles}"
+                  ItemsSource="{x:Bind ListaMisiones}"
                   IsItemClickEnabled="true"
                   ItemClick="LevelSelected"
                   ShowsScrollingPlaceholders="True"
-                  RequestedTheme="Dark"/>
+                  ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.HorizontalScrollMode="Enabled" ScrollViewer.VerticalScrollMode="Disabled"
+                  RequestedTheme="Light">
+
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            
+        </ListView>
         <!--#endregion-->
     </Grid>
 </Page>
