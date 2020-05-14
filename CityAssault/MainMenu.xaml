@@ -46,19 +46,19 @@
 
         <!--#region Botones -->
         <Grid Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2">
-            <Button x:Name="CampaignButton" VerticalAlignment="Top" HorizontalAlignment="Right" Content="CAMPAÑA" Margin="10, 10, 10, 10"
+            <Button x:Name="CampaignButton" VerticalAlignment="Top" HorizontalAlignment="Right" x:Uid="Campaign" Content="" Margin="10, 10, 10, 10"
                  Height="80" Width="360" Click="CampaignButton_Click" BorderBrush="Black" BorderThickness="2" Background="#FF43B5C0" FontSize="30" FontWeight="Bold"/>
             <Image Source="Assets/user.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 35, 15, 15"
                  Height="35" Width="35" />
         </Grid>
         <Grid Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2">
-            <Button x:Name="OnlineButton" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10, 10, 10, 10" Content="MULTIJUGADOR"
+            <Button x:Name="OnlineButton" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10, 10, 10, 10" Content="" x:Uid="Online"
                  Height="80" Width="360" Click="OnlineButton_Click" BorderBrush="Black" BorderThickness="2" Background="#FF43B5C0" FontSize="30" FontWeight="Bold"/>
             <Image Source="Assets/signal.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 35, 15, 15"
                  Height="35" Width="35" />
         </Grid>
         <Grid Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2">
-            <Button x:Name="GarageButton" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10, 10, 10, 10" Content="TALLER"
+            <Button x:Name="GarageButton" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10, 10, 10, 10" Content="" x:Uid="Garage"
                  Height="80" Width="360" Click="GarageButton_Click" BorderBrush="Black" BorderThickness="2" Background="#FF43B5C0" FontSize="30" FontWeight="Bold"/>
             <Image Source="Assets/llave.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 35, 15, 15"
                  Height="35" Width="35" />
