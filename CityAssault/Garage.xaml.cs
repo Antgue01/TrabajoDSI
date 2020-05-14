@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.System;
 using Windows.UI.ViewManagement;
+using System.Collections.ObjectModel;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -24,6 +25,14 @@ namespace CityAssault
     /// </summary>
     public sealed partial class Garage : Page
     {
+        public ObservableCollection<VMTank> ListaTanques { get; } = new ObservableCollection<VMTank>();
+        public ObservableCollection<VMPieza> ListaPiezas { get; } = new ObservableCollection<VMPieza>();
+
+        private VMTank selectedTank;
+        private VMPieza selectedPieza;
+        private List<VMTank> team = new List<VMTank>();
+        private int vit, atk, def, vel, mov;
+
         public Garage()
         {
             this.InitializeComponent();
@@ -40,11 +49,39 @@ namespace CityAssault
             this.KeyboardAccelerators.Add(AltLeft);
             // ALT routes here
             AltLeft.Modifiers = VirtualKeyModifiers.Menu;
+
+            if (ListaTanques != null)
+                foreach (Tank tank in model.GetAllTanks())
+                {
+                    VMTank VMitem = new VMTank(tank);
+                    ListaTanques.Add(VMitem);
+                }
+
+            if (ListaPiezas != null)
+                foreach (Pieza pieza in model.GetAllPiezas())
+                {
+                    VMPieza VMitem = new VMPieza(pieza);
+                    ListaPiezas.Add(VMitem);
+                }
+
+            selectedTank = ListaTanques[0];
+            selectedPieza = ListaPiezas[0];
+            vit = selectedTank.HP;
+            atk = selectedTank.Atk;
+            def = selectedTank.Def;
+            vel = selectedTank.Spe;
+            mov = selectedTank.Mov;
+
+            for (int i = 0; i < 4; ++i)
+            {
+               team.Add(ListaTanques[i]);
+            }
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             BackButton.IsEnabled = this.Frame.CanGoBack;
+
         }
 
         private void goBack(object sender, RoutedEventArgs e)
@@ -62,8 +99,7 @@ namespace CityAssault
             return false;
         }
 
-        private void BackInvoked(KeyboardAccelerator sender,
-        KeyboardAcceleratorInvokedEventArgs args)
+        private void BackInvoked(KeyboardAccelerator sender, KeyboardAcceleratorInvokedEventArgs args)
         {
             On_BackRequested();
             args.Handled = true;
@@ -71,7 +107,7 @@ namespace CityAssault
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-
+            //?
         }
 
         private void CanonButton_Click(object sender, RoutedEventArgs e)
@@ -87,6 +123,55 @@ namespace CityAssault
         private void RuedasButton_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ArrowRight_Click(object sender, RoutedEventArgs e)
+        {
+            selectedTank = team[(team.IndexOf(selectedTank)+1) % 4];
+            TanqueImagen.Source = selectedTank.Img.Source;
+
+            VitBar.Value = selectedTank.HP + selectedPieza.HP;
+            AtkBar.Value = selectedTank.Atk + selectedPieza.Atk;
+            DefBar.Value = selectedTank.Def + selectedPieza.Def;
+            VelBar.Value = selectedTank.Spe + selectedPieza.Spe;
+            MovBar.Value = selectedTank.Mov + selectedPieza.Mov;
+        }
+
+        private void ArrowLeft_Click(object sender, RoutedEventArgs e)
+        {
+            selectedTank = team[(team.IndexOf(selectedTank) + 3) % 4];
+            TanqueImagen.Source = selectedTank.Img.Source;
+
+            VitBar.Value = selectedTank.HP + selectedPieza.HP;
+            AtkBar.Value = selectedTank.Atk + selectedPieza.Atk;
+            DefBar.Value = selectedTank.Def + selectedPieza.Def;
+            VelBar.Value = selectedTank.Spe + selectedPieza.Spe;
+            MovBar.Value = selectedTank.Mov + selectedPieza.Mov;
+        }
+
+        private void SavedList_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            VMTank tank = e.ClickedItem as VMTank;
+
+            int aux = selectedTank.Id;
+
+            if (aux != tank.Id)
+            {
+                selectedTank = ListaTanques[tank.Id];
+                TanqueImagen.Source = selectedTank.Img.Source;
+
+                VitBar.Value = selectedTank.HP + selectedPieza.HP;
+                AtkBar.Value = selectedTank.Atk + selectedPieza.Atk;
+                DefBar.Value = selectedTank.Def + selectedPieza.Def;
+                VelBar.Value = selectedTank.Spe + selectedPieza.Spe;
+                MovBar.Value = selectedTank.Mov + selectedPieza.Mov;
+
+                int i = 0;
+                while (team[i].Id != aux)
+                    ++i;
+
+                team[i] = tank;
+            }
         }
     }
 }

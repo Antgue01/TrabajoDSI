@@ -25,12 +25,13 @@
         <!--#endregion-->
 
         <!--#region Boton atras -->
-        <Grid Grid.Row="0" Grid.ColumnSpan="2">
-            <Button x:Name="BackButton" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 10, 0, 0"
-                 Height="45" Width="45" Click="goBack" BorderBrush="Black" BorderThickness="2" Background="Gray"/>
-            <Image Source="Assets/atras.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15, 15, 0, 0"
-                 Height="35" Width="35" />
-        </Grid>
+        <Button x:Name="BackButton" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 10, 0, 0"
+                 Height="45" Width="45" Click="goBack" BorderBrush="Black" BorderThickness="2" Background="Gray"
+                    Grid.Row="0" Grid.ColumnSpan="2">
+
+            <Image Source="Assets/atras.png" VerticalAlignment="Center" HorizontalAlignment="Center"
+                 Height="25" Width="25" />
+        </Button>
         <!--#endregion-->
 
         <!--#region Multijugador -->
@@ -59,35 +60,43 @@
             </Grid.ColumnDefinitions>
             <!--#endregion-->
 
-            <Image Grid.Row="1" Grid.Column="1" Stretch="Fill" Source="Assets/Tank0.png"></Image>
-            <Image Grid.Row="1" Grid.Column="3" Stretch="Fill" Source="Assets/Tank1.png"></Image>
-            <Image Grid.Row="3" Grid.Column="1" Stretch="Fill" Source="Assets/Tank2.png"></Image>
-            <Image Grid.Row="3" Grid.Column="3" Stretch="Fill" Source="Assets/Tank3.png"></Image>
+            <!--<Canvas x:Name="TankCanvas" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3"
+                    PointerPressed="TankCanvas_PointerPressed">
+            </Canvas>
+            <ContentControl x:Name="crtl0" Grid.Row="1" Grid.Column="1">
+                <Image Stretch="Fill" Source="{x:Bind ListaTanques[0].Imagen}"></Image>
+            </ContentControl>
+            <Image Source="Assets/cuadrado.png" x:Name="sqr0" Grid.Row="1" Grid.Column="1" Stretch="Fill" Visibility="Visible"></Image>
 
+            <ContentControl x:Name="crtl1" Grid.Row="1" Grid.Column="3">
+                <Image Stretch="Fill" Source="{x:Bind ListaTanques[1].Imagen}"></Image>
+            </ContentControl>
+            <Image Source="Assets/cuadrado.png" x:Name="sqr1" Grid.Row="1" Grid.Column="3" Stretch="Fill" Visibility="Collapsed"></Image>
+
+            <ContentControl x:Name="crtl2" Grid.Row="3" Grid.Column="1">
+                <Image Stretch="Fill" Source="{x:Bind ListaTanques[2].Imagen}"></Image>
+            </ContentControl>
+            <Image Source="Assets/cuadrado.png" x:Name="sqr2" Grid.Row="3" Grid.Column="1" Stretch="Fill" Visibility="Collapsed"></Image>
+
+            <ContentControl x:Name="crtl3" Grid.Row="3" Grid.Column="3">
+                <Image Stretch="Fill" Source="{x:Bind ListaTanques[3].Imagen}"></Image>
+            </ContentControl>
+            <Image Source="Assets/cuadrado.png" x:Name="sqr3" Grid.Row="3" Grid.Column="3" Stretch="Fill" Visibility="Collapsed"></Image>
+-->
             <!--#region Boton Taller -->
-            <Grid Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Stretch"
-                    HorizontalAlignment="Center" Width="200">
-                <!--#region Definitions -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height ="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="10"/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="20"/>
-                </Grid.ColumnDefinitions>
-                <!--#endregion-->
+            <Button x:Name="GarageButton" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch" Click="GarageButton_Click" FontSize="20"
+                BorderBrush="Black" BorderThickness="2" Background="DarkCyan" Margin="12, 0, 12, 0">
 
-                <Button x:Name="GarageButton" Grid.ColumnSpan="5" VerticalAlignment="Stretch"
-                    HorizontalAlignment="Stretch" Click="GarageButton_Click" FontSize="20"
-                    BorderBrush="Black" BorderThickness="2" Background="DarkCyan">
-                </Button>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/llave.png" Height="30" Margin="0, 0, 15, 0"></Image>
+                    <TextBlock x:Uid="GarageT" Text="TALLER" FontSize="20"
+                           VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </StackPanel>
 
-                <Image Grid.Column="1" Source="Assets/llave.png" Height="30"></Image>
-                <TextBlock Grid.Column="2" x:Uid="GarageT" Text="TALLER" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            </Grid>
+            </Button>
             <!--#endregion-->
+
         </Grid>
         <!--#endregion-->
 
@@ -140,53 +149,31 @@
             <!--#endregion-->
 
             <!--#region Boton Local -->
-            <Grid Grid.Row="2" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-                <!--#region Definitions -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height ="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="10"/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="20"/>
-                </Grid.ColumnDefinitions>
-                <!--#endregion-->
+            <Button x:Name="LocalButton" Grid.Row="2" Grid.Column="1" VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch" Click="LocalButton_Click" FontSize="20"
+                BorderBrush="Black" BorderThickness="2" Background="DarkCyan">
 
-                <Button x:Name="LocalButton" Grid.ColumnSpan="5" VerticalAlignment="Stretch"
-                    HorizontalAlignment="Stretch" Click="LocalButton_Click" FontSize="20"
-                    BorderBrush="Black" BorderThickness="2" Background="DarkCyan">
-                </Button>
-
-                <Image Grid.Column="1" Source="Assets/signal.png" Height="30"></Image>
-                <TextBlock Grid.Column="2" x:Uid="Local" Text="" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            </Grid>
+                <StackPanel Orientation="Horizontal">
+                    <Image Grid.Column="1" Source="Assets/signal.png" Height="30" Margin="0,0,15,0"></Image>
+                    <TextBlock Grid.Column="2" x:Uid="Local" Text="" FontSize="20"
+                           VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
             <!--#endregion-->
 
             <!--#region Boton Online -->
-            <Grid Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-                <!--#region Definitions -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height ="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="10"/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="20"/>
-                </Grid.ColumnDefinitions>
-                <!--#endregion-->
+            <Button x:Name="OnlineButton" Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch" Click="OnlineButton_Click" FontSize="20"
+                BorderBrush="Black" BorderThickness="2" Background="DarkCyan">
 
-                <Button x:Name="OnlineButton" Grid.ColumnSpan="5" VerticalAlignment="Stretch"
-                    HorizontalAlignment="Stretch" Click="OnlineButton_Click" FontSize="20"
-                    BorderBrush="Black" BorderThickness="2" Background="DarkCyan">
-                </Button>
-
-                <Image Grid.Column="1" Source="Assets/internet.png" Height="30"></Image>
-                <TextBlock Grid.Column="2" x:Uid="Online2" Text="" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            </Grid>
+                <StackPanel Orientation="Horizontal">
+                    <Image Grid.Column="1" Source="Assets/internet.png" Height="30" Margin="0,0,15,0"></Image>
+                    <TextBlock Grid.Column="2" x:Uid="Online2" Text="" FontSize="20"
+                               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
             <!--#endregion-->
         </Grid>
-        
+
     </Grid>
 </Page>

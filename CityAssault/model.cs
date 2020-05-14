@@ -20,9 +20,26 @@ namespace CityAssault
         public int Spe { get; set; }
         public int Mov { get; set; }
         public Side side {get;set;}
+        public string Habilidad { get; set; }
         public Tank() { }
 
     }
+
+    public class Pieza
+    {
+        public enum Type { Canon, Blindaje, Ruedas };
+
+        public int Id { get; set; }
+        public string Imagen { get; set; }
+        public int HP { get; set; }
+        public int Atk { get; set; }
+        public int Def { get; set; }
+        public int Spe { get; set; }
+        public int Mov { get; set; }
+        public Type Tipo { get; set; }
+        public Pieza() { }
+    }
+
     public class model
     {
         public static List<Tank> Tanks = new List<Tank>()
@@ -38,7 +55,8 @@ namespace CityAssault
                 Def = 54,
                 Spe = 32,
                 Mov = 75,
-                side=Tank.Side.Ally
+                side=Tank.Side.Ally,
+                Habilidad = "Rayo Gélido"
             },
             new Tank()
             {
@@ -51,8 +69,8 @@ namespace CityAssault
                 Def = 37,
                 Spe = 98,
                 Mov = 44,
-                side=Tank.Side.Ally
-
+                side=Tank.Side.Ally,
+                Habilidad = "Bomba"
             },
             new Tank()
             {
@@ -65,9 +83,8 @@ namespace CityAssault
                 Def = 87,
                 Spe = 60,
                 Mov = 24,
-                side=Tank.Side.Ally
-                
-
+                side=Tank.Side.Ally,
+                Habilidad = "Terremoto"
             },
             new Tank()
             {
@@ -80,8 +97,8 @@ namespace CityAssault
                 Def = 49,
                 Spe = 22,
                 Mov = 75,
-                side=Tank.Side.Ally
-
+                side=Tank.Side.Ally,
+                Habilidad = "Visión Nocturna"
             },
             new Tank()
             {
@@ -94,7 +111,8 @@ namespace CityAssault
                 Def = 12,
                 Spe = 34,
                 Mov = 90,
-                side=Tank.Side.Enemy
+                side=Tank.Side.Enemy,
+                Habilidad = "Rayo Gélido"
             },
             new Tank()
             {
@@ -107,7 +125,8 @@ namespace CityAssault
                 Def = 34,
                 Spe = 43,
                 Mov = 55,
-                side=Tank.Side.Enemy
+                side=Tank.Side.Enemy,
+                Habilidad = "Bomba"
             },
             new Tank()
             {
@@ -120,7 +139,8 @@ namespace CityAssault
                 Def = 34,
                 Spe = 74,
                 Mov = 23,
-                side=Tank.Side.Enemy
+                side=Tank.Side.Enemy,
+                Habilidad = "Terremoto"
             },
             new Tank()
             {
@@ -133,10 +153,27 @@ namespace CityAssault
                 Def = 12,
                 Spe = 37,
                 Mov = 94,
-                side=Tank.Side.Enemy
+                side=Tank.Side.Enemy,
+                Habilidad = "Visión Nocturna"
             }
         };
-        
+
+        public static List<Pieza> Piezas = new List<Pieza>()
+        {
+            new Pieza()
+            {
+                Id = 0,
+                Imagen = "Assets\\Tank0.png",
+                HP = 0,
+                Atk = 0,
+                Def = 0,
+                Spe = 0,
+                Mov = 0,
+                Tipo = Pieza.Type.Canon
+            }
+        };
+
+
         public static IList<Tank> GetAllTanks()
         {
             return Tanks;
@@ -145,6 +182,16 @@ namespace CityAssault
         public static Tank GetTankById(int id)
         {
             return Tanks[id];
+        }
+
+        public static IList<Pieza> GetAllPiezas()
+        {
+            return Piezas;
+        }
+
+        public static Pieza GetPiezaById(int id)
+        {
+            return Piezas[id];
         }
     }
 }

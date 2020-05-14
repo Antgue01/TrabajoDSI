@@ -25,12 +25,13 @@
         <!--#endregion-->
 
         <!--#region Boton atras -->
-        <Grid Grid.Row="0" Grid.ColumnSpan="2">
-            <Button x:Name="BackButton" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 10, 0, 0"
-                 Height="45" Width="45" Click="goBack" BorderBrush="Black" BorderThickness="2" Background="Gray"/>
-            <Image Source="Assets/atras.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15, 15, 0, 0"
-                 Height="35" Width="35" />
-        </Grid>
+        <Button x:Name="BackButton" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 10, 0, 0"
+                 Height="45" Width="45" Click="goBack" BorderBrush="Black" BorderThickness="2" Background="Gray"
+                    Grid.Row="0" Grid.ColumnSpan="2">
+
+            <Image Source="Assets/atras.png" VerticalAlignment="Center" HorizontalAlignment="Center"
+                 Height="25" Width="25" />
+        </Button>
         <!--#endregion-->
 
         <!--#region Taller -->
@@ -77,25 +78,30 @@
 
                 <TextBlock x:Name="Habilidad" x:Uid="Super" Text="" Grid.Column="2" TextWrapping="Wrap" HorizontalAlignment="Center"
                            VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
-                <Image x:Name="TanqueImagen" Source="Assets/Tank0.png" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="2"></Image>
+                <Image x:Name="TanqueImagen" Source="{x:Bind selectedTank.Imagen}" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="2"></Image>
             </Grid>
             <!--#endregion-->
 
             <!--#region Flechas-->
-            <Image Source="Assets/Arrow.png" RenderTransformOrigin="0.5,0.5" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"
+            <Image Source="Assets/Arrow.png" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Center"
                    HorizontalAlignment="Center">
                 <Image.RenderTransform>
                     <CompositeTransform Rotation="90"/>
                 </Image.RenderTransform>
             </Image>
-            <Image Source="Assets/Arrow.png" RenderTransformOrigin="0.5,0.5" Grid.Row="0" Grid.Column="4" VerticalAlignment="Center"
-                   HorizontalAlignment="Center">
+            <Button x:Name="ArrowLeft" Grid.Row="0" Grid.Column="0" Background="White" Height="50" VerticalAlignment="Center"
+                    HorizontalAlignment="Stretch" Click="ArrowLeft_Click" Opacity="0"></Button>
+            
+            <Image Source="Assets/Arrow.png" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Center"
+                   HorizontalAlignment="Center" Grid.Row="0" Grid.Column="2">
                 <Image.RenderTransform>
                     <CompositeTransform Rotation="-90"/>
                 </Image.RenderTransform>
             </Image>
+            <Button x:Name="ArrowRight" Grid.Row="0" Grid.Column="2" Background="White" Height="50" VerticalAlignment="Center"
+                    HorizontalAlignment="Stretch" Click="ArrowRight_Click" Opacity="0"></Button>
             <!--#endregion-->
-            
+
             <!--#region Titulo guardados-->
             <Grid Grid.Row="2" Grid.Column="1">
                 <!--#region Definitions -->
@@ -109,22 +115,27 @@
                 <TextBlock x:Uid="Saved" Text="" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
             </Grid>
             <!--#endregion-->
-            
-            <!--#region Guardados-->
-            <Grid Grid.Row="3" Grid.ColumnSpan="3">
-                <!--#region Definitions -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height ="5"/>
-                    <RowDefinition Height ="*"/>
-                    <RowDefinition Height ="5"/>
-                    <RowDefinition Height ="13"/>
-                </Grid.RowDefinitions>
-                <!--#endregion-->
 
-                <ScrollBar Grid.Row="3" Orientation="Horizontal"></ScrollBar>
-            </Grid>
+            <!--#region Guardados-->
+            <ListView x:Name="SavedList" Grid.Row="3" Grid.ColumnSpan="3" ItemsSource="{x:Bind ListaTanques}" SelectionMode="Single" IsItemClickEnabled="True"
+                  ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.HorizontalScrollMode="Enabled" ScrollViewer.VerticalScrollMode="Disabled" ItemClick="SavedList_ItemClick">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate x:Name="ListViewTemplate" x:DataType="local:VMTank">
+                        <Grid Margin="5, 0, 0, 0">
+                            <Image Source="{x:Bind Imagen}" VerticalAlignment="Stretch" Margin="8, 0, 8, 0"/>
+                            <Image Source="Assets/cuadrado.png" Stretch="Fill"></Image>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
             <!--#endregion-->
-            
+
         </Grid>
         <!--#endregion-->
 
@@ -135,7 +146,7 @@
                 <RowDefinition Height ="8"/>
                 <RowDefinition Height ="0.8*"/>
                 <RowDefinition Height ="10"/>
-                <RowDefinition Height ="25"/>
+                <RowDefinition Height ="35"/>
                 <RowDefinition Height ="2*"/>
                 <RowDefinition Height ="8"/>
                 <RowDefinition Height ="2*"/>
@@ -165,26 +176,15 @@
                        VerticalAlignment="Center" FontSize="20"></TextBlock>
 
             <!--#region Boton guardar -->
-            <Grid Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-                <!--#region Definitions -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height ="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="3.5*"/>
-                    <ColumnDefinition Width="5"/>
-                </Grid.ColumnDefinitions>
-                <!--#endregion-->
-
-                <Button x:Name="SaveButton" Grid.ColumnSpan="5" VerticalAlignment="Stretch"
+            <Button x:Name="SaveButton" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="3" VerticalAlignment="Stretch"
                     HorizontalAlignment="Stretch" Click="SaveButton_Click" FontSize="20"
                     BorderBrush="DarkCyan" BorderThickness="3" Background="#FF75CFDB">
-                </Button>
 
-                <Image Grid.Column="0" Source="Assets/save.png" Height="20"></Image>
-                <TextBlock Grid.Column="1" x:Uid="Save" Text="" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            </Grid>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Image Source="Assets/save.png" Height="20" Margin="0,0,10,0"></Image>
+                    <TextBlock x:Uid="Save" Text="" FontSize="10"/>
+                </StackPanel>
+            </Button>
             <!--#endregion-->
 
             <!--#region Botones piezas-->
@@ -203,28 +203,17 @@
                 <Border Grid.Column="2" Background="#FF75DBA3" BorderThickness="2" BorderBrush="DarkGreen"></Border>
                 <!--#endregion-->
 
-                <Button x:Name="CanonButton" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                        x:Uid="Cannon" Content="" FontSize="8" Click="CanonButton_Click"></Button>
+                <!--<Button x:Name="CanonButton" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        x:Uid="Cannon" Content="" FontSize="10" Click="CanonButton_Click"></Button>
                 <Button x:Name="BlindajeButton" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                        x:Uid="Armor" Content="" FontSize="8" Click="BlindajeButton_Click"></Button>
+                        x:Uid="Armor" Content="" FontSize="10" Click="BlindajeButton_Click"></Button>
                 <Button x:Name="RuedasButton" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                        x:Uid="Wheels" Content="" FontSize="8" Click="RuedasButton_Click"></Button>
+                        x:Uid="Wheels" Content="" FontSize="10" Click="RuedasButton_Click"></Button>-->
             </Grid>
             <!--#endregion-->
-            
-            <!--#region Piezas-->
-            <Grid Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="5">
-                <!--#region Definitions -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height ="5"/>
-                    <RowDefinition Height ="*"/>
-                    <RowDefinition Height ="5"/>
-                    <RowDefinition Height="12" />
-                </Grid.RowDefinitions>
-                <!--#endregion-->
 
-                <ScrollBar Grid.Row="3" Orientation="Horizontal"></ScrollBar>
-            </Grid>
+            <!--#region Piezas-->
+            <ListView></ListView>
             <!--#endregion-->
 
             <!--#region Stats-->
@@ -252,11 +241,11 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <ProgressBar Width="200" Height="8" Margin="0, 0, 0, 10"></ProgressBar>
-                    <ProgressBar Width="200" Height="8" Margin="0, 0, 0, 10"></ProgressBar>
-                    <ProgressBar Width="200" Height="8" Margin="0, 0, 0, 10"></ProgressBar>
-                    <ProgressBar Width="200" Height="8" Margin="0, 0, 0, 10"></ProgressBar>
-                    <ProgressBar Width="200" Height="8"></ProgressBar>
+                    <ProgressBar x:Name="VitBar" Width="200" Height="8" Margin="0, 0, 0, 10" Value="{x:Bind vit}" Foreground="White"></ProgressBar>
+                    <ProgressBar x:Name="AtkBar" Width="200" Height="8" Margin="0, 0, 0, 10" Value="{x:Bind atk}" Foreground="White"></ProgressBar>
+                    <ProgressBar x:Name="DefBar" Width="200" Height="8" Margin="0, 0, 0, 10" Value="{x:Bind def}" Foreground="White"></ProgressBar>
+                    <ProgressBar x:Name="VelBar" Width="200" Height="8" Margin="0, 0, 0, 10" Value="{x:Bind vel}" Foreground="White"></ProgressBar>
+                    <ProgressBar x:Name="MovBar" Width="200" Height="8" Value="{x:Bind mov}" Foreground="White"></ProgressBar>
                 </StackPanel>
             </Grid>
             <!--#endregion-->

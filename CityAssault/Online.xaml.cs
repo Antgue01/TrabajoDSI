@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.System;
 using Windows.UI.ViewManagement;
+using System.Collections.ObjectModel;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -24,6 +25,10 @@ namespace CityAssault
     /// </summary>
     public sealed partial class Online : Page
     {
+        public ObservableCollection<VMTank> ListaTanques { get; } = new ObservableCollection<VMTank>();
+        private List<ContentControl> contentControls = new List<ContentControl>(8);
+        private VMTank selectedTank = model.GetTankById(0) as VMTank;
+
         public Online()
         {
             this.InitializeComponent();
@@ -31,6 +36,16 @@ namespace CityAssault
             ApplicationView.PreferredLaunchViewSize = new Size(Height = 432, Width = 768);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
 
+            if (ListaTanques != null)
+            {
+                foreach (Tank tank in model.GetAllTanks())
+                {
+                    VMTank VMitem = new VMTank(tank);
+                    ListaTanques.Add(VMitem);
+
+                    //if (tank.Id < 4) TankCanvas.Children.Add(ListaTanques[tank.Id].CCImg);
+                }
+            }
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -56,6 +71,23 @@ namespace CityAssault
         private void OnlineButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(BirdView));
+
+        }
+
+        private void TankCanvas_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            Image img = e.OriginalSource as Image;
+            ContentControl ctrl = img.Parent as ContentControl;
+
+            if (img != null)
+            {
+                //Activar el cuadrado
+
+            }
+        }
+        private void ItemCanvas_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+
 
         }
     }

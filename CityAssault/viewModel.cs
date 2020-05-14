@@ -42,7 +42,26 @@ namespace CityAssault
         }
     }
 
-
+    public class VMPieza : Pieza
+    {
+        public Image Img;
+        public VMPieza(Pieza pieza)
+        {
+            Id = pieza.Id;
+            Imagen = pieza.Imagen;
+            HP = pieza.HP;
+            Atk = pieza.Atk;
+            Def = pieza.Def;
+            Spe = pieza.Spe;
+            Mov = pieza.Mov;
+            Tipo = pieza.Tipo;
+            Img = new Image();
+            string s = System.IO.Directory.GetCurrentDirectory() + "\\" + pieza.Imagen;
+            Img.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
+            Img.Width = 50;
+            Img.Height = 50;
+        }
+    }
 
 }
 
