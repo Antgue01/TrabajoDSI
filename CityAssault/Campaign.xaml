@@ -10,9 +10,12 @@
 
     <Page.Resources>
 
-        <DataTemplate x:Key="Niveles" x:DataType="Image">
-            <Image x:Name="ImagenDueño" Width="auto" VerticalAlignment="Center" Source="Assets/Spain.png"/>
-
+        <DataTemplate x:Key="Niveles" x:DataType="local:Mission">
+            <StackPanel x:Name="mision" Orientation="Horizontal">
+                
+                <Image x:Name="ImagenDueño" Width="150" Height="AUTO" VerticalAlignment="Center" Source="{x:Bind Imagen}"/>
+                
+            </StackPanel>
         </DataTemplate>
 
 
@@ -47,7 +50,7 @@
 
         <!--#region DescripcionyBotonJugar -->
         <Button x:Name="PlayButton" x:Uid="Play" Content="" FontSize="40" Grid.Row="2" Grid.Column="1" Margin="0,0,38,32" 
-                Height="98" Width="307" Click="Button_Play" IsEnabled="True" Grid.ColumnSpan="2" Background="#FF06CD0F" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+                Height="98" Width="307" Click="Button_Play" IsEnabled="False" Grid.ColumnSpan="2" Background="#FF06CD0F" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
         <Image Source="Assets/PlayButton.png" Grid.Row="2" Grid.Column="1" Margin="160,65,243,47" Grid.ColumnSpan="2" PointerPressed="Button_Play"></Image>
         <TextBlock x:Name="Descripción" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="18" Margin="32,0,0,12" TextWrapping="Wrap" 
                     Height="143" Width="352">
@@ -59,10 +62,11 @@
         <!--#region ListaDeNiveles -->
         <ListView x:Name="ListadoPersonas" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
                   ItemTemplate="{StaticResource Niveles}"
+                  ItemsSource="{x:Bind ListaMisiones}"
                   IsItemClickEnabled="true"
                   ItemClick="LevelSelected"
                   ShowsScrollingPlaceholders="True"
-                  RequestedTheme="Dark"/>
+                  RequestedTheme="Light"/>
         <!--#endregion-->
     </Grid>
 </Page>

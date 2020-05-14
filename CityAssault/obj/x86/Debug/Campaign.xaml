@@ -1,0 +1,73 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="CityAssault.Campaign"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CityAssault"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+
+        <DataTemplate x:Key="Niveles"                           >
+            <StackPanel x:ConnectionId='3' x:Name="mision" Orientation="Horizontal">
+                
+                <Image x:ConnectionId='4' x:Name="ImagenDueño" Width="150" Height="AUTO" VerticalAlignment="Center"                         />
+                
+            </StackPanel>
+        </DataTemplate>
+
+
+
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2.15*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--#region TítuloyRecompensas -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,20,0">
+            <TextBlock x:Uid="Rewards" Text="" FontSize="25" TextAlignment="Center"/>
+            <TextBlock x:ConnectionId='11' x:Name="Rewards" Text="17/30" FontSize="25" TextAlignment="Left"/>
+        </StackPanel>
+
+        <TextBlock x:ConnectionId='5' x:Name="Menu" HorizontalAlignment="Stretch" VerticalAlignment="Center" x:Uid="CampaignT" Text="" FontSize="45
+                   " Grid.Column="1" TextAlignment="Center"/>
+
+        <Button x:ConnectionId='6' Grid.Column="0" Margin="11,0,0,0" Height="64" Width="67"                     Background="#CC0568E0">
+            <Image Source="Assets/atras.png"></Image>
+        </Button>
+        <!--#endregion-->
+
+        <!--#region DescripcionyBotonJugar -->
+        <Button x:ConnectionId='7' x:Name="PlayButton" x:Uid="Play" Content="" FontSize="40" Grid.Row="2" Grid.Column="1" Margin="0,0,38,32" 
+                Height="98" Width="307"                     IsEnabled="False" Grid.ColumnSpan="2" Background="#FF06CD0F" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        <Image x:ConnectionId='8' Source="Assets/PlayButton.png" Grid.Row="2" Grid.Column="1" Margin="160,65,243,47" Grid.ColumnSpan="2"                             ></Image>
+        <TextBlock x:ConnectionId='9' x:Name="Descripción" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="18" Margin="32,0,0,12" TextWrapping="Wrap" 
+                    Height="143" Width="352">
+            <Run x:Uid="Description" Text=""/><LineBreak/>
+            <Run Text="Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar inceptos vestibulum, cursus ac suspendisse ornare fames phasellus praesent litora molestie potenti."/>
+        </TextBlock>
+        <!--#endregion-->
+
+        <!--#region ListaDeNiveles -->
+        <ListView x:ConnectionId='10' x:Name="ListadoPersonas" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
+                  ItemTemplate="{StaticResource Niveles}"
+                                                      
+                  IsItemClickEnabled="true"
+                                           
+                  ShowsScrollingPlaceholders="True"
+                  RequestedTheme="Light"/>
+        <!--#endregion-->
+    </Grid>
+</Page>
+
