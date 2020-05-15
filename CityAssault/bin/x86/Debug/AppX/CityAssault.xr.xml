@@ -77,6 +77,7 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Height" />
       <RootProperty Name="Inlines" />
+      <RootProperty Name="FontWeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
       <RootProperty Name="HorizontalAlignment" />
@@ -112,13 +113,13 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
-      <RootProperty Name="FontSize" />
       <RootProperty Name="Opacity" />
-      <RootProperty Name="Name" />
+      <RootProperty Name="FontWeight" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas" />
@@ -152,27 +153,21 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Orientation" />
+      <RootProperty Name="Children" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="ItemsSource" />
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="ShowsScrollingPlaceholders" />
       <RootProperty Name="RequestedTheme" />
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="SelectionMode" />
       <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="SelectionMode" />
       <RootEvent Name="ItemClick" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Documents.Run">
-      <RootProperty Name="Text" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
-    <RootType FullName="CityAssault.Campaign" />
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootMethod Name="GetVerticalScrollBarVisibility" />
       <RootMethod Name="SetVerticalScrollBarVisibility" />
@@ -183,9 +178,15 @@
       <RootMethod Name="GetVerticalScrollMode" />
       <RootMethod Name="SetVerticalScrollMode" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
       <RootProperty Name="Template" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
+    <RootType FullName="CityAssault.Campaign" />
     <RootType FullName="CityAssault.Garage" />
     <RootType FullName="CityAssault.MainMenu" />
     <RootType FullName="CityAssault.Online" />

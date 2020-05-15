@@ -74,8 +74,8 @@
         <!--#endregion-->
         <!--#region Musica -->
         <Image Source="Assets/note.png" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"
-               Height="64" Margin="0,0,20,0"/>
-        <Rectangle Fill="#4DD7FA" Grid.Row="1" Grid.Column="1" Height="57"/>
+               Height="32" Margin="0,0,20,0"/>
+        <Rectangle Fill="#4DD7FA" Grid.Row="1" Grid.Column="1" Height="34"/>
         <TextBlock Grid.Row="1" Grid.Column="1" x:Uid="Music" Text="" FontSize="16"
                  VerticalAlignment="Center" TextAlignment="Center"
                  />
@@ -90,16 +90,16 @@
         <Slider x:Name="Music_Slider" Grid.Column="1" VerticalAlignment="Center" 
                 Margin="10,0,10,0" StepFrequency="10" ValueChanged="Music_Slider_ValueChanged"/>
         </Grid>
-        <ToggleButton IsChecked="False" x:Name="Mute_Music" Grid.Row="1" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Width="73"
-                Height="73" Background="#00A4D3" BorderThickness="3" BorderBrush="Black" Checked="Mute_Music_Checked" Unchecked="Mute_Music_Unchecked" >
+        <ToggleButton IsChecked="False" x:Name="Mute_Music" Grid.Row="1" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Width="36"
+                Height="36" Background="#00A4D3" BorderThickness="2" BorderBrush="Black" Checked="Mute_Music_Checked" Unchecked="Mute_Music_Unchecked" >
             <Image Source="Assets/Mute.png" VerticalAlignment="Center"
                    HorizontalAlignment="Center" Stretch="Fill"/>
         </ToggleButton>
         <!--#endregion-->
         <!--#region Efectos -->
         <Image Source="Assets/Effects.png" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"
-               Height="64" Margin="0,0,20,0"/>
-        <Rectangle Fill="#4DD7FA" Grid.Row="2" Grid.Column="1" Height="57"/>
+               Height="32" Margin="0,0,20,0"/>
+        <Rectangle Fill="#4DD7FA" Grid.Row="2" Grid.Column="1" Height="34"/>
         <TextBlock Grid.Row="2" Grid.Column="1" x:Uid="Effects" Text="" FontSize="16"
                  VerticalAlignment="Center" TextAlignment="Center"
                  />
@@ -114,16 +114,16 @@
             <Slider x:Name="Effects_Slider" Grid.Column="1" VerticalAlignment="Center" 
                 Margin="10,0,10,0" StepFrequency="10" ValueChanged="Effects_Slider_ValueChanged"/>
         </Grid>
-        <ToggleButton IsChecked="False" x:Name="Mute_Effects" Grid.Row="2" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Width="73"
-                Height="73" Background="#00A4D3" BorderThickness="3" BorderBrush="Black" Unchecked="Mute_Effects_Unchecked" Checked="Mute_Effects_Checked" >
+        <ToggleButton IsChecked="False" x:Name="Mute_Effects" Grid.Row="2" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Width="36"
+                Height="36" Background="#00A4D3" BorderThickness="2" BorderBrush="Black" Unchecked="Mute_Effects_Unchecked" Checked="Mute_Effects_Checked" >
             <Image Source="Assets/Mute.png" VerticalAlignment="Center"
                    HorizontalAlignment="Center" Stretch="Fill"/>
         </ToggleButton>
         <!--#endregion-->
         <!--#region Audio -->
         <Image Source="Assets/Audio.png" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"
-               Height="64" Margin="0,0,20,0"/>
-        <Rectangle Fill="#4DD7FA" Grid.Row="3" Grid.Column="1" Height="57"/>
+               Height="32" Margin="0,0,20,0"/>
+        <Rectangle Fill="#4DD7FA" Grid.Row="3" Grid.Column="1" Height="34"/>
         <TextBlock Grid.Row="3" Grid.Column="1" x:Uid="Audio" Text="" FontSize="16"
                  VerticalAlignment="Center" TextAlignment="Center"/>
         <Grid Margin="30,0,0,0" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center">
@@ -147,8 +147,8 @@
         <!--#endregion-->
         <!--#region Apuntado -->
         <Image Source="Assets/Apuntado.png" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"
-               Height="64" Margin="0,0,20,0"/>
-        <Rectangle Fill="#4DD7FA" Grid.Row="4" Grid.Column="1" Height="57"/>
+               Height="32" Margin="0,0,20,0"/>
+        <Rectangle Fill="#4DD7FA" Grid.Row="4" Grid.Column="1" Height="34"/>
         <TextBlock Grid.Row="4" Grid.Column="1" x:Uid="Aim" Text="" FontSize="16"
                    TextWrapping="Wrap"
                  VerticalAlignment="Center" TextAlignment="Center"/>
