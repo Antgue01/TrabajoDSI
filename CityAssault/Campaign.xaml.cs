@@ -66,14 +66,24 @@ namespace CityAssault
             this.Frame.Navigate(typeof(MainMenu));
         }
 
-        private void LevelSelected(object sender, RoutedEventArgs e)
+        private void LevelSelected(object sender, ItemClickEventArgs e)
         {
-            PlayButton.IsEnabled = true;
+            Mission aux = e.ClickedItem as Mission;
+            if(aux.side == Mission.State.Unlock)
+            {
+                PlayButton.IsEnabled = true;
+                Texto.Text = aux.Descripcion;
+            }
+            else {
+                PlayButton.IsEnabled = false;
+                Texto.Text = aux.Descripcion;
+            }
         }
 
         private void LevelUnselected(object sender, RoutedEventArgs e)
         {
             PlayButton.IsEnabled = false;
+            Texto.Text = "";
         }
     }
 }

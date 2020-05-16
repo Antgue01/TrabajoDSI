@@ -191,65 +191,65 @@ namespace CityAssault
             new Mission()
             {
                 Id = 0,
-                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Imagen = "Assets\\M1.png",
                 Dificultad = 0,
-                Descripcion = "bla bla bla",
+                Descripcion = "Deberás de capturar la bandera de los enemigos en un límite de tiempo de 2 minutos.",
                 side=Mission.State.Unlock
             },
             new Mission()
             {
                 Id = 0,
-                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Imagen = "Assets\\M2.png",
                 Dificultad = 0,
-                Descripcion = "bla bla bla",
+                Descripcion = "Deberás de eliminar a todos los enemigos en un limite de 10 turnos. Contarás con mas vida de la habitual.",
                 side=Mission.State.Unlock
             },
             new Mission()
             {
                 Id = 1,
-                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Imagen = "Assets\\M3.png",
                 Dificultad = 1,
-                Descripcion = "bla bla bla",
+                Descripcion = "Deberas de eliminar a los tanques enemigos desde la distancia usando los disparos de mortero.",
                 side=Mission.State.Unlock
             },
             new Mission()
             {
                 Id = 2,
-                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Imagen = "Assets\\M4.png",
                 Dificultad = 1,
-                Descripcion = "bla bla bla",
+                Descripcion = "Deberás de incapacitar a 3 tanques enemigos a la vez usando un ataque especial en área.",
                 side=Mission.State.Unlock
             },
             new Mission()
             {
                 Id = 3,
-                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Imagen = "Assets\\M5.png",
                 Dificultad = 2,
-                Descripcion = "bla bla bla",
-                side=Mission.State.Lock
+                Descripcion = "Debes derrotar al general de las fuerzas enemigas en un combate cara a cara. No hay restricciones usa tu mejor armamento",
+                side=Mission.State.Unlock
             },
             new Mission()
             {
                 Id = 4,
-                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Imagen = "Assets\\Lock.png",
                 Dificultad = 1,
-                Descripcion = "bla bla bla",
+                Descripcion = "Misión no desbloqueada",
                 side=Mission.State.Lock
             },
             new Mission()
             {
                 Id = 5,
-                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Imagen = "Assets\\Lock.png",
                 Dificultad = 0,
-                Descripcion = "bla bla bla",
+                Descripcion = "Misión no desbloqueada",
                 side=Mission.State.Lock
             },
             new Mission()
             {
                 Id = 6,
-                Imagen = "Assets\\LockScreenLogo.scale-200.png",
+                Imagen = "Assets\\Lock.png",
                 Dificultad = 1,
-                Descripcion = "bla bla bla",
+                Descripcion = "Misión no desbloqueada",
                 side=Mission.State.Lock
             }
         };

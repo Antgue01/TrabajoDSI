@@ -12,7 +12,6 @@
 
         <DataTemplate x:Key="Niveles" x:DataType="local:Mission">
             <StackPanel x:Name="mision" Orientation="Horizontal">
-                
                 <Image x:Name="ImagenDueño" Width="150" Height="AUTO" VerticalAlignment="Center" Source="{x:Bind Imagen}"/>
                 
             </StackPanel>
@@ -43,7 +42,7 @@
         <TextBlock x:Name="Menu" HorizontalAlignment="Stretch" VerticalAlignment="Center" x:Uid="CampaignT" Text="" FontSize="45
                    " Grid.Column="1" TextAlignment="Center"/>
 
-        <Button Grid.Column="0" Margin="11,0,0,0" Height="64" Width="67" Click="Button_Back" Background="#CC0568E0">
+        <Button Grid.Column="0" Margin="11,0,0,0" Height="45" Width="45" Click="Button_Back" Background="#CC0568E0">
             <Image Source="Assets/atras.png"></Image>
         </Button>
         <!--#endregion-->
@@ -55,7 +54,7 @@
         <TextBlock x:Name="Descripción" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="18" Margin="32,0,0,12" TextWrapping="Wrap" 
                     Height="143" Width="352">
             <Run x:Uid="Description" Text=""/><LineBreak/>
-            <Run Text="Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar inceptos vestibulum, cursus ac suspendisse ornare fames phasellus praesent litora molestie potenti."/>
+            <Run x:Name="Texto" Text="Aquí aparecerá la descripción de la misión, pulsa una para poder jugar."/>
         </TextBlock>
         <!--#endregion-->
 

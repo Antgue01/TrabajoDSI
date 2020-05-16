@@ -1,0 +1,180 @@
+﻿<Page
+    x:Class="CityAssault.Online"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CityAssault"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <!--#region Definitions -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition />
+            <ColumnDefinition Width="40"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <!--#endregion-->
+
+        <!--#region Boton atras -->
+        <Button x:ConnectionId='2' x:Name="BackButton" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 10, 0, 0"
+                 Height="45" Width="45"                BorderBrush="Black" BorderThickness="2" Background="Gray"
+                    Grid.Row="0" Grid.ColumnSpan="2">
+
+            <Image Source="Assets/atras.png" VerticalAlignment="Center" HorizontalAlignment="Center"
+                 Height="25" Width="25" />
+        </Button>
+        <!--#endregion-->
+
+        <!--#region Multijugador -->
+        <TextBlock Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" x:Uid="OnlineT" Text="" VerticalAlignment="Center"
+                   HorizontalAlignment="Center" FontSize="40"/>
+        <!--#endregion-->
+
+        <!--#region Panel tanques -->
+        <Grid Grid.Row="1" Grid.Column ="1" Background="#FF54C4D4" BorderBrush="DarkCyan" BorderThickness="3">
+            <!--#region Definitions -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height ="30"/>
+                <RowDefinition Height ="1.2*"/>
+                <RowDefinition Height ="12"/>
+                <RowDefinition Height ="1.2*"/>
+                <RowDefinition Height ="20"/>
+                <RowDefinition Height ="*"/>
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="35"/>
+            </Grid.ColumnDefinitions>
+            <!--#endregion-->
+
+            <!--<Canvas x:Name="TankCanvas" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3"
+                    PointerPressed="TankCanvas_PointerPressed">
+            </Canvas>
+            <ContentControl x:Name="crtl0" Grid.Row="1" Grid.Column="1">
+                <Image Stretch="Fill" Source="{x:Bind ListaTanques[0].Imagen}"></Image>
+            </ContentControl>
+            <Image Source="Assets/cuadrado.png" x:Name="sqr0" Grid.Row="1" Grid.Column="1" Stretch="Fill" Visibility="Visible"></Image>
+
+            <ContentControl x:Name="crtl1" Grid.Row="1" Grid.Column="3">
+                <Image Stretch="Fill" Source="{x:Bind ListaTanques[1].Imagen}"></Image>
+            </ContentControl>
+            <Image Source="Assets/cuadrado.png" x:Name="sqr1" Grid.Row="1" Grid.Column="3" Stretch="Fill" Visibility="Collapsed"></Image>
+
+            <ContentControl x:Name="crtl2" Grid.Row="3" Grid.Column="1">
+                <Image Stretch="Fill" Source="{x:Bind ListaTanques[2].Imagen}"></Image>
+            </ContentControl>
+            <Image Source="Assets/cuadrado.png" x:Name="sqr2" Grid.Row="3" Grid.Column="1" Stretch="Fill" Visibility="Collapsed"></Image>
+
+            <ContentControl x:Name="crtl3" Grid.Row="3" Grid.Column="3">
+                <Image Stretch="Fill" Source="{x:Bind ListaTanques[3].Imagen}"></Image>
+            </ContentControl>
+            <Image Source="Assets/cuadrado.png" x:Name="sqr3" Grid.Row="3" Grid.Column="3" Stretch="Fill" Visibility="Collapsed"></Image>
+-->
+            <!--#region Boton Taller -->
+            <Button x:ConnectionId='5' x:Name="GarageButton" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch"                            FontSize="20"
+                BorderBrush="Black" BorderThickness="2" Background="DarkCyan" Margin="12, 0, 12, 0">
+
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/llave.png" Height="30" Margin="0, 0, 15, 0"></Image>
+                    <TextBlock x:Uid="GarageT" Text="TALLER" FontSize="20"
+                           VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+            </Button>
+            <!--#endregion-->
+
+        </Grid>
+        <!--#endregion-->
+
+        <Grid Grid.Row="1" Grid.Column ="3">
+            <!--#region Definitions -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height ="2.2*"/>
+                <RowDefinition Height ="20"/>
+                <RowDefinition Height ="*"/>
+                <RowDefinition Height ="20"/>
+                <RowDefinition Height ="*"/>
+                <RowDefinition Height="10" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="45"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="45"/>
+            </Grid.ColumnDefinitions>
+            <!--#endregion-->
+
+            <!--#region Usuario -->
+            <Grid Grid.Row="0" Grid.ColumnSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FF75DBA3"
+                  BorderBrush="DarkGreen" BorderThickness="2.5">
+                <!--#region Definitions -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height ="1.5*"/>
+                    <RowDefinition Height ="10"/>
+                    <RowDefinition Height ="*"/>
+                    <RowDefinition Height ="10"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <!--#endregion-->
+
+                <Border Grid.Row="2" Grid.Column ="1" Background="#FF409374"/>
+
+                <StackPanel Grid.Row="0" Grid.ColumnSpan="3" Orientation="Horizontal">
+                    <Image Source="Assets/user.png" Height="40" Margin="30, 0, 20, 0"></Image>
+                    <TextBlock Text="username_17" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"
+                               Margin="20, 0, 0, 0"/>
+                </StackPanel>
+
+                <TextBlock Grid.Row="2" Grid.Column="1" x:Uid="Victory" Text="" FontSize="18" HorizontalAlignment="Center"
+                           VerticalAlignment="Center"></TextBlock>
+
+            </Grid>
+            <!--#endregion-->
+
+            <!--#region Boton Local -->
+            <Button x:ConnectionId='3' x:Name="LocalButton" Grid.Row="2" Grid.Column="1" VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch"                           FontSize="20"
+                BorderBrush="Black" BorderThickness="2" Background="DarkCyan">
+
+                <StackPanel Orientation="Horizontal">
+                    <Image Grid.Column="1" Source="Assets/signal.png" Height="30" Margin="0,0,15,0"></Image>
+                    <TextBlock Grid.Column="2" x:Uid="Local" Text="" FontSize="20"
+                           VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <!--#endregion-->
+
+            <!--#region Boton Online -->
+            <Button x:ConnectionId='4' x:Name="OnlineButton" Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch"                            FontSize="20"
+                BorderBrush="Black" BorderThickness="2" Background="DarkCyan">
+
+                <StackPanel Orientation="Horizontal">
+                    <Image Grid.Column="1" Source="Assets/internet.png" Height="30" Margin="0,0,15,0"></Image>
+                    <TextBlock Grid.Column="2" x:Uid="Online2" Text="" FontSize="20"
+                               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <!--#endregion-->
+        </Grid>
+
+    </Grid>
+</Page>
+

@@ -171,6 +171,12 @@
     <Content Include="Assets\Japan.png" />
     <Content Include="Assets\JoysticVirtual.png" />
     <Content Include="Assets\llave.png" />
+    <Content Include="Assets\Lock.png" />
+    <Content Include="Assets\M1.png" />
+    <Content Include="Assets\M2.png" />
+    <Content Include="Assets\M3.png" />
+    <Content Include="Assets\M4.png" />
+    <Content Include="Assets\M5.png" />
     <Content Include="Assets\Movement.png" />
     <Content Include="Assets\Mute.png" />
     <Content Include="Assets\note.png" />
