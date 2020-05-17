@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-AAPQ2T5</Machine>
-    <WindowsUser>nduarte</WindowsUser>
+    <Machine>DESKTOP-3GQM424</Machine>
+    <WindowsUser>danie</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>0fc206b4-df4e-4daa-be2b-ec0e9cdc9372</PackageIdentityName>
     <PackageIdentityPublisher>CN=madar</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\TrabajoDSI\CityAssault\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>3240CBBDFBDE77EACD6F474D5CDECF42B8340D735C2B7BCAA13ED411CA9359C1</RegisteredManifestChecksum>
+    <LayoutDir>C:\TrabajoDSI\CityAssault\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>B00D7B9B80E31940A618E8F09915468ACC3F7F5B0909A8CC5166E39E94AEA0B4</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>0fc206b4-df4e-4daa-be2b-ec0e9cdc9372_1.0.0.0_x86__1sjm9f762bm00</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>0fc206b4-df4e-4daa-be2b-ec0e9cdc9372_1sjm9f762bm00!App</RegisteredUserModeAppID>
     <RegisteredPackageID>0fc206b4-df4e-4daa-be2b-ec0e9cdc9372</RegisteredPackageID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\TrabajoDSI\CityAssault\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-17T11:33:24.343</Modified>
+      <Modified>2020-05-17T16:52:39.716</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\CityAssault.exe">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\bin\x86\Debug\CityAssault.exe">
       <PackagePath>entrypoint\CityAssault.exe</PackagePath>
-      <Modified>2020-05-17T11:33:23.031</Modified>
+      <Modified>2020-05-17T16:52:38.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -46,299 +46,299 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T17:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Apuntado.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Apuntado.png">
       <PackagePath>Assets\Apuntado.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.563</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Arrow.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Arrow.png">
       <PackagePath>Assets\Arrow.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.565</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\atras.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\atras.png">
       <PackagePath>Assets\atras.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.661</Modified>
+      <Modified>2020-05-14T13:39:35.552</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Attack.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Attack.png">
       <PackagePath>Assets\Attack.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.566</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Audio.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Audio.png">
       <PackagePath>Assets\Audio.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.567</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Auto.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Auto.png">
       <PackagePath>Assets\Auto.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.568</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\birdbg.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\birdbg.png">
       <PackagePath>Assets\birdbg.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.672</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\bracket.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\bracket.png">
       <PackagePath>Assets\bracket.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.674</Modified>
+      <Modified>2020-05-14T13:39:35.595</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\cuadrado.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\cuadrado.png">
       <PackagePath>Assets\cuadrado.png</PackagePath>
-      <Modified>2020-05-13T19:43:02.696</Modified>
+      <Modified>2020-05-17T16:29:48.165</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Defense.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Defense.png">
       <PackagePath>Assets\Defense.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.605</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Effects.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Effects.png">
       <PackagePath>Assets\Effects.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.606</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\England.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\England.png">
       <PackagePath>Assets\England.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.608</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\exit.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\exit.png">
       <PackagePath>Assets\exit.png</PackagePath>
-      <Modified>2020-05-14T14:31:23.324</Modified>
+      <Modified>2020-05-14T13:58:30.565</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Flag.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Flag.png">
       <PackagePath>Assets\Flag.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.608</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Giroscopio.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Giroscopio.png">
       <PackagePath>Assets\Giroscopio.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.610</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\HealthIcon.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\HealthIcon.png">
       <PackagePath>Assets\HealthIcon.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.611</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\internet.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\internet.png">
       <PackagePath>Assets\internet.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.677</Modified>
+      <Modified>2020-05-14T13:39:35.618</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Japan.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Japan.png">
       <PackagePath>Assets\Japan.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.613</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\JoysticVirtual.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\JoysticVirtual.png">
       <PackagePath>Assets\JoysticVirtual.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.614</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\llave.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\llave.png">
       <PackagePath>Assets\llave.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.678</Modified>
+      <Modified>2020-05-14T13:39:35.708</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Lock.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Lock.png">
       <PackagePath>Assets\Lock.png</PackagePath>
-      <Modified>2020-05-17T08:40:09.457</Modified>
+      <Modified>2020-05-17T16:29:48.156</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\M1.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\M1.png">
       <PackagePath>Assets\M1.png</PackagePath>
-      <Modified>2020-05-17T08:40:09.473</Modified>
+      <Modified>2020-05-17T16:29:48.156</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\M2.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\M2.png">
       <PackagePath>Assets\M2.png</PackagePath>
-      <Modified>2020-05-17T08:40:09.491</Modified>
+      <Modified>2020-05-17T16:29:48.157</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\M3.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\M3.png">
       <PackagePath>Assets\M3.png</PackagePath>
-      <Modified>2020-05-17T08:40:09.503</Modified>
+      <Modified>2020-05-17T16:29:48.157</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\M4.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\M4.png">
       <PackagePath>Assets\M4.png</PackagePath>
-      <Modified>2020-05-17T08:40:09.515</Modified>
+      <Modified>2020-05-17T16:29:48.158</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\M5.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\M5.png">
       <PackagePath>Assets\M5.png</PackagePath>
-      <Modified>2020-05-17T08:40:09.527</Modified>
+      <Modified>2020-05-17T16:29:48.158</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Movement.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Movement.png">
       <PackagePath>Assets\Movement.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.615</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Mute.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Mute.png">
       <PackagePath>Assets\Mute.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.616</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\note.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\note.png">
       <PackagePath>Assets\note.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.679</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\PlayButton.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\PlayButton.png">
       <PackagePath>Assets\PlayButton.png</PackagePath>
-      <Modified>2020-05-14T14:31:23.323</Modified>
+      <Modified>2020-05-14T13:39:35.451</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\playerone.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\playerone.png">
       <PackagePath>Assets\playerone.png</PackagePath>
-      <Modified>2020-05-14T14:31:23.327</Modified>
+      <Modified>2020-05-14T13:53:33.550</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\save.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\save.png">
       <PackagePath>Assets\save.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.680</Modified>
+      <Modified>2020-05-14T13:39:35.752</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\settingsicon.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\settingsicon.png">
       <PackagePath>Assets\settingsicon.png</PackagePath>
-      <Modified>2020-05-14T14:31:23.333</Modified>
+      <Modified>2020-05-14T13:45:09.673</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\ShootButton.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\ShootButton.png">
       <PackagePath>Assets\ShootButton.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.637</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\signal.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\signal.png">
       <PackagePath>Assets\signal.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.681</Modified>
+      <Modified>2020-05-14T13:39:35.887</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\sound0.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\sound0.png">
       <PackagePath>Assets\sound0.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.682</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\sound1.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\sound1.png">
       <PackagePath>Assets\sound1.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.683</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\sound2.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\sound2.png">
       <PackagePath>Assets\sound2.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.684</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\sound3.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\sound3.png">
       <PackagePath>Assets\sound3.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.685</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Spain.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Spain.png">
       <PackagePath>Assets\Spain.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.639</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\SpecialButton.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\SpecialButton.png">
       <PackagePath>Assets\SpecialButton.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.640</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\speechIcon.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\speechIcon.png">
       <PackagePath>Assets\speechIcon.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.686</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Speed.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Speed.png">
       <PackagePath>Assets\Speed.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.641</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Tank0.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Tank0.png">
       <PackagePath>Assets\Tank0.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.649</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Tank1.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Tank1.png">
       <PackagePath>Assets\Tank1.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.652</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Tank2.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Tank2.png">
       <PackagePath>Assets\Tank2.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.655</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Tank3.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Tank3.png">
       <PackagePath>Assets\Tank3.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.658</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\twoplayer.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\twoplayer.png">
       <PackagePath>Assets\twoplayer.png</PackagePath>
-      <Modified>2020-05-14T14:31:23.334</Modified>
+      <Modified>2020-05-14T13:52:51.931</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\unnamed.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\unnamed.png">
       <PackagePath>Assets\unnamed.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.688</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\user.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\user.png">
       <PackagePath>Assets\user.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.689</Modified>
+      <Modified>2020-05-14T13:39:35.917</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\VS.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\VS.png">
       <PackagePath>Assets\VS.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.659</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-05-13T19:11:10.615</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-13T19:11:10.642</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-13T19:11:10.642</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-13T19:11:10.644</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-13T19:11:10.645</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-13T19:11:10.645</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-13T19:11:10.660</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Assets\BattleZone.jpg">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Assets\BattleZone.jpg">
       <PackagePath>Assets\BattleZone.jpg</PackagePath>
-      <Modified>2020-05-13T19:11:10.571</Modified>
+      <Modified>2020-05-14T10:52:13.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-05-13T19:11:10.707</Modified>
+      <Modified>2020-05-14T13:38:56.716</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\CityAssault.xr.xml">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\bin\x86\Debug\CityAssault.xr.xml">
       <PackagePath>CityAssault.xr.xml</PackagePath>
-      <Modified>2020-05-17T11:12:07.968</Modified>
+      <Modified>2020-05-17T16:50:45.093</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-17T11:29:06.517</Modified>
+      <Modified>2020-05-17T16:52:38.543</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\BattleView.xbf">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\bin\x86\Debug\BattleView.xbf">
       <PackagePath>BattleView.xbf</PackagePath>
-      <Modified>2020-05-17T11:29:06.518</Modified>
+      <Modified>2020-05-17T16:52:38.543</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\BirdView.xbf">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\bin\x86\Debug\BirdView.xbf">
       <PackagePath>BirdView.xbf</PackagePath>
-      <Modified>2020-05-17T11:29:06.425</Modified>
+      <Modified>2020-05-17T16:52:38.524</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\Campaign.xbf">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\bin\x86\Debug\Campaign.xbf">
       <PackagePath>Campaign.xbf</PackagePath>
-      <Modified>2020-05-17T11:29:06.520</Modified>
+      <Modified>2020-05-17T16:52:38.543</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\Garage.xbf">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\bin\x86\Debug\Garage.xbf">
       <PackagePath>Garage.xbf</PackagePath>
-      <Modified>2020-05-17T11:29:06.462</Modified>
+      <Modified>2020-05-17T16:52:38.532</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\MainMenu.xbf">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\bin\x86\Debug\MainMenu.xbf">
       <PackagePath>MainMenu.xbf</PackagePath>
-      <Modified>2020-05-17T11:29:06.522</Modified>
+      <Modified>2020-05-17T16:52:38.543</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\Online.xbf">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\bin\x86\Debug\Online.xbf">
       <PackagePath>Online.xbf</PackagePath>
-      <Modified>2020-05-17T11:29:06.493</Modified>
+      <Modified>2020-05-17T16:52:38.538</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\Settings.xbf">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\bin\x86\Debug\Settings.xbf">
       <PackagePath>Settings.xbf</PackagePath>
-      <Modified>2020-05-17T11:29:06.516</Modified>
+      <Modified>2020-05-17T16:52:38.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-18T16:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-05-17T09:59:42.269</Modified>
+      <Modified>2020-05-17T16:50:48.490</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nduarte\Documents\Tati\TrabajoDSI\CityAssault\bin\x86\Debug\Core\CityAssault.exe">
+    <AppxPackagedFile Include="C:\TrabajoDSI\CityAssault\bin\x86\Debug\Core\CityAssault.exe">
       <PackagePath>CityAssault.exe</PackagePath>
-      <Modified>2020-05-17T11:33:24.327</Modified>
+      <Modified>2020-05-17T16:52:39.712</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
