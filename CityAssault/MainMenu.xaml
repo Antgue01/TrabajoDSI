@@ -48,6 +48,7 @@
         <Grid Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2">
             <Button x:Name="CampaignButton" VerticalAlignment="Top" HorizontalAlignment="Right" x:Uid="Campaign" Content="" Margin="10, 10, 10, 10"
                  Height="80" Width="360" Click="CampaignButton_Click" BorderBrush="Black" BorderThickness="2" Background="#FF43B5C0" FontSize="30" FontWeight="Bold"/>
+           
             <Image Source="/Assets/playerone.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30, 20, 15, 15"
                  Height="50" Width="50" />
         </Grid>

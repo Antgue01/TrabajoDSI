@@ -120,7 +120,6 @@
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Opacity" />
       <RootProperty Name="FontWeight" />
-      <RootProperty Name="Visibility" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas" />

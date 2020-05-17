@@ -53,7 +53,7 @@ namespace CityAssault
 
         private void goBack(object sender, RoutedEventArgs e)
         {
-            
+
             this.Frame.Navigate(typeof(MainMenu));
         }
 
@@ -80,7 +80,7 @@ namespace CityAssault
             Tank3.IsChecked = false;
 
             selectedTank = ListaTanques[0];
-            GarageButton.Visibility = Visibility.Visible;
+            GarageButton.IsEnabled = true;
         }
 
         private void Tank1_Checked(object sender, RoutedEventArgs e)
@@ -90,7 +90,8 @@ namespace CityAssault
             Tank3.IsChecked = false;
 
             selectedTank = ListaTanques[1];
-            GarageButton.Visibility = Visibility.Visible;
+            GarageButton.IsEnabled = true;
+
         }
 
         private void Tank2_Checked(object sender, RoutedEventArgs e)
@@ -100,7 +101,8 @@ namespace CityAssault
             Tank3.IsChecked = false;
 
             selectedTank = ListaTanques[2];
-            GarageButton.Visibility = Visibility.Visible;
+            GarageButton.IsEnabled = true;
+
         }
 
         private void Tank3_Checked(object sender, RoutedEventArgs e)
@@ -110,12 +112,14 @@ namespace CityAssault
             Tank0.IsChecked = false;
 
             selectedTank = ListaTanques[3];
-            GarageButton.Visibility = Visibility.Visible;
+            GarageButton.IsEnabled = true;
+
         }
 
         private void Tank_Unchecked(object sender, RoutedEventArgs e)
         {
-            GarageButton.Visibility = Visibility.Collapsed;
+            GarageButton.IsEnabled = false;
+
         }
     }
 }
