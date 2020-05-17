@@ -26,8 +26,7 @@ namespace CityAssault
     public sealed partial class Online : Page
     {
         public ObservableCollection<VMTank> ListaTanques { get; } = new ObservableCollection<VMTank>();
-        private List<ContentControl> contentControls = new List<ContentControl>(8);
-        private VMTank selectedTank = model.GetTankById(0) as VMTank;
+        private VMTank selectedTank;
 
         public Online()
         {
@@ -42,9 +41,9 @@ namespace CityAssault
                 {
                     VMTank VMitem = new VMTank(tank);
                     ListaTanques.Add(VMitem);
-
-                    //if (tank.Id < 4) TankCanvas.Children.Add(ListaTanques[tank.Id].CCImg);
                 }
+
+                selectedTank = ListaTanques[0];
             }
         }
 
@@ -60,7 +59,7 @@ namespace CityAssault
 
         private void GarageButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Garage));
+            this.Frame.Navigate(typeof(Garage), selectedTank.Id);
         }
 
         private void LocalButton_Click(object sender, RoutedEventArgs e)
@@ -74,21 +73,49 @@ namespace CityAssault
 
         }
 
-        private void TankCanvas_PointerPressed(object sender, PointerRoutedEventArgs e)
+        private void Tank0_Checked(object sender, RoutedEventArgs e)
         {
-            Image img = e.OriginalSource as Image;
-            ContentControl ctrl = img.Parent as ContentControl;
+            Tank1.IsChecked = false;
+            Tank2.IsChecked = false;
+            Tank3.IsChecked = false;
 
-            if (img != null)
-            {
-                //Activar el cuadrado
-
-            }
+            selectedTank = ListaTanques[0];
+            GarageButton.Visibility = Visibility.Visible;
         }
-        private void ItemCanvas_PointerPressed(object sender, PointerRoutedEventArgs e)
+
+        private void Tank1_Checked(object sender, RoutedEventArgs e)
         {
+            Tank0.IsChecked = false;
+            Tank2.IsChecked = false;
+            Tank3.IsChecked = false;
 
+            selectedTank = ListaTanques[1];
+            GarageButton.Visibility = Visibility.Visible;
+        }
 
+        private void Tank2_Checked(object sender, RoutedEventArgs e)
+        {
+            Tank1.IsChecked = false;
+            Tank0.IsChecked = false;
+            Tank3.IsChecked = false;
+
+            selectedTank = ListaTanques[2];
+            GarageButton.Visibility = Visibility.Visible;
+        }
+
+        private void Tank3_Checked(object sender, RoutedEventArgs e)
+        {
+            Tank1.IsChecked = false;
+            Tank2.IsChecked = false;
+            Tank0.IsChecked = false;
+
+            selectedTank = ListaTanques[3];
+            GarageButton.Visibility = Visibility.Visible;
+        }
+
+        private void Tank_Unchecked(object sender, RoutedEventArgs e)
+        {
+            GarageButton.Visibility = Visibility.Collapsed;
         }
     }
 }

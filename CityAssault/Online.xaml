@@ -60,32 +60,32 @@
             </Grid.ColumnDefinitions>
             <!--#endregion-->
 
-            <!--<Canvas x:Name="TankCanvas" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3"
-                    PointerPressed="TankCanvas_PointerPressed">
-            </Canvas>
-            <ContentControl x:Name="crtl0" Grid.Row="1" Grid.Column="1">
-                <Image Stretch="Fill" Source="{x:Bind ListaTanques[0].Imagen}"></Image>
-            </ContentControl>
-            <Image Source="Assets/cuadrado.png" x:Name="sqr0" Grid.Row="1" Grid.Column="1" Stretch="Fill" Visibility="Visible"></Image>
+            <!--#region Equipo-->
+            <ToggleButton x:Name="Tank0" Grid.Column="1" Grid.Row="1" Background="#91E4FB" VerticalAlignment="Stretch"
+                     HorizontalAlignment="Stretch" Checked="Tank0_Checked" IsChecked="False" Unchecked="Tank_Unchecked">
+                <Image Source="{x:Bind ListaTanques[0].Img.Source}" />
+            </ToggleButton>
 
-            <ContentControl x:Name="crtl1" Grid.Row="1" Grid.Column="3">
-                <Image Stretch="Fill" Source="{x:Bind ListaTanques[1].Imagen}"></Image>
-            </ContentControl>
-            <Image Source="Assets/cuadrado.png" x:Name="sqr1" Grid.Row="1" Grid.Column="3" Stretch="Fill" Visibility="Collapsed"></Image>
+            <ToggleButton x:Name="Tank1" Grid.Column="3" Grid.Row="1" Background="#91E4FB" VerticalAlignment="Stretch"
+                     HorizontalAlignment="Stretch" Checked="Tank1_Checked" IsChecked="False" Unchecked="Tank_Unchecked">
+                <Image Source="{x:Bind ListaTanques[1].Img.Source}" />
+            </ToggleButton>
 
-            <ContentControl x:Name="crtl2" Grid.Row="3" Grid.Column="1">
-                <Image Stretch="Fill" Source="{x:Bind ListaTanques[2].Imagen}"></Image>
-            </ContentControl>
-            <Image Source="Assets/cuadrado.png" x:Name="sqr2" Grid.Row="3" Grid.Column="1" Stretch="Fill" Visibility="Collapsed"></Image>
+            <ToggleButton x:Name="Tank2" Grid.Column="1" Grid.Row="3" Background="#91E4FB" VerticalAlignment="Stretch"
+                     HorizontalAlignment="Stretch" Checked="Tank2_Checked" IsChecked="False" Unchecked="Tank_Unchecked">
+                <Image Source="{x:Bind ListaTanques[2].Img.Source}" />
+            </ToggleButton>
 
-            <ContentControl x:Name="crtl3" Grid.Row="3" Grid.Column="3">
-                <Image Stretch="Fill" Source="{x:Bind ListaTanques[3].Imagen}"></Image>
-            </ContentControl>
-            <Image Source="Assets/cuadrado.png" x:Name="sqr3" Grid.Row="3" Grid.Column="3" Stretch="Fill" Visibility="Collapsed"></Image>
--->
+            <ToggleButton x:Name="Tank3" Grid.Column="3" Grid.Row="3" Background="#91E4FB" VerticalAlignment="Stretch"
+                     HorizontalAlignment="Stretch" Checked="Tank3_Checked" IsChecked="False" Unchecked="Tank_Unchecked">
+                <Image Source="{x:Bind ListaTanques[3].Img.Source}" />
+            </ToggleButton>
+
+            <!--#endregion-->
+
             <!--#region Boton Taller -->
             <Button x:Name="GarageButton" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Stretch"
-                HorizontalAlignment="Stretch" Click="GarageButton_Click" FontSize="20"
+                HorizontalAlignment="Stretch" Click="GarageButton_Click" FontSize="20" Visibility="Collapsed"
                 BorderBrush="Black" BorderThickness="2" Background="DarkCyan" Margin="12, 0, 12, 0">
 
                 <StackPanel Orientation="Horizontal">

@@ -63,14 +63,7 @@ namespace CityAssault
                     VMPieza VMitem = new VMPieza(pieza);
                     ListaPiezas.Add(VMitem);
                 }
-
-            selectedTank = ListaTanques[0];
             selectedPieza = ListaPiezas[0];
-            vit = selectedTank.HP;
-            atk = selectedTank.Atk;
-            def = selectedTank.Def;
-            vel = selectedTank.Spe;
-            mov = selectedTank.Mov;
 
             for (int i = 0; i < 4; ++i)
             {
@@ -82,6 +75,20 @@ namespace CityAssault
         {
             BackButton.IsEnabled = this.Frame.CanGoBack;
 
+            if (e.Parameter != null && e.Parameter is int) {
+                selectedTank = ListaTanques[(int)e.Parameter];
+            }
+            else
+            {
+                selectedTank = ListaTanques[0];
+            }
+            base.OnNavigatedTo(e);
+
+            vit = selectedTank.HP;
+            atk = selectedTank.Atk;
+            def = selectedTank.Def;
+            vel = selectedTank.Spe;
+            mov = selectedTank.Mov;
         }
 
         private void goBack(object sender, RoutedEventArgs e)
