@@ -84,5 +84,10 @@ namespace CityAssault
         {
             BarraSalud.Value -= damage;
         }
+
+        private void Volver(object sender, PointerRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(BirdView));
+        }
     }
 }

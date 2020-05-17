@@ -23,7 +23,7 @@
                      Margin="54,31,0,0" VerticalAlignment="Top" Width="253" 
                      Foreground="#FF24C514" Background="#3311AEC7" BorderBrush="#FF165B0C" 
                      BorderThickness="2,2,2,2" Value="75" />
-        <Image HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="34" Source="Assets/HealthIcon.png" Margin="17,21,0,0"/>
+        <Image HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="34" Source="Assets/HealthIcon.png"  Margin="17,21,0,0" PointerPressed="Volver"/>
         <Rectangle Width="102" Height="70" Stroke="Black"
                    HorizontalAlignment="Center" VerticalAlignment="Top" StrokeThickness="3">
             <Rectangle.Fill>
