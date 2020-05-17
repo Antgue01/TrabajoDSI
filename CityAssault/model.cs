@@ -27,7 +27,7 @@ namespace CityAssault
 
     public class Pieza
     {
-        public enum Type { Canon, Blindaje, Ruedas };
+        public enum Type { Null, Canon, Blindaje, Ruedas };
 
         public int Id { get; set; }
         public string Imagen { get; set; }
@@ -69,7 +69,7 @@ namespace CityAssault
                 Spe = 32,
                 Mov = 75,
                 side=Tank.Side.Ally,
-                Habilidad = "Rayo Gélido"
+                Habilidad = "Ice Beam"
             },
             new Tank()
             {
@@ -83,7 +83,7 @@ namespace CityAssault
                 Spe = 98,
                 Mov = 44,
                 side=Tank.Side.Ally,
-                Habilidad = "Bomba"
+                Habilidad = "Bomb"
             },
             new Tank()
             {
@@ -97,7 +97,7 @@ namespace CityAssault
                 Spe = 60,
                 Mov = 24,
                 side=Tank.Side.Ally,
-                Habilidad = "Terremoto"
+                Habilidad = "Earthquake"
             },
             new Tank()
             {
@@ -111,7 +111,7 @@ namespace CityAssault
                 Spe = 22,
                 Mov = 75,
                 side=Tank.Side.Ally,
-                Habilidad = "Visión Nocturna"
+                Habilidad = "Night Vision"
             },
             new Tank()
             {
@@ -125,7 +125,7 @@ namespace CityAssault
                 Spe = 34,
                 Mov = 90,
                 side=Tank.Side.Enemy,
-                Habilidad = "Rayo Gélido"
+                Habilidad = "Ice Beam"
             },
             new Tank()
             {
@@ -139,7 +139,7 @@ namespace CityAssault
                 Spe = 43,
                 Mov = 55,
                 side=Tank.Side.Enemy,
-                Habilidad = "Bomba"
+                Habilidad = "Bomb"
             },
             new Tank()
             {
@@ -153,7 +153,7 @@ namespace CityAssault
                 Spe = 74,
                 Mov = 23,
                 side=Tank.Side.Enemy,
-                Habilidad = "Terremoto"
+                Habilidad = "Earthquake"
             },
             new Tank()
             {
@@ -167,7 +167,7 @@ namespace CityAssault
                 Spe = 37,
                 Mov = 94,
                 side=Tank.Side.Enemy,
-                Habilidad = "Visión Nocturna"
+                Habilidad = "Night Vision"
             }
         };
 
@@ -182,7 +182,67 @@ namespace CityAssault
                 Def = 0,
                 Spe = 0,
                 Mov = 0,
+                Tipo = Pieza.Type.Null
+            },
+
+            new Pieza()
+            {
+                Id = 1,
+                Imagen = "Assets\\Tank1.png",
+                HP = 0,
+                Atk = 10,
+                Def = 0,
+                Spe = 0,
+                Mov = 0,
                 Tipo = Pieza.Type.Canon
+            },
+
+            new Pieza()
+            {
+                Id = 2,
+                Imagen = "Assets\\Tank1.png",
+                HP = 0,
+                Atk = 14,
+                Def = 0,
+                Spe = 0,
+                Mov = 0,
+                Tipo = Pieza.Type.Canon
+            },
+
+            new Pieza()
+            {
+                Id = 3,
+                Imagen = "Assets\\Tank2.png",
+                HP = 0,
+                Atk = 0,
+                Def = 10,
+                Spe = 0,
+                Mov = 0,
+                Tipo = Pieza.Type.Blindaje
+            },
+
+            new Pieza()
+            {
+                Id = 4,
+                Imagen = "Assets\\Tank2.png",
+                HP = 0,
+                Atk = 0,
+                Def = 16,
+                Spe = 0,
+                Mov = 0,
+                Tipo = Pieza.Type.Blindaje
+            },
+
+            new Pieza()
+            {
+                Id = 5,
+                Imagen = "Assets\\Tank2.png",
+                HP = 0,
+                Atk = 0,
+                Def = 0,
+                Spe = 5,
+                Mov = 10,
+                Tipo = Pieza.Type.Ruedas
             }
         };
 

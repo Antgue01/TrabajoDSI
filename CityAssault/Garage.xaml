@@ -26,7 +26,7 @@
 
         <!--#region Boton atras -->
         <Button x:Name="BackButton" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 10, 0, 0"
-                 Height="45" Width="45" Click="goBack" BorderBrush="Black" BorderThickness="2" Background="Gray"
+                 Height="45" Width="45" Click="goBack" BorderBrush="Black" BorderThickness="2" Background="#CC0568E0"
                     Grid.Row="0" Grid.ColumnSpan="2">
 
             <Image Source="Assets/atras.png" VerticalAlignment="Center" HorizontalAlignment="Center"
@@ -76,7 +76,7 @@
 
                 <Border Grid.Row="0" Grid.Column="2" Background="#FF75B6DB" BorderBrush="DarkCyan" BorderThickness="2"></Border>
 
-                <TextBlock x:Name="Habilidad" x:Uid="Super" Text="" Grid.Column="2" TextWrapping="Wrap" HorizontalAlignment="Center"
+                <TextBlock x:Name="Habilidad" Text="" Grid.Column="2" TextWrapping="Wrap" HorizontalAlignment="Center"
                            VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
                 <Image x:Name="TanqueImagen" Source="{x:Bind selectedTank.Imagen}" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="2"></Image>
             </Grid>
@@ -127,7 +127,7 @@
                 </ListView.ItemsPanel>
                 <ListView.ItemTemplate>
                     <DataTemplate x:Name="ListViewTemplate" x:DataType="local:VMTank">
-                        <Grid Margin="5, 0, 0, 0">
+                        <Grid Margin="5, 5, 0, 5">
                             <Image Source="{x:Bind Imagen}" VerticalAlignment="Stretch" Margin="8, 0, 8, 0"/>
                             <Image Source="Assets/cuadrado.png" Stretch="Fill"></Image>
                         </Grid>
@@ -203,17 +203,33 @@
                 <Border Grid.Column="2" Background="#FF75DBA3" BorderThickness="2" BorderBrush="DarkGreen"></Border>
                 <!--#endregion-->
 
-                <!--<Button x:Name="CanonButton" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                        x:Uid="Cannon" Content="" FontSize="10" Click="CanonButton_Click"></Button>
-                <Button x:Name="BlindajeButton" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                        x:Uid="Armor" Content="" FontSize="10" Click="BlindajeButton_Click"></Button>
-                <Button x:Name="RuedasButton" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                        x:Uid="Wheels" Content="" FontSize="10" Click="RuedasButton_Click"></Button>-->
+                <ToggleButton x:Name="CanonButton" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        Content="Cannon" FontSize="10" IsChecked="False" Checked="CanonButton_Checked"></ToggleButton>
+                <ToggleButton x:Name="BlindajeButton" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        Content="Armor" FontSize="10" IsChecked="False" Checked="BlindajeButton_Checked"></ToggleButton>
+                <ToggleButton x:Name="RuedasButton" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                        Content="Wheels" FontSize="10" IsChecked="False" Checked="RuedasButton_Checked"></ToggleButton>
             </Grid>
             <!--#endregion-->
 
             <!--#region Piezas-->
-            <ListView></ListView>
+            <ListView x:Name="PiezasList" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="5" ItemsSource="{x:Bind ListaCanon}" SelectionMode="Single" IsItemClickEnabled="True"
+                  ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.HorizontalScrollMode="Enabled" ScrollViewer.VerticalScrollMode="Disabled" ItemClick="PiezasList_ItemClick">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate x:Name="ListViewTemplatePieza" x:DataType="local:VMPieza">
+                        <Grid Margin="5, 5, 0, 5">
+                            <Image Source="{x:Bind Imagen}" VerticalAlignment="Stretch" Margin="8, 0, 8, 0"/>
+                            <Image Source="Assets/cuadrado.png" Stretch="Fill"></Image>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
             <!--#endregion-->
 
             <!--#region Stats-->

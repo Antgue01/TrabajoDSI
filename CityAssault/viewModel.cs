@@ -24,6 +24,7 @@ namespace CityAssault
             Spe = tank.Spe;
             Mov = tank.Mov;
             side = tank.side;
+            Habilidad = tank.Habilidad;
             Img = new Image();
             string s = System.IO.Directory.GetCurrentDirectory() + "\\" + tank.Imagen;
             Img.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));

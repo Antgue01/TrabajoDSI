@@ -27,9 +27,13 @@ namespace CityAssault
     {
         public ObservableCollection<VMTank> ListaTanques { get; } = new ObservableCollection<VMTank>();
         public ObservableCollection<VMPieza> ListaPiezas { get; } = new ObservableCollection<VMPieza>();
+        public ObservableCollection<VMPieza> ListaCanon { get; } = new ObservableCollection<VMPieza>();
+        public ObservableCollection<VMPieza> ListaBlindaje { get; } = new ObservableCollection<VMPieza>();
+        public ObservableCollection<VMPieza> ListaRuedas { get; } = new ObservableCollection<VMPieza>();
 
         private VMTank selectedTank;
         private VMPieza selectedPieza;
+        private VMPieza nullPieza;
         private List<VMTank> team = new List<VMTank>();
         private int vit, atk, def, vel, mov;
 
@@ -63,7 +67,36 @@ namespace CityAssault
                     VMPieza VMitem = new VMPieza(pieza);
                     ListaPiezas.Add(VMitem);
                 }
-            selectedPieza = ListaPiezas[0];
+
+            if (ListaCanon != null)
+                foreach (Pieza pieza in model.GetAllPiezas())
+                {
+                    VMPieza VMitem = new VMPieza(pieza);
+
+                    if (VMitem.Tipo == Pieza.Type.Null)
+                        nullPieza = VMitem;
+
+                    if (VMitem.Tipo == Pieza.Type.Canon)
+                        ListaCanon.Add(VMitem);
+                }
+
+            if (ListaBlindaje != null)
+                foreach (Pieza pieza in model.GetAllPiezas())
+                {
+                    VMPieza VMitem = new VMPieza(pieza);
+                    if (VMitem.Tipo == Pieza.Type.Blindaje)
+                        ListaBlindaje.Add(VMitem);
+                }
+
+            if (ListaRuedas != null)
+                foreach (Pieza pieza in model.GetAllPiezas())
+                {
+                    VMPieza VMitem = new VMPieza(pieza);
+                    if (VMitem.Tipo == Pieza.Type.Ruedas)
+                        ListaRuedas.Add(VMitem);
+                }
+
+            selectedPieza = nullPieza;
 
             for (int i = 0; i < 4; ++i)
             {
@@ -89,6 +122,9 @@ namespace CityAssault
             def = selectedTank.Def;
             vel = selectedTank.Spe;
             mov = selectedTank.Mov;
+
+            CanonButton.IsChecked = true;
+            Habilidad.Text = selectedTank.Habilidad;
         }
 
         private void goBack(object sender, RoutedEventArgs e)
@@ -117,19 +153,28 @@ namespace CityAssault
             //?
         }
 
-        private void CanonButton_Click(object sender, RoutedEventArgs e)
+        private void CanonButton_Checked(object sender, RoutedEventArgs e)
         {
+            BlindajeButton.IsChecked = false;
+            RuedasButton.IsChecked = false;
 
+            PiezasList.ItemsSource = ListaCanon;
         }
 
-        private void BlindajeButton_Click(object sender, RoutedEventArgs e)
+        private void BlindajeButton_Checked(object sender, RoutedEventArgs e)
         {
+            CanonButton.IsChecked = false;
+            RuedasButton.IsChecked = false;
 
-        }
+            PiezasList.ItemsSource = ListaBlindaje;
+        }        
 
-        private void RuedasButton_Click(object sender, RoutedEventArgs e)
+        private void RuedasButton_Checked(object sender, RoutedEventArgs e)
         {
+            BlindajeButton.IsChecked = false;
+            CanonButton.IsChecked = false;
 
+            PiezasList.ItemsSource = ListaRuedas;
         }
 
         private void ArrowRight_Click(object sender, RoutedEventArgs e)
@@ -142,6 +187,7 @@ namespace CityAssault
             DefBar.Value = selectedTank.Def + selectedPieza.Def;
             VelBar.Value = selectedTank.Spe + selectedPieza.Spe;
             MovBar.Value = selectedTank.Mov + selectedPieza.Mov;
+            Habilidad.Text = selectedTank.Habilidad;
         }
 
         private void ArrowLeft_Click(object sender, RoutedEventArgs e)
@@ -154,6 +200,7 @@ namespace CityAssault
             DefBar.Value = selectedTank.Def + selectedPieza.Def;
             VelBar.Value = selectedTank.Spe + selectedPieza.Spe;
             MovBar.Value = selectedTank.Mov + selectedPieza.Mov;
+            Habilidad.Text = selectedTank.Habilidad;
         }
 
         private void SavedList_ItemClick(object sender, ItemClickEventArgs e)
@@ -172,12 +219,29 @@ namespace CityAssault
                 DefBar.Value = selectedTank.Def + selectedPieza.Def;
                 VelBar.Value = selectedTank.Spe + selectedPieza.Spe;
                 MovBar.Value = selectedTank.Mov + selectedPieza.Mov;
+                Habilidad.Text = selectedTank.Habilidad;
 
                 int i = 0;
                 while (team[i].Id != aux)
                     ++i;
 
                 team[i] = tank;
+            }
+        }
+
+        private void PiezasList_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            VMPieza pieza = e.ClickedItem as VMPieza;
+
+            if (pieza != null)
+            {
+                selectedPieza = ListaPiezas[pieza.Id];
+
+                VitBar.Value = selectedTank.HP + selectedPieza.HP;
+                AtkBar.Value = selectedTank.Atk + selectedPieza.Atk;
+                DefBar.Value = selectedTank.Def + selectedPieza.Def;
+                VelBar.Value = selectedTank.Spe + selectedPieza.Spe;
+                MovBar.Value = selectedTank.Mov + selectedPieza.Mov;
             }
         }
     }
