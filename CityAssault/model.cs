@@ -188,7 +188,7 @@ namespace CityAssault
             new Pieza()
             {
                 Id = 1,
-                Imagen = "Assets\\Tank1.png",
+                Imagen = "Assets\\canon1.png",
                 HP = 0,
                 Atk = 10,
                 Def = 0,
@@ -200,8 +200,8 @@ namespace CityAssault
             new Pieza()
             {
                 Id = 2,
-                Imagen = "Assets\\Tank1.png",
-                HP = 0,
+                Imagen = "Assets\\canon2.png",
+                HP = 2,
                 Atk = 14,
                 Def = 0,
                 Spe = 0,
@@ -212,23 +212,23 @@ namespace CityAssault
             new Pieza()
             {
                 Id = 3,
-                Imagen = "Assets\\Tank2.png",
-                HP = 0,
-                Atk = 0,
-                Def = 10,
+                Imagen = "Assets\\canon3.png",
+                HP = -10,
+                Atk = 20,
+                Def = 0,
                 Spe = 0,
                 Mov = 0,
-                Tipo = Pieza.Type.Blindaje
+                Tipo = Pieza.Type.Canon
             },
 
             new Pieza()
             {
                 Id = 4,
-                Imagen = "Assets\\Tank2.png",
+                Imagen = "Assets\\blindaje1.png",
                 HP = 0,
                 Atk = 0,
                 Def = 16,
-                Spe = 0,
+                Spe = -3,
                 Mov = 0,
                 Tipo = Pieza.Type.Blindaje
             },
@@ -236,12 +236,72 @@ namespace CityAssault
             new Pieza()
             {
                 Id = 5,
-                Imagen = "Assets\\Tank2.png",
+                Imagen = "Assets\\blindaje2.png",
+                HP = 0,
+                Atk = 0,
+                Def = 8,
+                Spe = 0,
+                Mov = 0,
+                Tipo = Pieza.Type.Blindaje
+            },
+
+            new Pieza()
+            {
+                Id = 6,
+                Imagen = "Assets\\blindaje3.png",
+                HP = 0,
+                Atk = 0,
+                Def = 20,
+                Spe = -10,
+                Mov = 0,
+                Tipo = Pieza.Type.Blindaje
+            },
+
+            new Pieza()
+            {
+                Id = 7,
+                Imagen = "Assets\\ruedas1.png",
+                HP = 0,
+                Atk = 0,
+                Def = 0,
+                Spe = 10,
+                Mov = 10,
+                Tipo = Pieza.Type.Ruedas
+            },
+
+            new Pieza()
+            {
+                Id = 8,
+                Imagen = "Assets\\ruedas2.png",
+                HP = 0,
+                Atk = 0,
+                Def = 0,
+                Spe = 10,
+                Mov = 5,
+                Tipo = Pieza.Type.Ruedas
+            },
+
+            new Pieza()
+            {
+                Id = 9,
+                Imagen = "Assets\\ruedas3.png",
+                HP = 0,
+                Atk = 0,
+                Def = 0,
+                Spe = 13,
+                Mov = 8,
+                Tipo = Pieza.Type.Ruedas
+            },
+
+            new Pieza()
+            {
+                Id = 10,
+                Imagen = "Assets\\ruedas4.png",
                 HP = 0,
                 Atk = 0,
                 Def = 0,
                 Spe = 5,
-                Mov = 10,
+                Mov = 13,
                 Tipo = Pieza.Type.Ruedas
             }
         };

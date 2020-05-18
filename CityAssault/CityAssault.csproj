@@ -158,7 +158,13 @@
     <Content Include="Assets\Auto.png" />
     <Content Include="Assets\BattleZone.jpg" />
     <Content Include="Assets\birdbg.png" />
+    <Content Include="Assets\blindaje1.png" />
+    <Content Include="Assets\blindaje2.png" />
+    <Content Include="Assets\blindaje3.png" />
     <Content Include="Assets\bracket.png" />
+    <Content Include="Assets\canon1.png" />
+    <Content Include="Assets\canon2.png" />
+    <Content Include="Assets\canon3.png" />
     <Content Include="Assets\cuadrado.png" />
     <Content Include="Assets\Defense.png" />
     <Content Include="Assets\Effects.png" />
@@ -182,6 +188,10 @@
     <Content Include="Assets\note.png" />
     <Content Include="Assets\PlayButton.png" />
     <Content Include="Assets\playerone.png" />
+    <Content Include="Assets\ruedas1.png" />
+    <Content Include="Assets\ruedas2.png" />
+    <Content Include="Assets\ruedas3.png" />
+    <Content Include="Assets\ruedas4.png" />
     <Content Include="Assets\save.png" />
     <Content Include="Assets\settingsicon.png" />
     <Content Include="Assets\ShootButton.png" />
