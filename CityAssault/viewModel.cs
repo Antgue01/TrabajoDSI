@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media;
 
 namespace CityAssault
 {
@@ -35,10 +37,12 @@ namespace CityAssault
             CCImg.UseSystemFocusVisuals = true;
             CCImg.Visibility = Windows.UI.Xaml.Visibility.Visible;
             panel = new StackPanel();
-            panel.Children.Add(CCImg);
             ProgressBar pb = new ProgressBar();
             pb.Value = tank.HP;
+            if (tank.side == Side.Ally)
+                //pb.Foreground =new SolidColorBrush(Color.Green) ;
             panel.Children.Add(pb);
+            panel.Children.Add(CCImg);
 
             //meterlasbarrasenstackpanelsynoseveianporquenotenianwidth
 
@@ -73,7 +77,9 @@ namespace CityAssault
         {
             Id = mis.Id;
             Imagen = mis.Imagen;
-            Descripcion = mis.Descripcion;
+            DescripcionEsp = mis.DescripcionEsp;
+            DescripcionEn = mis.DescripcionEn;
+            DescripcionJa = mis.DescripcionJa;
             side = mis.side;
         }
         public VMission() { }

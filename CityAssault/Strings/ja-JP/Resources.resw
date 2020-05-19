@@ -147,6 +147,9 @@
   <data name="Description.Text" xml:space="preserve">
     <value>任務記述: </value>
   </data>
+  <data name="descriptionRedux.Text" xml:space="preserve">
+    <value>詳細を知るよう任務を選びなさい。</value>
+  </data>
   <data name="Disabled.Text" xml:space="preserve">
     <value>オフ</value>
   </data>

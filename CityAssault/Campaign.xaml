@@ -54,7 +54,7 @@
         <TextBlock x:Name="Descripción" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="18" Margin="32,0,0,12" TextWrapping="Wrap" 
                     Height="143" Width="352">
             <Run x:Uid="Description" Text=""/><LineBreak/>
-            <Run x:Name="Texto" Text="Aquí aparecerá la descripción de la misión, pulsa una para poder jugar."/>
+            <Run x:Name="Texto" x:Uid="descriptionRedux" Text=""/>
         </TextBlock>
         <!--#endregion-->
 

@@ -141,6 +141,9 @@
   <data name="Description.Text" xml:space="preserve">
     <value>Mission Description:</value>
   </data>
+  <data name="descriptionRedux.Text" xml:space="preserve">
+    <value>Select a mission to see its rules</value>
+  </data>
   <data name="Disabled.Text" xml:space="preserve">
     <value>Off</value>
   </data>

@@ -138,13 +138,17 @@ namespace CityAssault
             {
                 case "Español":
                     ApplicationLanguages.PrimaryLanguageOverride = "es-ES";
+                    Language = "es-ES";
                     break;
                 case "English":
                     ApplicationLanguages.PrimaryLanguageOverride = "en-US";
+                    Language = "en-US";
 
                     break;
                 case "日本語":
                     ApplicationLanguages.PrimaryLanguageOverride = "ja-JP";
+                    Language = "ja-JP";
+
                     break;
                 default:
                     break;

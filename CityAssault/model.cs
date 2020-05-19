@@ -47,7 +47,9 @@ namespace CityAssault
         public int Id { get; set; }
         public string Imagen { get; set; }
         public int Dificultad { get; set; }     //0 facil, 1 medio, 2 dificil
-        public string Descripcion { get; set; }
+        public string DescripcionEsp { get; set; }
+        public string DescripcionEn { get; set; }
+        public string DescripcionJa { get; set; }
         public State side { get; set; }
         public Mission() { }
 
@@ -313,7 +315,9 @@ namespace CityAssault
                 Id = 0,
                 Imagen = "Assets\\M1.png",
                 Dificultad = 0,
-                Descripcion = "Deberás de capturar la bandera de los enemigos en un límite de tiempo de 2 minutos.",
+                DescripcionEsp = "Deberás de capturar la bandera de los enemigos en un límite de tiempo de 2 minutos.",
+                DescripcionEn="You must capture the enemy flag within the 2 minutes time limit.",
+                DescripcionJa="二分で敵の旗を捉えろ",
                 side=Mission.State.Unlock
             },
             new Mission()
@@ -321,7 +325,9 @@ namespace CityAssault
                 Id = 0,
                 Imagen = "Assets\\M2.png",
                 Dificultad = 0,
-                Descripcion = "Deberás de eliminar a todos los enemigos en un limite de 10 turnos. Contarás con mas vida de la habitual.",
+                DescripcionEsp = "Deberás de eliminar a todos los enemigos en un limite de 10 turnos. Contarás con mas vida de la habitual.",
+                DescripcionEn="You must destroy all enemy tanks within the 10 turn limit. You'll have more life points than usual.",
+                DescripcionJa="十ターンで全ての敵戦車を全滅しろ。普段よりもっとHPがあります",
                 side=Mission.State.Unlock
             },
             new Mission()
@@ -329,7 +335,9 @@ namespace CityAssault
                 Id = 1,
                 Imagen = "Assets\\M3.png",
                 Dificultad = 1,
-                Descripcion = "Deberas de eliminar a los tanques enemigos desde la distancia usando los disparos de mortero.",
+                DescripcionEsp = "Deberas de eliminar a los tanques enemigos desde la distancia usando los disparos de mortero.",
+                DescripcionEn="You must destroy all enemy tanks from the distance using the mortar.",
+                DescripcionJa="迫撃砲で遠い場所から全ての敵戦車を全滅しろ",
                 side=Mission.State.Unlock
             },
             new Mission()
@@ -337,7 +345,9 @@ namespace CityAssault
                 Id = 2,
                 Imagen = "Assets\\M4.png",
                 Dificultad = 1,
-                Descripcion = "Deberás de incapacitar a 3 tanques enemigos a la vez usando un ataque especial en área.",
+                DescripcionEsp = "Deberás de incapacitar a 3 tanques enemigos a la vez usando un ataque especial en área.",
+                DescripcionEn="You'll have to incapacitate 3 enemy tanks at a time using an area special attack.",
+                DescripcionJa="エリア超攻撃で三つの敵戦車を全滅しろ",
                 side=Mission.State.Unlock
             },
             new Mission()
@@ -345,7 +355,9 @@ namespace CityAssault
                 Id = 3,
                 Imagen = "Assets\\M5.png",
                 Dificultad = 2,
-                Descripcion = "Debes derrotar al general de las fuerzas enemigas en un combate cara a cara. No hay restricciones usa tu mejor armamento",
+                DescripcionEsp = "Debes derrotar al general de las fuerzas enemigas en un combate cara a cara. No hay restricciones. Usa tu mejor armamento",
+                DescripcionEn="You have to defeat the general's forces in a face to face battle. No restriction. Use your best weaponry.",
+                DescripcionJa="真剣勝負に全ての将軍の兵を撃て。制限がない。出来るほどの力を使うが良い。",
                 side=Mission.State.Unlock
             },
             new Mission()
@@ -353,7 +365,9 @@ namespace CityAssault
                 Id = 4,
                 Imagen = "Assets\\Lock.png",
                 Dificultad = 1,
-                Descripcion = "Misión no desbloqueada",
+                DescripcionEsp = "Misión no desbloqueada",
+                DescripcionEn ="Locked Mission",
+                DescripcionJa="ロックされた任務。",
                 side=Mission.State.Lock
             },
             new Mission()
@@ -361,7 +375,9 @@ namespace CityAssault
                 Id = 5,
                 Imagen = "Assets\\Lock.png",
                 Dificultad = 0,
-                Descripcion = "Misión no desbloqueada",
+                DescripcionEsp = "Misión no desbloqueada",
+                DescripcionEn ="Locked Mission",
+                DescripcionJa="ロックされた任務。",
                 side=Mission.State.Lock
             },
             new Mission()
@@ -369,7 +385,9 @@ namespace CityAssault
                 Id = 6,
                 Imagen = "Assets\\Lock.png",
                 Dificultad = 1,
-                Descripcion = "Misión no desbloqueada",
+                DescripcionEsp = "Misión no desbloqueada",
+                DescripcionEn ="Locked Mission",
+                DescripcionJa="ロックされた任務。",
                 side=Mission.State.Lock
             }
         };

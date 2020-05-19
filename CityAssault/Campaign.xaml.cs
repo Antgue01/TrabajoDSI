@@ -15,11 +15,12 @@ using Windows.UI.Xaml.Navigation;
 
 using Windows.UI.ViewManagement;
 using System.Collections.ObjectModel;
+using Windows.Globalization;
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace CityAssault
 {
-   
+
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
@@ -27,8 +28,8 @@ namespace CityAssault
     {
         public ObservableCollection<Mission> ListaMisiones { get; } = new ObservableCollection<Mission>();
 
-        int rewards= 10;
-        int maxRewards =50;
+        int rewards = 10;
+        int maxRewards = 50;
         public Campaign()
         {
             ApplicationView.PreferredLaunchViewSize = new Size(Height = 432, Width = 768);
@@ -69,14 +70,44 @@ namespace CityAssault
         private void LevelSelected(object sender, ItemClickEventArgs e)
         {
             Mission aux = e.ClickedItem as Mission;
-            if(aux.side == Mission.State.Unlock)
+            if (aux.side == Mission.State.Unlock)
             {
                 PlayButton.IsEnabled = true;
-                Texto.Text = aux.Descripcion;
+                switch (ApplicationLanguages.Languages[0])
+
+                {
+                    case "es-ES":
+                    
+                        Texto.Text = aux.DescripcionEsp;
+                        break;
+                    case "en-US":
+                        Texto.Text = aux.DescripcionEn;
+                        break;
+                    case "ja":
+                        Texto.Text = aux.DescripcionJa;
+                        break;
+                    default:
+                        break;
+                }
             }
-            else {
+            else
+            {
                 PlayButton.IsEnabled = false;
-                Texto.Text = aux.Descripcion;
+
+                switch (ApplicationLanguages.Languages[0])
+                {
+                    case "es-ES":
+                        Texto.Text = aux.DescripcionEsp;
+                        break;
+                    case "en-US":
+                        Texto.Text = aux.DescripcionEn;
+                        break;
+                    case "ja":
+                        Texto.Text = aux.DescripcionJa;
+                        break;
+                    default:
+                        break;
+                }
             }
         }
 
