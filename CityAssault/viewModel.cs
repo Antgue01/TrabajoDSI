@@ -11,7 +11,7 @@ namespace CityAssault
     {
         public Image Img;
         public ContentControl CCImg;
-        public ContentControl HPBarControl;
+        public StackPanel panel;
         public VMTank(Tank tank)
         {
             Id = tank.Id;
@@ -34,12 +34,15 @@ namespace CityAssault
             CCImg.Content = Img;
             CCImg.UseSystemFocusVisuals = true;
             CCImg.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            HPBarControl = new ContentControl();
-            HPBarControl.Content = new ProgressBar();
-            (HPBarControl.Content as ProgressBar).Value = 100;
-            HPBarControl.UseSystemFocusVisuals = false;
-            HPBarControl.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            HPBarControl.IsEnabled = true;
+            panel = new StackPanel();
+            panel.Children.Add(CCImg);
+            ProgressBar pb = new ProgressBar();
+            pb.Value = tank.HP;
+            panel.Children.Add(pb);
+
+            //meterlasbarrasenstackpanelsynoseveianporquenotenianwidth
+
+
         }
     }
 

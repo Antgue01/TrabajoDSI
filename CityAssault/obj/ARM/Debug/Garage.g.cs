@@ -33,7 +33,7 @@ namespace CityAssault
             case 3: // Garage.xaml line 208
                 {
                     this.BlindajeButton = (global::Windows.UI.Xaml.Controls.Button)(target);
-                    ((global::Windows.UI.Xaml.Controls.Button)this.BlindajeButton).Click += this.BlindajeButton_Click;
+                    //((global::Windows.UI.Xaml.Controls.Button)this.BlindajeButton).Click += this.BlindajeButton_Click;
                 }
                 break;
             case 4: // Garage.xaml line 210

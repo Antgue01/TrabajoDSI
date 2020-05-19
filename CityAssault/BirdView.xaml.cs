@@ -56,8 +56,7 @@ namespace CityAssault
                 img.Width = 60;
                 img.Height = 60;
                 img.Source = ListaTanques[i].Img.Source;
-                canvasTanques.Children.Add(ListaTanques[i].CCImg);
-                bars.Children.Add(ListaTanques[i].HPBarControl);
+                canvasTanques.Children.Add(ListaTanques[i].panel);
                 ListaTanques[i].CCImg.PointerPressed += SelectTank;
                 contentControls.Add(ListaTanques[i].CCImg);
                 ListaTanques[i].Img.CenterPoint = new System.Numerics.Vector3(.5f, .5f, .5f);
