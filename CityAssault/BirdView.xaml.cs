@@ -66,12 +66,14 @@ namespace CityAssault
                     ListaTanques[i].Img.Scale = new System.Numerics.Vector3(ListaTanques[i].Img.Scale.X * -1
                         , ListaTanques[i].Img.Scale.Y, ListaTanques[i].Img.Scale.Z);
                 }
-                //canvasTanques.Children.Add(ListaTanques[i].HPBarControl.Content as ProgressBar);
                 Canvas.SetTop(ListaTanques[i].panel, ListaTanques[i].Y);
-                //Canvas.SetTop(ListaTanques[i].HPBarControl, ListaTanques[i].Y-30);
-
+                if (ListaTanques[i].side == Tank.Side.Enemy)
+                {
+                    Canvas.SetLeft(ListaTanques[i].CCImg, ListaTanques[i].X + ListaTanques[i].Img.Width / 2);
+                    ListaTanques[i].pb.Scale= new System.Numerics.Vector3(ListaTanques[i].pb.Scale.X * -1
+                        , ListaTanques[i].pb.Scale.Y, ListaTanques[i].pb.Scale.Z);
+                }
                 Canvas.SetLeft(ListaTanques[i].panel, ListaTanques[i].X);
-                //Canvas.SetLeft(ListaTanques[i].HPBarControl, ListaTanques[i].X);
             }
             selectedTank = ListaTanques[0];
         }

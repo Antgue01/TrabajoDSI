@@ -14,6 +14,7 @@ namespace CityAssault
         public Image Img;
         public ContentControl CCImg;
         public StackPanel panel;
+        public ProgressBar pb;
         public VMTank(Tank tank)
         {
             Id = tank.Id;
@@ -37,14 +38,24 @@ namespace CityAssault
             CCImg.UseSystemFocusVisuals = true;
             CCImg.Visibility = Windows.UI.Xaml.Visibility.Visible;
             panel = new StackPanel();
-            ProgressBar pb = new ProgressBar();
+            pb = new ProgressBar();
             pb.Value = tank.HP;
+            Windows.UI.Color col = new Windows.UI.Color();
+            col.B = 0x00;
+            col.A = 0xff;
             if (tank.side == Side.Ally)
-                //pb.Foreground =new SolidColorBrush(Color.Green) ;
+            {
+                col.R = 0x00;
+                col.G = 0xff;
+            }else
+            {
+                col.R = 0xff;
+                col.G = 0x00;
+            }   
+            pb.Foreground = new SolidColorBrush(col);
             panel.Children.Add(pb);
             panel.Children.Add(CCImg);
 
-            //meterlasbarrasenstackpanelsynoseveianporquenotenianwidth
 
 
         }
