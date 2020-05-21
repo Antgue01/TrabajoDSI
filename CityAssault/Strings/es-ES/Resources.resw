@@ -129,7 +129,7 @@
   <data name="Auto.Text" xml:space="preserve">
     <value>Auto</value>
   </data>
-  <data name="Campaign.Content" xml:space="preserve">
+  <data name="Campaign.Text" xml:space="preserve">
     <value>Campaña</value>
   </data>
   <data name="CampaignT.Text" xml:space="preserve">
@@ -153,7 +153,7 @@
   <data name="Enabled.Text" xml:space="preserve">
     <value>Activado</value>
   </data>
-  <data name="Garage.Content" xml:space="preserve">
+  <data name="Garage.Text" xml:space="preserve">
     <value>Taller</value>
   </data>
   <data name="Garage2.Text" xml:space="preserve">
@@ -171,7 +171,7 @@
   <data name="Music.Text" xml:space="preserve">
     <value>Música</value>
   </data>
-  <data name="Online.Content" xml:space="preserve">
+  <data name="Online.Text" xml:space="preserve">
     <value>Multijugador</value>
   </data>
   <data name="Online2.Text" xml:space="preserve">
