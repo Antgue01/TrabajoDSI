@@ -161,10 +161,12 @@
     <Content Include="Assets\blindaje1.png" />
     <Content Include="Assets\blindaje2.png" />
     <Content Include="Assets\blindaje3.png" />
+    <Content Include="Assets\blindajeicon.png" />
     <Content Include="Assets\bracket.png" />
     <Content Include="Assets\canon1.png" />
     <Content Include="Assets\canon2.png" />
     <Content Include="Assets\canon3.png" />
+    <Content Include="Assets\canonicon.png" />
     <Content Include="Assets\cuadrado.png" />
     <Content Include="Assets\Defense.png" />
     <Content Include="Assets\Effects.png" />
@@ -192,6 +194,7 @@
     <Content Include="Assets\ruedas2.png" />
     <Content Include="Assets\ruedas3.png" />
     <Content Include="Assets\ruedas4.png" />
+    <Content Include="Assets\ruedasicon.png" />
     <Content Include="Assets\save.png" />
     <Content Include="Assets\settingsicon.png" />
     <Content Include="Assets\ShootButton.png" />
@@ -204,6 +207,7 @@
     <Content Include="Assets\SpecialButton.png" />
     <Content Include="Assets\speechIcon.png" />
     <Content Include="Assets\Speed.png" />
+    <Content Include="Assets\tank-icon-png-6.png" />
     <Content Include="Assets\Tank0.png" />
     <Content Include="Assets\Tank1.png" />
     <Content Include="Assets\Tank2.png" />

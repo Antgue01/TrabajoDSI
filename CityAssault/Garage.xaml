@@ -204,11 +204,17 @@
                 <!--#endregion-->
 
                 <ToggleButton x:Name="CanonButton" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                        Content="Cannon" FontSize="10" IsChecked="False" Checked="CanonButton_Checked"></ToggleButton>
+                        FontSize="10" IsChecked="False" Checked="CanonButton_Checked">
+                    <Image Source="Assets/canonicon.png"></Image>                
+                </ToggleButton>
                 <ToggleButton x:Name="BlindajeButton" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                        Content="Armor" FontSize="10" IsChecked="False" Checked="BlindajeButton_Checked"></ToggleButton>
+                        FontSize="10" IsChecked="False" Checked="BlindajeButton_Checked">
+                    <Image Source="Assets/blindajeicon.png"></Image>
+                </ToggleButton>
                 <ToggleButton x:Name="RuedasButton" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                        Content="Wheels" FontSize="10" IsChecked="False" Checked="RuedasButton_Checked"></ToggleButton>
+                        FontSize="10" IsChecked="False" Checked="RuedasButton_Checked">
+                    <Image Source="Assets/ruedasicon.png"></Image>
+                </ToggleButton>
             </Grid>
             <!--#endregion-->
 
