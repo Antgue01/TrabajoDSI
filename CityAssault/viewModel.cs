@@ -52,7 +52,13 @@ namespace CityAssault
                 col.R = 0xff;
                 col.G = 0x00;
             }   
+            Windows.UI.Color colbg = new Windows.UI.Color();
+            colbg.R = 0xff;
+            colbg.G = 0xff;
+            colbg.B = 0xff;
+            colbg.A = 0xaa;
             pb.Foreground = new SolidColorBrush(col);
+            pb.Background = new SolidColorBrush(colbg);
             panel.Children.Add(pb);
             panel.Children.Add(CCImg);
 
